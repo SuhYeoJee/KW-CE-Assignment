@@ -1,0 +1,100 @@
+import java_cup.runtime.*;
+import java.util.*;	//hashtable
+
+action code	{:
+	Hashtable table = new Hashtable(); // IDENT 저장
+:}
+
+parser code  {: 
+// 사용자 정의 코드
+	Scanner scanner; //lexical analyzer
+	parser(String expr){
+		this(); //생성자
+		scanner = new Scanner (new java.io.StringReader(expr));
+	}
+
+:};
+
+scan with {: return scanner.next_token(); :}
+
+// terminals & non terminals
+terminal PLUS, MINUS, DIV, MULT, LPAREN, RPAREN, SEMICOLON, ASSIGN;
+terminal Integer NUMBER;
+terminal String IDENT;
+
+non terminal Integer StmtList, Stmt, Expr, Term, Factor;
+
+start with StmtList;
+
+StmtList ::=	//EMPTY	
+		|
+			StmtList:stmtlist Stmt:stmt
+			{:
+			:}
+		;
+
+Stmt ::=	IDENT:ident ASSIGN Expr:expr SEMICOLON
+			{:
+			table.put(ident, expr);
+			:}
+		|
+			Expr:expr SEMICOLON
+			{:
+			RESULT = expr;
+			System.out.println(RESULT);
+			:}
+		;
+
+Expr ::=	Expr:expr PLUS Term:term
+			{:
+			RESULT = (expr + term);
+			:}
+		|
+        	Expr:expr MINUS Term:term
+			{:
+			RESULT = (expr - term);
+			:}
+        |
+            Term:term
+            {:
+			RESULT = term;
+			:}
+        ;
+
+Term ::=    Term:term MULT Factor:factor
+			{:
+			RESULT = (term * factor);
+			:}
+		|
+		   Term:term DIV Factor:factor
+			{:
+			RESULT = (term / factor);
+			:}
+		|
+			Factor:factor
+			{:
+			RESULT = factor;
+			:}
+		;
+
+Factor::=	LPAREN Expr:expr RPAREN
+			{:
+			RESULT = expr;
+			:}
+		|
+			NUMBER:value
+			{:
+			RESULT = value;
+			:}
+		|
+			IDENT:ident
+			{:
+			Integer value = (Integer) table.get(ident);
+			if(value==null){
+				parser.report_error("Undeclared Identifier"+ident,
+				new Symbol(sym.IDENT, identleft, identright, ident));
+				value = (Integer)0;
+			}
+			RESULT = value;
+			:}
+		;
