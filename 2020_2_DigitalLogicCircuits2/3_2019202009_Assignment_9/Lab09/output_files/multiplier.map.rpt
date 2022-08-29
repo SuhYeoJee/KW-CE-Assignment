@@ -1,0 +1,638 @@
+Analysis & Synthesis report for multiplier
+Fri Nov 13 00:48:25 2020
+Quartus Prime Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Parameter Settings for User Entity Instance: next_state:U0
+ 12. Parameter Settings for User Entity Instance: calculate:U1
+ 13. Port Connectivity Checks: "calculate:U1|cla64:U8_cla64"
+ 14. Port Connectivity Checks: "calculate:U1|cla64:U7_cla64"
+ 15. Post-Synthesis Netlist Statistics for Top Partition
+ 16. Elapsed Time Per Partition
+ 17. Analysis & Synthesis Messages
+ 18. Analysis & Synthesis Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++---------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Fri Nov 13 00:48:25 2020       ;
+; Quartus Prime Version           ; 15.1.0 Build 185 10/21/2015 SJ Lite Edition ;
+; Revision Name                   ; multiplier                                  ;
+; Top-level Entity Name           ; multiplier                                  ;
+; Family                          ; Cyclone V                                   ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 321                                         ;
+; Total pins                      ; 261                                         ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0                                           ;
+; Total DSP Blocks                ; 0                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                             ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                          ; Setting            ; Default Value      ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                          ; 5CSXFC6D6F31C6     ;                    ;
+; Top-level entity name                                                           ; multiplier         ; multiplier         ;
+; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
+; Use smart compilation                                                           ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation      ; On                 ; On                 ;
+; Enable compact report table                                                     ; Off                ; Off                ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
+; Preserve fewer node names                                                       ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                       ; Off                ; Off                ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                        ; Auto               ; Auto               ;
+; Safe State Machine                                                              ; Off                ; Off                ;
+; Extract Verilog State Machines                                                  ; On                 ; On                 ;
+; Extract VHDL State Machines                                                     ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
+; Parallel Synthesis                                                              ; On                 ; On                 ;
+; DSP Block Balancing                                                             ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                 ; On                 ;
+; Power-Up Don't Care                                                             ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
+; Remove Duplicate Registers                                                      ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
+; Optimization Technique                                                          ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                              ; 70                 ; 70                 ;
+; Auto Carry Chains                                                               ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
+; Auto ROM Replacement                                                            ; On                 ; On                 ;
+; Auto RAM Replacement                                                            ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
+; Strict RAM Replacement                                                          ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                           ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
+; Report Parameter Settings                                                       ; On                 ; On                 ;
+; Report Source Assignments                                                       ; On                 ; On                 ;
+; Report Connectivity Checks                                                      ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
+; PowerPlay Power Optimization During Synthesis                                   ; Normal compilation ; Normal compilation ;
+; HDL message level                                                               ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
+; Clock MUX Protection                                                            ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
+; Block Design Naming                                                             ; Auto               ; Auto               ;
+; SDC constraint protection                                                       ; Off                ; Off                ;
+; Synthesis Effort                                                                ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
+; Synthesis Seed                                                                  ; 1                  ; 1                  ;
+; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 6      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                 ;
++----------------------------------+-----------------+------------------------+----------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                   ; Library ;
++----------------------------------+-----------------+------------------------+----------------------------------------------------------------+---------+
+; gates.v                          ; yes             ; User Verilog HDL File  ; C:/Program_A/Altera_Quartus/Project_file/Lab09/gates.v         ;         ;
+; fa_v2.v                          ; yes             ; User Verilog HDL File  ; C:/Program_A/Altera_Quartus/Project_file/Lab09/fa_v2.v         ;         ;
+; clb4.v                           ; yes             ; User Verilog HDL File  ; C:/Program_A/Altera_Quartus/Project_file/Lab09/clb4.v          ;         ;
+; cla4.v                           ; yes             ; User Verilog HDL File  ; C:/Program_A/Altera_Quartus/Project_file/Lab09/cla4.v          ;         ;
+; cla32.v                          ; yes             ; User Verilog HDL File  ; C:/Program_A/Altera_Quartus/Project_file/Lab09/cla32.v         ;         ;
+; multiplier.v                     ; yes             ; User Verilog HDL File  ; C:/Program_A/Altera_Quartus/Project_file/Lab09/multiplier.v    ;         ;
+; register64_r.v                   ; yes             ; User Verilog HDL File  ; C:/Program_A/Altera_Quartus/Project_file/Lab09/register64_r.v  ;         ;
+; register128_r.v                  ; yes             ; User Verilog HDL File  ; C:/Program_A/Altera_Quartus/Project_file/Lab09/register128_r.v ;         ;
+; register2_r.v                    ; yes             ; User Verilog HDL File  ; C:/Program_A/Altera_Quartus/Project_file/Lab09/register2_r.v   ;         ;
+; next_state.v                     ; yes             ; User Verilog HDL File  ; C:/Program_A/Altera_Quartus/Project_file/Lab09/next_state.v    ;         ;
+; calculate.v                      ; yes             ; User Verilog HDL File  ; C:/Program_A/Altera_Quartus/Project_file/Lab09/calculate.v     ;         ;
+; cla64.v                          ; yes             ; User Verilog HDL File  ; C:/Program_A/Altera_Quartus/Project_file/Lab09/cla64.v         ;         ;
++----------------------------------+-----------------+------------------------+----------------------------------------------------------------+---------+
+
+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimate of Logic utilization (ALMs needed) ; 237       ;
+;                                             ;           ;
+; Combinational ALUT usage for logic          ; 278       ;
+;     -- 7 input functions                    ; 2         ;
+;     -- 6 input functions                    ; 100       ;
+;     -- 5 input functions                    ; 13        ;
+;     -- 4 input functions                    ; 34        ;
+;     -- <=3 input functions                  ; 129       ;
+;                                             ;           ;
+; Dedicated logic registers                   ; 321       ;
+;                                             ;           ;
+; I/O pins                                    ; 261       ;
+;                                             ;           ;
+; Total DSP Blocks                            ; 0         ;
+;                                             ;           ;
+; Maximum fan-out node                        ; clk~input ;
+; Maximum fan-out                             ; 321       ;
+; Total fan-out                               ; 3123      ;
+; Average fan-out                             ; 2.79      ;
++---------------------------------------------+-----------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                            ;
++--------------------------------------+-------------------+--------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node           ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                            ; Library Name ;
++--------------------------------------+-------------------+--------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------------------------------------+--------------+
+; |multiplier                          ; 278 (1)           ; 321 (0)      ; 0                 ; 0          ; 261  ; 0            ; |multiplier                                                                                                    ;              ;
+;    |calculate:U1|                    ; 271 (135)         ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1                                                                                       ; work         ;
+;       |cla64:U7_cla64|               ; 64 (0)            ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U7_cla64                                                                        ; work         ;
+;          |cla32:U0_cla32|            ; 32 (0)            ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U7_cla64|cla32:U0_cla32                                                         ; work         ;
+;             |cla4:U0_cla4|           ; 3 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U7_cla64|cla32:U0_cla32|cla4:U0_cla4                                            ; work         ;
+;                |clb4:U0_clb4|        ; 3 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U7_cla64|cla32:U0_cla32|cla4:U0_cla4|clb4:U0_clb4                               ; work         ;
+;                   |_or5:U21_or5|     ; 3 (3)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U7_cla64|cla32:U0_cla32|cla4:U0_cla4|clb4:U0_clb4|_or5:U21_or5                  ; work         ;
+;             |cla4:U1_cla4|           ; 5 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U7_cla64|cla32:U0_cla32|cla4:U1_cla4                                            ; work         ;
+;                |clb4:U0_clb4|        ; 5 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U7_cla64|cla32:U0_cla32|cla4:U1_cla4|clb4:U0_clb4                               ; work         ;
+;                   |_and2:U3_and2|    ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U7_cla64|cla32:U0_cla32|cla4:U1_cla4|clb4:U0_clb4|_and2:U3_and2                 ; work         ;
+;                   |_or2:U5_or2|      ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U7_cla64|cla32:U0_cla32|cla4:U1_cla4|clb4:U0_clb4|_or2:U5_or2                   ; work         ;
+;                   |_or5:U21_or5|     ; 3 (3)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U7_cla64|cla32:U0_cla32|cla4:U1_cla4|clb4:U0_clb4|_or5:U21_or5                  ; work         ;
+;             |cla4:U2_cla4|           ; 4 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U7_cla64|cla32:U0_cla32|cla4:U2_cla4                                            ; work         ;
+;                |clb4:U0_clb4|        ; 4 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U7_cla64|cla32:U0_cla32|cla4:U2_cla4|clb4:U0_clb4                               ; work         ;
+;                   |_or2:U5_or2|      ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U7_cla64|cla32:U0_cla32|cla4:U2_cla4|clb4:U0_clb4|_or2:U5_or2                   ; work         ;
+;                   |_or5:U21_or5|     ; 3 (3)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U7_cla64|cla32:U0_cla32|cla4:U2_cla4|clb4:U0_clb4|_or5:U21_or5                  ; work         ;
+;             |cla4:U3_cla4|           ; 5 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U7_cla64|cla32:U0_cla32|cla4:U3_cla4                                            ; work         ;
+;                |clb4:U0_clb4|        ; 5 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U7_cla64|cla32:U0_cla32|cla4:U3_cla4|clb4:U0_clb4                               ; work         ;
+;                   |_and2:U2_and2|    ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U7_cla64|cla32:U0_cla32|cla4:U3_cla4|clb4:U0_clb4|_and2:U2_and2                 ; work         ;
+;                   |_or2:U6_or2|      ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U7_cla64|cla32:U0_cla32|cla4:U3_cla4|clb4:U0_clb4|_or2:U6_or2                   ; work         ;
+;                   |_or5:U21_or5|     ; 3 (3)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U7_cla64|cla32:U0_cla32|cla4:U3_cla4|clb4:U0_clb4|_or5:U21_or5                  ; work         ;
+;             |cla4:U4_cla4|           ; 5 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U7_cla64|cla32:U0_cla32|cla4:U4_cla4                                            ; work         ;
+;                |clb4:U0_clb4|        ; 4 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U7_cla64|cla32:U0_cla32|cla4:U4_cla4|clb4:U0_clb4                               ; work         ;
+;                   |_and2:U3_and2|    ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U7_cla64|cla32:U0_cla32|cla4:U4_cla4|clb4:U0_clb4|_and2:U3_and2                 ; work         ;
+;                   |_or5:U21_or5|     ; 3 (3)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U7_cla64|cla32:U0_cla32|cla4:U4_cla4|clb4:U0_clb4|_or5:U21_or5                  ; work         ;
+;                |fa_v2:U2_fa_v2|      ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U7_cla64|cla32:U0_cla32|cla4:U4_cla4|fa_v2:U2_fa_v2                             ; work         ;
+;                   |_xor2:U1_xor2|    ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U7_cla64|cla32:U0_cla32|cla4:U4_cla4|fa_v2:U2_fa_v2|_xor2:U1_xor2               ; work         ;
+;                      |_and2:U3_and2| ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U7_cla64|cla32:U0_cla32|cla4:U4_cla4|fa_v2:U2_fa_v2|_xor2:U1_xor2|_and2:U3_and2 ; work         ;
+;             |cla4:U5_cla4|           ; 2 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U7_cla64|cla32:U0_cla32|cla4:U5_cla4                                            ; work         ;
+;                |clb4:U0_clb4|        ; 2 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U7_cla64|cla32:U0_cla32|cla4:U5_cla4|clb4:U0_clb4                               ; work         ;
+;                   |_or5:U21_or5|     ; 2 (2)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U7_cla64|cla32:U0_cla32|cla4:U5_cla4|clb4:U0_clb4|_or5:U21_or5                  ; work         ;
+;             |cla4:U6_cla4|           ; 4 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U7_cla64|cla32:U0_cla32|cla4:U6_cla4                                            ; work         ;
+;                |clb4:U0_clb4|        ; 4 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U7_cla64|cla32:U0_cla32|cla4:U6_cla4|clb4:U0_clb4                               ; work         ;
+;                   |_and2:U3_and2|    ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U7_cla64|cla32:U0_cla32|cla4:U6_cla4|clb4:U0_clb4|_and2:U3_and2                 ; work         ;
+;                   |_or2:U4_or2|      ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U7_cla64|cla32:U0_cla32|cla4:U6_cla4|clb4:U0_clb4|_or2:U4_or2                   ; work         ;
+;                   |_or5:U21_or5|     ; 2 (2)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U7_cla64|cla32:U0_cla32|cla4:U6_cla4|clb4:U0_clb4|_or5:U21_or5                  ; work         ;
+;             |cla4:U7_cla4|           ; 4 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U7_cla64|cla32:U0_cla32|cla4:U7_cla4                                            ; work         ;
+;                |clb4:U0_clb4|        ; 4 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U7_cla64|cla32:U0_cla32|cla4:U7_cla4|clb4:U0_clb4                               ; work         ;
+;                   |_or2:U5_or2|      ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U7_cla64|cla32:U0_cla32|cla4:U7_cla4|clb4:U0_clb4|_or2:U5_or2                   ; work         ;
+;                   |_or5:U21_or5|     ; 3 (3)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U7_cla64|cla32:U0_cla32|cla4:U7_cla4|clb4:U0_clb4|_or5:U21_or5                  ; work         ;
+;          |cla32:U1_cla32|            ; 32 (0)            ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U7_cla64|cla32:U1_cla32                                                         ; work         ;
+;             |cla4:U0_cla4|           ; 5 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U7_cla64|cla32:U1_cla32|cla4:U0_cla4                                            ; work         ;
+;                |clb4:U0_clb4|        ; 5 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U7_cla64|cla32:U1_cla32|cla4:U0_cla4|clb4:U0_clb4                               ; work         ;
+;                   |_and2:U0_and2|    ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U7_cla64|cla32:U1_cla32|cla4:U0_cla4|clb4:U0_clb4|_and2:U0_and2                 ; work         ;
+;                   |_or2:U6_or2|      ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U7_cla64|cla32:U1_cla32|cla4:U0_cla4|clb4:U0_clb4|_or2:U6_or2                   ; work         ;
+;                   |_or5:U21_or5|     ; 3 (3)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U7_cla64|cla32:U1_cla32|cla4:U0_cla4|clb4:U0_clb4|_or5:U21_or5                  ; work         ;
+;             |cla4:U1_cla4|           ; 5 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U7_cla64|cla32:U1_cla32|cla4:U1_cla4                                            ; work         ;
+;                |clb4:U0_clb4|        ; 4 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U7_cla64|cla32:U1_cla32|cla4:U1_cla4|clb4:U0_clb4                               ; work         ;
+;                   |_or5:U21_or5|     ; 4 (4)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U7_cla64|cla32:U1_cla32|cla4:U1_cla4|clb4:U0_clb4|_or5:U21_or5                  ; work         ;
+;                |fa_v2:U2_fa_v2|      ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U7_cla64|cla32:U1_cla32|cla4:U1_cla4|fa_v2:U2_fa_v2                             ; work         ;
+;                   |_xor2:U1_xor2|    ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U7_cla64|cla32:U1_cla32|cla4:U1_cla4|fa_v2:U2_fa_v2|_xor2:U1_xor2               ; work         ;
+;                      |_and2:U3_and2| ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U7_cla64|cla32:U1_cla32|cla4:U1_cla4|fa_v2:U2_fa_v2|_xor2:U1_xor2|_and2:U3_and2 ; work         ;
+;             |cla4:U2_cla4|           ; 2 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U7_cla64|cla32:U1_cla32|cla4:U2_cla4                                            ; work         ;
+;                |clb4:U0_clb4|        ; 2 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U7_cla64|cla32:U1_cla32|cla4:U2_cla4|clb4:U0_clb4                               ; work         ;
+;                   |_or5:U21_or5|     ; 2 (2)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U7_cla64|cla32:U1_cla32|cla4:U2_cla4|clb4:U0_clb4|_or5:U21_or5                  ; work         ;
+;             |cla4:U3_cla4|           ; 3 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U7_cla64|cla32:U1_cla32|cla4:U3_cla4                                            ; work         ;
+;                |clb4:U0_clb4|        ; 3 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U7_cla64|cla32:U1_cla32|cla4:U3_cla4|clb4:U0_clb4                               ; work         ;
+;                   |_or2:U4_or2|      ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U7_cla64|cla32:U1_cla32|cla4:U3_cla4|clb4:U0_clb4|_or2:U4_or2                   ; work         ;
+;                   |_or5:U21_or5|     ; 2 (2)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U7_cla64|cla32:U1_cla32|cla4:U3_cla4|clb4:U0_clb4|_or5:U21_or5                  ; work         ;
+;             |cla4:U4_cla4|           ; 4 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U7_cla64|cla32:U1_cla32|cla4:U4_cla4                                            ; work         ;
+;                |clb4:U0_clb4|        ; 4 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U7_cla64|cla32:U1_cla32|cla4:U4_cla4|clb4:U0_clb4                               ; work         ;
+;                   |_or2:U6_or2|      ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U7_cla64|cla32:U1_cla32|cla4:U4_cla4|clb4:U0_clb4|_or2:U6_or2                   ; work         ;
+;                   |_or5:U21_or5|     ; 3 (3)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U7_cla64|cla32:U1_cla32|cla4:U4_cla4|clb4:U0_clb4|_or5:U21_or5                  ; work         ;
+;             |cla4:U5_cla4|           ; 4 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U7_cla64|cla32:U1_cla32|cla4:U5_cla4                                            ; work         ;
+;                |clb4:U0_clb4|        ; 4 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U7_cla64|cla32:U1_cla32|cla4:U5_cla4|clb4:U0_clb4                               ; work         ;
+;                   |_or2:U6_or2|      ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U7_cla64|cla32:U1_cla32|cla4:U5_cla4|clb4:U0_clb4|_or2:U6_or2                   ; work         ;
+;                   |_or5:U21_or5|     ; 3 (3)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U7_cla64|cla32:U1_cla32|cla4:U5_cla4|clb4:U0_clb4|_or5:U21_or5                  ; work         ;
+;             |cla4:U6_cla4|           ; 7 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U7_cla64|cla32:U1_cla32|cla4:U6_cla4                                            ; work         ;
+;                |clb4:U0_clb4|        ; 7 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U7_cla64|cla32:U1_cla32|cla4:U6_cla4|clb4:U0_clb4                               ; work         ;
+;                   |_or2:U4_or2|      ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U7_cla64|cla32:U1_cla32|cla4:U6_cla4|clb4:U0_clb4|_or2:U4_or2                   ; work         ;
+;                   |_or2:U5_or2|      ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U7_cla64|cla32:U1_cla32|cla4:U6_cla4|clb4:U0_clb4|_or2:U5_or2                   ; work         ;
+;                   |_or5:U21_or5|     ; 5 (5)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U7_cla64|cla32:U1_cla32|cla4:U6_cla4|clb4:U0_clb4|_or5:U21_or5                  ; work         ;
+;             |cla4:U7_cla4|           ; 2 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U7_cla64|cla32:U1_cla32|cla4:U7_cla4                                            ; work         ;
+;                |clb4:U0_clb4|        ; 2 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U7_cla64|cla32:U1_cla32|cla4:U7_cla4|clb4:U0_clb4                               ; work         ;
+;                   |_and2:U1_and2|    ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U7_cla64|cla32:U1_cla32|cla4:U7_cla4|clb4:U0_clb4|_and2:U1_and2                 ; work         ;
+;                   |_or2:U5_or2|      ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U7_cla64|cla32:U1_cla32|cla4:U7_cla4|clb4:U0_clb4|_or2:U5_or2                   ; work         ;
+;       |cla64:U8_cla64|               ; 72 (0)            ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U8_cla64                                                                        ; work         ;
+;          |cla32:U0_cla32|            ; 38 (0)            ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U8_cla64|cla32:U0_cla32                                                         ; work         ;
+;             |cla4:U0_cla4|           ; 3 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U8_cla64|cla32:U0_cla32|cla4:U0_cla4                                            ; work         ;
+;                |clb4:U0_clb4|        ; 3 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U8_cla64|cla32:U0_cla32|cla4:U0_cla4|clb4:U0_clb4                               ; work         ;
+;                   |_or5:U21_or5|     ; 3 (3)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U8_cla64|cla32:U0_cla32|cla4:U0_cla4|clb4:U0_clb4|_or5:U21_or5                  ; work         ;
+;             |cla4:U1_cla4|           ; 3 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U8_cla64|cla32:U0_cla32|cla4:U1_cla4                                            ; work         ;
+;                |clb4:U0_clb4|        ; 3 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U8_cla64|cla32:U0_cla32|cla4:U1_cla4|clb4:U0_clb4                               ; work         ;
+;                   |_or5:U21_or5|     ; 3 (3)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U8_cla64|cla32:U0_cla32|cla4:U1_cla4|clb4:U0_clb4|_or5:U21_or5                  ; work         ;
+;             |cla4:U2_cla4|           ; 7 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U8_cla64|cla32:U0_cla32|cla4:U2_cla4                                            ; work         ;
+;                |clb4:U0_clb4|        ; 6 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U8_cla64|cla32:U0_cla32|cla4:U2_cla4|clb4:U0_clb4                               ; work         ;
+;                   |_or2:U5_or2|      ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U8_cla64|cla32:U0_cla32|cla4:U2_cla4|clb4:U0_clb4|_or2:U5_or2                   ; work         ;
+;                   |_or4:U16_or4|     ; 4 (4)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U8_cla64|cla32:U0_cla32|cla4:U2_cla4|clb4:U0_clb4|_or4:U16_or4                  ; work         ;
+;                   |_or5:U21_or5|     ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U8_cla64|cla32:U0_cla32|cla4:U2_cla4|clb4:U0_clb4|_or5:U21_or5                  ; work         ;
+;                |fa_v2:U2_fa_v2|      ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U8_cla64|cla32:U0_cla32|cla4:U2_cla4|fa_v2:U2_fa_v2                             ; work         ;
+;                   |_xor2:U1_xor2|    ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U8_cla64|cla32:U0_cla32|cla4:U2_cla4|fa_v2:U2_fa_v2|_xor2:U1_xor2               ; work         ;
+;                      |_and2:U2_and2| ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U8_cla64|cla32:U0_cla32|cla4:U2_cla4|fa_v2:U2_fa_v2|_xor2:U1_xor2|_and2:U2_and2 ; work         ;
+;             |cla4:U3_cla4|           ; 5 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U8_cla64|cla32:U0_cla32|cla4:U3_cla4                                            ; work         ;
+;                |clb4:U0_clb4|        ; 4 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U8_cla64|cla32:U0_cla32|cla4:U3_cla4|clb4:U0_clb4                               ; work         ;
+;                   |_or2:U9_or2|      ; 2 (2)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U8_cla64|cla32:U0_cla32|cla4:U3_cla4|clb4:U0_clb4|_or2:U9_or2                   ; work         ;
+;                   |_or4:U16_or4|     ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U8_cla64|cla32:U0_cla32|cla4:U3_cla4|clb4:U0_clb4|_or4:U16_or4                  ; work         ;
+;                   |_or5:U21_or5|     ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U8_cla64|cla32:U0_cla32|cla4:U3_cla4|clb4:U0_clb4|_or5:U21_or5                  ; work         ;
+;                |fa_v2:U1_fa_v2|      ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U8_cla64|cla32:U0_cla32|cla4:U3_cla4|fa_v2:U1_fa_v2                             ; work         ;
+;                   |_xor2:U1_xor2|    ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U8_cla64|cla32:U0_cla32|cla4:U3_cla4|fa_v2:U1_fa_v2|_xor2:U1_xor2               ; work         ;
+;                      |_and2:U2_and2| ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U8_cla64|cla32:U0_cla32|cla4:U3_cla4|fa_v2:U1_fa_v2|_xor2:U1_xor2|_and2:U2_and2 ; work         ;
+;             |cla4:U4_cla4|           ; 4 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U8_cla64|cla32:U0_cla32|cla4:U4_cla4                                            ; work         ;
+;                |clb4:U0_clb4|        ; 4 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U8_cla64|cla32:U0_cla32|cla4:U4_cla4|clb4:U0_clb4                               ; work         ;
+;                   |_or4:U16_or4|     ; 3 (3)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U8_cla64|cla32:U0_cla32|cla4:U4_cla4|clb4:U0_clb4|_or4:U16_or4                  ; work         ;
+;                   |_or5:U21_or5|     ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U8_cla64|cla32:U0_cla32|cla4:U4_cla4|clb4:U0_clb4|_or5:U21_or5                  ; work         ;
+;             |cla4:U5_cla4|           ; 6 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U8_cla64|cla32:U0_cla32|cla4:U5_cla4                                            ; work         ;
+;                |clb4:U0_clb4|        ; 5 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U8_cla64|cla32:U0_cla32|cla4:U5_cla4|clb4:U0_clb4                               ; work         ;
+;                   |_or4:U16_or4|     ; 4 (4)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U8_cla64|cla32:U0_cla32|cla4:U5_cla4|clb4:U0_clb4|_or4:U16_or4                  ; work         ;
+;                   |_or5:U21_or5|     ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U8_cla64|cla32:U0_cla32|cla4:U5_cla4|clb4:U0_clb4|_or5:U21_or5                  ; work         ;
+;                |fa_v2:U3_fa_v2|      ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U8_cla64|cla32:U0_cla32|cla4:U5_cla4|fa_v2:U3_fa_v2                             ; work         ;
+;                   |_xor2:U1_xor2|    ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U8_cla64|cla32:U0_cla32|cla4:U5_cla4|fa_v2:U3_fa_v2|_xor2:U1_xor2               ; work         ;
+;                      |_and2:U2_and2| ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U8_cla64|cla32:U0_cla32|cla4:U5_cla4|fa_v2:U3_fa_v2|_xor2:U1_xor2|_and2:U2_and2 ; work         ;
+;             |cla4:U6_cla4|           ; 6 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U8_cla64|cla32:U0_cla32|cla4:U6_cla4                                            ; work         ;
+;                |clb4:U0_clb4|        ; 5 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U8_cla64|cla32:U0_cla32|cla4:U6_cla4|clb4:U0_clb4                               ; work         ;
+;                   |_or4:U16_or4|     ; 2 (2)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U8_cla64|cla32:U0_cla32|cla4:U6_cla4|clb4:U0_clb4|_or4:U16_or4                  ; work         ;
+;                   |_or5:U21_or5|     ; 3 (3)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U8_cla64|cla32:U0_cla32|cla4:U6_cla4|clb4:U0_clb4|_or5:U21_or5                  ; work         ;
+;                |fa_v2:U1_fa_v2|      ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U8_cla64|cla32:U0_cla32|cla4:U6_cla4|fa_v2:U1_fa_v2                             ; work         ;
+;                   |_xor2:U1_xor2|    ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U8_cla64|cla32:U0_cla32|cla4:U6_cla4|fa_v2:U1_fa_v2|_xor2:U1_xor2               ; work         ;
+;                      |_and2:U2_and2| ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U8_cla64|cla32:U0_cla32|cla4:U6_cla4|fa_v2:U1_fa_v2|_xor2:U1_xor2|_and2:U2_and2 ; work         ;
+;             |cla4:U7_cla4|           ; 4 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U8_cla64|cla32:U0_cla32|cla4:U7_cla4                                            ; work         ;
+;                |clb4:U0_clb4|        ; 3 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U8_cla64|cla32:U0_cla32|cla4:U7_cla4|clb4:U0_clb4                               ; work         ;
+;                   |_or4:U16_or4|     ; 2 (2)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U8_cla64|cla32:U0_cla32|cla4:U7_cla4|clb4:U0_clb4|_or4:U16_or4                  ; work         ;
+;                   |_or5:U21_or5|     ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U8_cla64|cla32:U0_cla32|cla4:U7_cla4|clb4:U0_clb4|_or5:U21_or5                  ; work         ;
+;                |fa_v2:U2_fa_v2|      ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U8_cla64|cla32:U0_cla32|cla4:U7_cla4|fa_v2:U2_fa_v2                             ; work         ;
+;                   |_xor2:U1_xor2|    ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U8_cla64|cla32:U0_cla32|cla4:U7_cla4|fa_v2:U2_fa_v2|_xor2:U1_xor2               ; work         ;
+;                      |_and2:U2_and2| ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U8_cla64|cla32:U0_cla32|cla4:U7_cla4|fa_v2:U2_fa_v2|_xor2:U1_xor2|_and2:U2_and2 ; work         ;
+;          |cla32:U1_cla32|            ; 34 (0)            ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U8_cla64|cla32:U1_cla32                                                         ; work         ;
+;             |cla4:U0_cla4|           ; 6 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U8_cla64|cla32:U1_cla32|cla4:U0_cla4                                            ; work         ;
+;                |clb4:U0_clb4|        ; 5 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U8_cla64|cla32:U1_cla32|cla4:U0_cla4|clb4:U0_clb4                               ; work         ;
+;                   |_or2:U9_or2|      ; 2 (2)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U8_cla64|cla32:U1_cla32|cla4:U0_cla4|clb4:U0_clb4|_or2:U9_or2                   ; work         ;
+;                   |_or4:U16_or4|     ; 2 (2)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U8_cla64|cla32:U1_cla32|cla4:U0_cla4|clb4:U0_clb4|_or4:U16_or4                  ; work         ;
+;                   |_or5:U21_or5|     ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U8_cla64|cla32:U1_cla32|cla4:U0_cla4|clb4:U0_clb4|_or5:U21_or5                  ; work         ;
+;                |fa_v2:U3_fa_v2|      ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U8_cla64|cla32:U1_cla32|cla4:U0_cla4|fa_v2:U3_fa_v2                             ; work         ;
+;                   |_xor2:U1_xor2|    ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U8_cla64|cla32:U1_cla32|cla4:U0_cla4|fa_v2:U3_fa_v2|_xor2:U1_xor2               ; work         ;
+;                      |_and2:U2_and2| ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U8_cla64|cla32:U1_cla32|cla4:U0_cla4|fa_v2:U3_fa_v2|_xor2:U1_xor2|_and2:U2_and2 ; work         ;
+;             |cla4:U1_cla4|           ; 5 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U8_cla64|cla32:U1_cla32|cla4:U1_cla4                                            ; work         ;
+;                |clb4:U0_clb4|        ; 4 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U8_cla64|cla32:U1_cla32|cla4:U1_cla4|clb4:U0_clb4                               ; work         ;
+;                   |_or4:U16_or4|     ; 3 (3)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U8_cla64|cla32:U1_cla32|cla4:U1_cla4|clb4:U0_clb4|_or4:U16_or4                  ; work         ;
+;                   |_or5:U21_or5|     ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U8_cla64|cla32:U1_cla32|cla4:U1_cla4|clb4:U0_clb4|_or5:U21_or5                  ; work         ;
+;                |fa_v2:U4_fa_v2|      ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U8_cla64|cla32:U1_cla32|cla4:U1_cla4|fa_v2:U4_fa_v2                             ; work         ;
+;                   |_xor2:U1_xor2|    ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U8_cla64|cla32:U1_cla32|cla4:U1_cla4|fa_v2:U4_fa_v2|_xor2:U1_xor2               ; work         ;
+;                      |_and2:U2_and2| ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U8_cla64|cla32:U1_cla32|cla4:U1_cla4|fa_v2:U4_fa_v2|_xor2:U1_xor2|_and2:U2_and2 ; work         ;
+;             |cla4:U2_cla4|           ; 6 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U8_cla64|cla32:U1_cla32|cla4:U2_cla4                                            ; work         ;
+;                |clb4:U0_clb4|        ; 5 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U8_cla64|cla32:U1_cla32|cla4:U2_cla4|clb4:U0_clb4                               ; work         ;
+;                   |_or4:U16_or4|     ; 4 (4)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U8_cla64|cla32:U1_cla32|cla4:U2_cla4|clb4:U0_clb4|_or4:U16_or4                  ; work         ;
+;                   |_or5:U21_or5|     ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U8_cla64|cla32:U1_cla32|cla4:U2_cla4|clb4:U0_clb4|_or5:U21_or5                  ; work         ;
+;                |fa_v2:U3_fa_v2|      ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U8_cla64|cla32:U1_cla32|cla4:U2_cla4|fa_v2:U3_fa_v2                             ; work         ;
+;                   |_xor2:U1_xor2|    ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U8_cla64|cla32:U1_cla32|cla4:U2_cla4|fa_v2:U3_fa_v2|_xor2:U1_xor2               ; work         ;
+;                      |_and2:U2_and2| ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U8_cla64|cla32:U1_cla32|cla4:U2_cla4|fa_v2:U3_fa_v2|_xor2:U1_xor2|_and2:U2_and2 ; work         ;
+;             |cla4:U3_cla4|           ; 7 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U8_cla64|cla32:U1_cla32|cla4:U3_cla4                                            ; work         ;
+;                |clb4:U0_clb4|        ; 5 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U8_cla64|cla32:U1_cla32|cla4:U3_cla4|clb4:U0_clb4                               ; work         ;
+;                   |_or4:U16_or4|     ; 2 (2)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U8_cla64|cla32:U1_cla32|cla4:U3_cla4|clb4:U0_clb4|_or4:U16_or4                  ; work         ;
+;                   |_or5:U21_or5|     ; 3 (3)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U8_cla64|cla32:U1_cla32|cla4:U3_cla4|clb4:U0_clb4|_or5:U21_or5                  ; work         ;
+;                |fa_v2:U1_fa_v2|      ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U8_cla64|cla32:U1_cla32|cla4:U3_cla4|fa_v2:U1_fa_v2                             ; work         ;
+;                   |_xor2:U1_xor2|    ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U8_cla64|cla32:U1_cla32|cla4:U3_cla4|fa_v2:U1_fa_v2|_xor2:U1_xor2               ; work         ;
+;                      |_and2:U2_and2| ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U8_cla64|cla32:U1_cla32|cla4:U3_cla4|fa_v2:U1_fa_v2|_xor2:U1_xor2|_and2:U2_and2 ; work         ;
+;                |fa_v2:U4_fa_v2|      ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U8_cla64|cla32:U1_cla32|cla4:U3_cla4|fa_v2:U4_fa_v2                             ; work         ;
+;                   |_xor2:U1_xor2|    ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U8_cla64|cla32:U1_cla32|cla4:U3_cla4|fa_v2:U4_fa_v2|_xor2:U1_xor2               ; work         ;
+;                      |_and2:U2_and2| ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U8_cla64|cla32:U1_cla32|cla4:U3_cla4|fa_v2:U4_fa_v2|_xor2:U1_xor2|_and2:U2_and2 ; work         ;
+;             |cla4:U4_cla4|           ; 2 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U8_cla64|cla32:U1_cla32|cla4:U4_cla4                                            ; work         ;
+;                |clb4:U0_clb4|        ; 2 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U8_cla64|cla32:U1_cla32|cla4:U4_cla4|clb4:U0_clb4                               ; work         ;
+;                   |_or4:U16_or4|     ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U8_cla64|cla32:U1_cla32|cla4:U4_cla4|clb4:U0_clb4|_or4:U16_or4                  ; work         ;
+;                   |_or5:U21_or5|     ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U8_cla64|cla32:U1_cla32|cla4:U4_cla4|clb4:U0_clb4|_or5:U21_or5                  ; work         ;
+;             |cla4:U5_cla4|           ; 5 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U8_cla64|cla32:U1_cla32|cla4:U5_cla4                                            ; work         ;
+;                |clb4:U0_clb4|        ; 4 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U8_cla64|cla32:U1_cla32|cla4:U5_cla4|clb4:U0_clb4                               ; work         ;
+;                   |_or2:U9_or2|      ; 2 (2)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U8_cla64|cla32:U1_cla32|cla4:U5_cla4|clb4:U0_clb4|_or2:U9_or2                   ; work         ;
+;                   |_or4:U16_or4|     ; 2 (2)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U8_cla64|cla32:U1_cla32|cla4:U5_cla4|clb4:U0_clb4|_or4:U16_or4                  ; work         ;
+;                |fa_v2:U1_fa_v2|      ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U8_cla64|cla32:U1_cla32|cla4:U5_cla4|fa_v2:U1_fa_v2                             ; work         ;
+;                   |_xor2:U1_xor2|    ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U8_cla64|cla32:U1_cla32|cla4:U5_cla4|fa_v2:U1_fa_v2|_xor2:U1_xor2               ; work         ;
+;                      |_and2:U2_and2| ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U8_cla64|cla32:U1_cla32|cla4:U5_cla4|fa_v2:U1_fa_v2|_xor2:U1_xor2|_and2:U2_and2 ; work         ;
+;             |cla4:U6_cla4|           ; 3 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U8_cla64|cla32:U1_cla32|cla4:U6_cla4                                            ; work         ;
+;                |clb4:U0_clb4|        ; 3 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U8_cla64|cla32:U1_cla32|cla4:U6_cla4|clb4:U0_clb4                               ; work         ;
+;                   |_or2:U5_or2|      ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U8_cla64|cla32:U1_cla32|cla4:U6_cla4|clb4:U0_clb4|_or2:U5_or2                   ; work         ;
+;                   |_or4:U16_or4|     ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U8_cla64|cla32:U1_cla32|cla4:U6_cla4|clb4:U0_clb4|_or4:U16_or4                  ; work         ;
+;                   |_or5:U21_or5|     ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|calculate:U1|cla64:U8_cla64|cla32:U1_cla32|cla4:U6_cla4|clb4:U0_clb4|_or5:U21_or5                  ; work         ;
+;    |next_state:U0|                   ; 2 (2)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|next_state:U0                                                                                      ; work         ;
+;    |register128_r:reg_result|        ; 0 (0)             ; 127 (127)    ; 0                 ; 0          ; 0    ; 0            ; |multiplier|register128_r:reg_result                                                                           ; work         ;
+;    |register2_r:reg_state|           ; 1 (1)             ; 2 (2)        ; 0                 ; 0          ; 0    ; 0            ; |multiplier|register2_r:reg_state                                                                              ; work         ;
+;    |register64_r:reg_counter|        ; 1 (1)             ; 64 (64)      ; 0                 ; 0          ; 0    ; 0            ; |multiplier|register64_r:reg_counter                                                                           ; work         ;
+;    |register64_r:reg_multiplicand|   ; 2 (2)             ; 64 (64)      ; 0                 ; 0          ; 0    ; 0            ; |multiplier|register64_r:reg_multiplicand                                                                      ; work         ;
+;    |register64_r:reg_multiplier|     ; 0 (0)             ; 64 (64)      ; 0                 ; 0          ; 0    ; 0            ; |multiplier|register64_r:reg_multiplier                                                                        ; work         ;
++--------------------------------------+-------------------+--------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++-----------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                      ;
++---------------------------------------+-------------------------------------------------+
+; Register name                         ; Reason for Removal                              ;
++---------------------------------------+-------------------------------------------------+
+; register128_r:reg_result|d_out[127]   ; Merged with register128_r:reg_result|d_out[126] ;
+; Total Number of Removed Registers = 1 ;                                                 ;
++---------------------------------------+-------------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 321   ;
+; Number of registers using Synchronous Clear  ; 319   ;
+; Number of registers using Synchronous Load   ; 64    ;
+; Number of registers using Asynchronous Clear ; 321   ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 190   ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                    ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                          ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------+
+; 4:1                ; 63 bits   ; 126 LEs       ; 0 LEs                ; 126 LEs                ; Yes        ; |multiplier|register128_r:reg_result|d_out[29]      ;
+; 3:1                ; 63 bits   ; 126 LEs       ; 0 LEs                ; 126 LEs                ; Yes        ; |multiplier|register64_r:reg_counter|d_out[16]      ;
+; 5:1                ; 64 bits   ; 192 LEs       ; 0 LEs                ; 192 LEs                ; Yes        ; |multiplier|register64_r:reg_multiplicand|d_out[62] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------+
+
+
++------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: next_state:U0 ;
++----------------+-------+-----------------------------------+
+; Parameter Name ; Value ; Type                              ;
++----------------+-------+-----------------------------------+
+; INIT           ; 00    ; Unsigned Binary                   ;
+; LOAD           ; 01    ; Unsigned Binary                   ;
+; MUL            ; 10    ; Unsigned Binary                   ;
+; STAY           ; 11    ; Unsigned Binary                   ;
++----------------+-------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: calculate:U1 ;
++----------------+-------+----------------------------------+
+; Parameter Name ; Value ; Type                             ;
++----------------+-------+----------------------------------+
+; INIT           ; 00    ; Unsigned Binary                  ;
+; LOAD           ; 01    ; Unsigned Binary                  ;
+; MUL            ; 10    ; Unsigned Binary                  ;
+; STAY           ; 11    ; Unsigned Binary                  ;
++----------------+-------+----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------+
+; Port Connectivity Checks: "calculate:U1|cla64:U8_cla64" ;
++------+--------+----------+------------------------------+
+; Port ; Type   ; Severity ; Details                      ;
++------+--------+----------+------------------------------+
+; ci   ; Input  ; Info     ; Stuck at GND                 ;
+; co   ; Output ; Info     ; Explicitly unconnected       ;
++------+--------+----------+------------------------------+
+
+
++---------------------------------------------------------+
+; Port Connectivity Checks: "calculate:U1|cla64:U7_cla64" ;
++------+--------+----------+------------------------------+
+; Port ; Type   ; Severity ; Details                      ;
++------+--------+----------+------------------------------+
+; ci   ; Input  ; Info     ; Stuck at VCC                 ;
+; co   ; Output ; Info     ; Explicitly unconnected       ;
++------+--------+----------+------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_ff             ; 321                         ;
+;     CLR               ; 2                           ;
+;     CLR SCLR          ; 129                         ;
+;     ENA CLR SCLR      ; 126                         ;
+;     ENA CLR SCLR SLD  ; 64                          ;
+; arriav_lcell_comb     ; 278                         ;
+;     extend            ; 2                           ;
+;         7 data inputs ; 2                           ;
+;     normal            ; 276                         ;
+;         2 data inputs ; 69                          ;
+;         3 data inputs ; 60                          ;
+;         4 data inputs ; 34                          ;
+;         5 data inputs ; 13                          ;
+;         6 data inputs ; 100                         ;
+; boundary_port         ; 261                         ;
+;                       ;                             ;
+; Max LUT depth         ; 26.00                       ;
+; Average LUT depth     ; 8.61                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:01     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition
+    Info: Processing started: Fri Nov 13 00:48:12 2020
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off multiplier -c multiplier
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 1 design units, including 1 entities, in source file register64_rs.v
+    Info (12023): Found entity 1: register64_rs File: C:/Program_A/Altera_Quartus/Project_file/Lab09/register64_rs.v Line: 1
+Info (12021): Found 22 design units, including 22 entities, in source file gates.v
+    Info (12023): Found entity 1: _inv File: C:/Program_A/Altera_Quartus/Project_file/Lab09/gates.v Line: 8
+    Info (12023): Found entity 2: _nand2 File: C:/Program_A/Altera_Quartus/Project_file/Lab09/gates.v Line: 14
+    Info (12023): Found entity 3: _and2 File: C:/Program_A/Altera_Quartus/Project_file/Lab09/gates.v Line: 20
+    Info (12023): Found entity 4: _or2 File: C:/Program_A/Altera_Quartus/Project_file/Lab09/gates.v Line: 26
+    Info (12023): Found entity 5: _nor2 File: C:/Program_A/Altera_Quartus/Project_file/Lab09/gates.v Line: 32
+    Info (12023): Found entity 6: _xor2 File: C:/Program_A/Altera_Quartus/Project_file/Lab09/gates.v Line: 38
+    Info (12023): Found entity 7: _and3 File: C:/Program_A/Altera_Quartus/Project_file/Lab09/gates.v Line: 51
+    Info (12023): Found entity 8: _and4 File: C:/Program_A/Altera_Quartus/Project_file/Lab09/gates.v Line: 57
+    Info (12023): Found entity 9: _and5 File: C:/Program_A/Altera_Quartus/Project_file/Lab09/gates.v Line: 63
+    Info (12023): Found entity 10: _or3 File: C:/Program_A/Altera_Quartus/Project_file/Lab09/gates.v Line: 69
+    Info (12023): Found entity 11: _or4 File: C:/Program_A/Altera_Quartus/Project_file/Lab09/gates.v Line: 75
+    Info (12023): Found entity 12: _or5 File: C:/Program_A/Altera_Quartus/Project_file/Lab09/gates.v Line: 81
+    Info (12023): Found entity 13: _inv_4bits File: C:/Program_A/Altera_Quartus/Project_file/Lab09/gates.v Line: 87
+    Info (12023): Found entity 14: _and2_4bits File: C:/Program_A/Altera_Quartus/Project_file/Lab09/gates.v Line: 93
+    Info (12023): Found entity 15: _or2_4bits File: C:/Program_A/Altera_Quartus/Project_file/Lab09/gates.v Line: 99
+    Info (12023): Found entity 16: _xor2_4bits File: C:/Program_A/Altera_Quartus/Project_file/Lab09/gates.v Line: 105
+    Info (12023): Found entity 17: _xnor2_4bits File: C:/Program_A/Altera_Quartus/Project_file/Lab09/gates.v Line: 114
+    Info (12023): Found entity 18: _inv_32bits File: C:/Program_A/Altera_Quartus/Project_file/Lab09/gates.v Line: 122
+    Info (12023): Found entity 19: _and2_32bits File: C:/Program_A/Altera_Quartus/Project_file/Lab09/gates.v Line: 128
+    Info (12023): Found entity 20: _or2_32bits File: C:/Program_A/Altera_Quartus/Project_file/Lab09/gates.v Line: 134
+    Info (12023): Found entity 21: _xor2_32bits File: C:/Program_A/Altera_Quartus/Project_file/Lab09/gates.v Line: 140
+    Info (12023): Found entity 22: _xnor2_32bits File: C:/Program_A/Altera_Quartus/Project_file/Lab09/gates.v Line: 153
+Info (12021): Found 1 design units, including 1 entities, in source file fa_v2.v
+    Info (12023): Found entity 1: fa_v2 File: C:/Program_A/Altera_Quartus/Project_file/Lab09/fa_v2.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file clb4.v
+    Info (12023): Found entity 1: clb4 File: C:/Program_A/Altera_Quartus/Project_file/Lab09/clb4.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file cla4.v
+    Info (12023): Found entity 1: cla4 File: C:/Program_A/Altera_Quartus/Project_file/Lab09/cla4.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file cla32.v
+    Info (12023): Found entity 1: cla32 File: C:/Program_A/Altera_Quartus/Project_file/Lab09/cla32.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file ha.v
+    Info (12023): Found entity 1: ha File: C:/Program_A/Altera_Quartus/Project_file/Lab09/ha.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file fa.v
+    Info (12023): Found entity 1: fa File: C:/Program_A/Altera_Quartus/Project_file/Lab09/fa.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file multiplier.v
+    Info (12023): Found entity 1: multiplier File: C:/Program_A/Altera_Quartus/Project_file/Lab09/multiplier.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file tb_multiplier.v
+    Info (12023): Found entity 1: tb_multiplier File: C:/Program_A/Altera_Quartus/Project_file/Lab09/tb_multiplier.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file register64_r.v
+    Info (12023): Found entity 1: register64_r File: C:/Program_A/Altera_Quartus/Project_file/Lab09/register64_r.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file register128_r.v
+    Info (12023): Found entity 1: register128_r File: C:/Program_A/Altera_Quartus/Project_file/Lab09/register128_r.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file register2_r.v
+    Info (12023): Found entity 1: register2_r File: C:/Program_A/Altera_Quartus/Project_file/Lab09/register2_r.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file next_state.v
+    Info (12023): Found entity 1: next_state File: C:/Program_A/Altera_Quartus/Project_file/Lab09/next_state.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file calculate.v
+    Info (12023): Found entity 1: calculate File: C:/Program_A/Altera_Quartus/Project_file/Lab09/calculate.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file cla64.v
+    Info (12023): Found entity 1: cla64 File: C:/Program_A/Altera_Quartus/Project_file/Lab09/cla64.v Line: 1
+Info (12127): Elaborating entity "multiplier" for the top level hierarchy
+Info (12128): Elaborating entity "register64_r" for hierarchy "register64_r:reg_multiplier" File: C:/Program_A/Altera_Quartus/Project_file/Lab09/multiplier.v Line: 12
+Info (12128): Elaborating entity "register128_r" for hierarchy "register128_r:reg_result" File: C:/Program_A/Altera_Quartus/Project_file/Lab09/multiplier.v Line: 14
+Info (12128): Elaborating entity "register2_r" for hierarchy "register2_r:reg_state" File: C:/Program_A/Altera_Quartus/Project_file/Lab09/multiplier.v Line: 15
+Info (12128): Elaborating entity "next_state" for hierarchy "next_state:U0" File: C:/Program_A/Altera_Quartus/Project_file/Lab09/multiplier.v Line: 20
+Info (12128): Elaborating entity "calculate" for hierarchy "calculate:U1" File: C:/Program_A/Altera_Quartus/Project_file/Lab09/multiplier.v Line: 23
+Warning (10235): Verilog HDL Always Construct warning at calculate.v(24): variable "o_nd" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Program_A/Altera_Quartus/Project_file/Lab09/calculate.v Line: 24
+Warning (10235): Verilog HDL Always Construct warning at calculate.v(36): variable "result" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Program_A/Altera_Quartus/Project_file/Lab09/calculate.v Line: 36
+Warning (10235): Verilog HDL Always Construct warning at calculate.v(37): variable "w_sub" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Program_A/Altera_Quartus/Project_file/Lab09/calculate.v Line: 37
+Warning (10235): Verilog HDL Always Construct warning at calculate.v(41): variable "result" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Program_A/Altera_Quartus/Project_file/Lab09/calculate.v Line: 41
+Warning (10235): Verilog HDL Always Construct warning at calculate.v(42): variable "result" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Program_A/Altera_Quartus/Project_file/Lab09/calculate.v Line: 42
+Warning (10235): Verilog HDL Always Construct warning at calculate.v(43): variable "w_sub" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Program_A/Altera_Quartus/Project_file/Lab09/calculate.v Line: 43
+Warning (10235): Verilog HDL Always Construct warning at calculate.v(44): variable "w_add" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Program_A/Altera_Quartus/Project_file/Lab09/calculate.v Line: 44
+Warning (10235): Verilog HDL Always Construct warning at calculate.v(48): variable "result" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Program_A/Altera_Quartus/Project_file/Lab09/calculate.v Line: 48
+Warning (10235): Verilog HDL Always Construct warning at calculate.v(55): variable "result" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Program_A/Altera_Quartus/Project_file/Lab09/calculate.v Line: 55
+Warning (10240): Verilog HDL Always Construct warning at calculate.v(16): inferring latch(es) for variable "w_result", which holds its previous value in one or more paths through the always construct File: C:/Program_A/Altera_Quartus/Project_file/Lab09/calculate.v Line: 16
+Info (12128): Elaborating entity "cla64" for hierarchy "calculate:U1|cla64:U7_cla64" File: C:/Program_A/Altera_Quartus/Project_file/Lab09/calculate.v Line: 61
+Info (12128): Elaborating entity "cla32" for hierarchy "calculate:U1|cla64:U7_cla64|cla32:U0_cla32" File: C:/Program_A/Altera_Quartus/Project_file/Lab09/cla64.v Line: 9
+Info (12128): Elaborating entity "cla4" for hierarchy "calculate:U1|cla64:U7_cla64|cla32:U0_cla32|cla4:U0_cla4" File: C:/Program_A/Altera_Quartus/Project_file/Lab09/cla32.v Line: 9
+Info (12128): Elaborating entity "clb4" for hierarchy "calculate:U1|cla64:U7_cla64|cla32:U0_cla32|cla4:U0_cla4|clb4:U0_clb4" File: C:/Program_A/Altera_Quartus/Project_file/Lab09/cla4.v Line: 8
+Info (12128): Elaborating entity "_and2" for hierarchy "calculate:U1|cla64:U7_cla64|cla32:U0_cla32|cla4:U0_cla4|clb4:U0_clb4|_and2:U0_and2" File: C:/Program_A/Altera_Quartus/Project_file/Lab09/clb4.v Line: 12
+Info (12128): Elaborating entity "_or2" for hierarchy "calculate:U1|cla64:U7_cla64|cla32:U0_cla32|cla4:U0_cla4|clb4:U0_clb4|_or2:U4_or2" File: C:/Program_A/Altera_Quartus/Project_file/Lab09/clb4.v Line: 18
+Info (12128): Elaborating entity "_and3" for hierarchy "calculate:U1|cla64:U7_cla64|cla32:U0_cla32|cla4:U0_cla4|clb4:U0_clb4|_and3:U11_and3" File: C:/Program_A/Altera_Quartus/Project_file/Lab09/clb4.v Line: 29
+Info (12128): Elaborating entity "_or3" for hierarchy "calculate:U1|cla64:U7_cla64|cla32:U0_cla32|cla4:U0_cla4|clb4:U0_clb4|_or3:U12_or3" File: C:/Program_A/Altera_Quartus/Project_file/Lab09/clb4.v Line: 30
+Info (12128): Elaborating entity "_and4" for hierarchy "calculate:U1|cla64:U7_cla64|cla32:U0_cla32|cla4:U0_cla4|clb4:U0_clb4|_and4:U15_and4" File: C:/Program_A/Altera_Quartus/Project_file/Lab09/clb4.v Line: 35
+Info (12128): Elaborating entity "_or4" for hierarchy "calculate:U1|cla64:U7_cla64|cla32:U0_cla32|cla4:U0_cla4|clb4:U0_clb4|_or4:U16_or4" File: C:/Program_A/Altera_Quartus/Project_file/Lab09/clb4.v Line: 36
+Info (12128): Elaborating entity "_and5" for hierarchy "calculate:U1|cla64:U7_cla64|cla32:U0_cla32|cla4:U0_cla4|clb4:U0_clb4|_and5:U20_and5" File: C:/Program_A/Altera_Quartus/Project_file/Lab09/clb4.v Line: 43
+Info (12128): Elaborating entity "_or5" for hierarchy "calculate:U1|cla64:U7_cla64|cla32:U0_cla32|cla4:U0_cla4|clb4:U0_clb4|_or5:U21_or5" File: C:/Program_A/Altera_Quartus/Project_file/Lab09/clb4.v Line: 44
+Info (12128): Elaborating entity "fa_v2" for hierarchy "calculate:U1|cla64:U7_cla64|cla32:U0_cla32|cla4:U0_cla4|fa_v2:U1_fa_v2" File: C:/Program_A/Altera_Quartus/Project_file/Lab09/cla4.v Line: 9
+Info (12128): Elaborating entity "_xor2" for hierarchy "calculate:U1|cla64:U7_cla64|cla32:U0_cla32|cla4:U0_cla4|fa_v2:U1_fa_v2|_xor2:U1_xor2" File: C:/Program_A/Altera_Quartus/Project_file/Lab09/fa_v2.v Line: 6
+Info (12128): Elaborating entity "_inv" for hierarchy "calculate:U1|cla64:U7_cla64|cla32:U0_cla32|cla4:U0_cla4|fa_v2:U1_fa_v2|_xor2:U1_xor2|_inv:U0_inv" File: C:/Program_A/Altera_Quartus/Project_file/Lab09/gates.v Line: 44
+Info (286030): Timing-Driven Synthesis is running
+Info (144001): Generated suppressed messages file C:/Program_A/Altera_Quartus/Project_file/Lab09/output_files/multiplier.map.smsg
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 793 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 132 input pins
+    Info (21059): Implemented 129 output pins
+    Info (21061): Implemented 532 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 11 warnings
+    Info: Peak virtual memory: 5000 megabytes
+    Info: Processing ended: Fri Nov 13 00:48:25 2020
+    Info: Elapsed time: 00:00:13
+    Info: Total CPU time (on all processors): 00:00:23
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in C:/Program_A/Altera_Quartus/Project_file/Lab09/output_files/multiplier.map.smsg.
+
+

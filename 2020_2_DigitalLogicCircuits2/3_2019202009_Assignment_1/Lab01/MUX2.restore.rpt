@@ -1,0 +1,74 @@
+Restore Archived Project report for MUX2
+Mon Sep 14 21:48:21 2020
+Quartus Prime Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Restore Archived Project Summary
+  3. Restore Archived Project Messages
+  4. Files Restored
+  5. Files Not Restored
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++-------------------------------------------------------------------------+
+; Restore Archived Project Summary                                        ;
++---------------------------------+---------------------------------------+
+; Restore Archived Project Status ; Successful - Mon Sep 14 21:48:21 2020 ;
+; Revision Name                   ; MUX2                                  ;
+; Top-level Entity Name           ; mx2                                   ;
+; Family                          ; Cyclone V                             ;
++---------------------------------+---------------------------------------+
+
+
++-----------------------------------+
+; Restore Archived Project Messages ;
++-----------------------------------+
+Info: Successfully restored 'C:/Program_A/Altera_Quartus/Project_file/Lab01/MUX2_tmp_archive.qar' into the 'C:/Program_A/Altera_Quartus/Project_file/Lab01_copy/' directory
+Info: Generated report 'MUX2.restore.rpt'
+
+
++-------------------------+
+; Files Restored          ;
++-------------------------+
+; File Name               ;
++-------------------------+
+; qar_info.json           ;
+; MUX2.qpf                ;
+; MUX2.qsf                ;
+; mx2.v                   ;
+; tb_mx2.v                ;
+; assignment_defaults.qdf ;
++-------------------------+
+
+
++--------------------+
+; Files Not Restored ;
++--------------------+
+; File Name          ;
++--------------------+
+
+

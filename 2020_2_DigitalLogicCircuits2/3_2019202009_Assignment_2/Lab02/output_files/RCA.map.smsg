@@ -1,0 +1,2 @@
+Info (10281): Verilog HDL Declaration information at ha.v(3): object "s" differs only in case from object "S" in the same scope File: D:/Altera_lite/Project/Lab02/ha.v Line: 3
+Info (10281): Verilog HDL Declaration information at ha.v(3): object "co" differs only in case from object "CO" in the same scope File: D:/Altera_lite/Project/Lab02/ha.v Line: 3

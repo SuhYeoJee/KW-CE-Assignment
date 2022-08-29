@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at bus_arbit.v(6): always construct contains both blocking and non-blocking assignments File: C:/Program_A/Altera_Quartus/Project_file/Lab10/bus/bus_arbit.v Line: 6

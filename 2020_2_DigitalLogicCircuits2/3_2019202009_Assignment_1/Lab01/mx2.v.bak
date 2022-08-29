@@ -1,0 +1,22 @@
+module _NAND(a,b,y);
+	input a, b;
+	output y;
+	assign y = ~(a&b);
+endmodule
+
+module INV(a,y);
+	input a;
+	output y;
+	assign y = ~a;
+endmodule
+
+module mx2(y, d0, d1, s);
+	input d0, d1, s;
+	output y;
+	wire sb, w0, w1;
+	
+	INV iv0(.a(s), .y(sb));
+	_NAND nd20(.a(d0),.b(sb),.y(w0));
+	_NAND nd21(.a(d1),.b(s),.y(w1));
+	_NAND nd22(.a(w0),.b(w1),.y(y));
+endmodule

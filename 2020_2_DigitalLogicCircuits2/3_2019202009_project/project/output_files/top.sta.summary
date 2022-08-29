@@ -1,0 +1,181 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'mul:mul|register2_r:reg_state|d_out[0]'
+Slack : -9.758
+TNS   : -678.607
+
+Type  : Slow 1100mV 85C Model Setup 'register4_r:state_reg|d_out[0]'
+Slack : -9.303
+TNS   : -276.849
+
+Type  : Slow 1100mV 85C Model Setup 'clk'
+Slack : -6.124
+TNS   : -4738.139
+
+Type  : Slow 1100mV 85C Model Hold 'clk'
+Slack : -2.263
+TNS   : -116.862
+
+Type  : Slow 1100mV 85C Model Hold 'mul:mul|register2_r:reg_state|d_out[0]'
+Slack : -0.297
+TNS   : -0.297
+
+Type  : Slow 1100mV 85C Model Hold 'register4_r:state_reg|d_out[0]'
+Slack : 0.668
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Recovery 'clk'
+Slack : -2.565
+TNS   : -408.931
+
+Type  : Slow 1100mV 85C Model Removal 'clk'
+Slack : 1.023
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clk'
+Slack : -0.394
+TNS   : -544.847
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'register4_r:state_reg|d_out[0]'
+Slack : -0.394
+TNS   : -3.115
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'mul:mul|register2_r:reg_state|d_out[0]'
+Slack : -0.241
+TNS   : -0.612
+
+Type  : Slow 1100mV 0C Model Setup 'mul:mul|register2_r:reg_state|d_out[0]'
+Slack : -9.667
+TNS   : -682.376
+
+Type  : Slow 1100mV 0C Model Setup 'register4_r:state_reg|d_out[0]'
+Slack : -9.227
+TNS   : -276.693
+
+Type  : Slow 1100mV 0C Model Setup 'clk'
+Slack : -5.959
+TNS   : -4506.587
+
+Type  : Slow 1100mV 0C Model Hold 'clk'
+Slack : -2.424
+TNS   : -127.216
+
+Type  : Slow 1100mV 0C Model Hold 'mul:mul|register2_r:reg_state|d_out[0]'
+Slack : -0.258
+TNS   : -0.258
+
+Type  : Slow 1100mV 0C Model Hold 'register4_r:state_reg|d_out[0]'
+Slack : 0.600
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Recovery 'clk'
+Slack : -2.228
+TNS   : -353.278
+
+Type  : Slow 1100mV 0C Model Removal 'clk'
+Slack : 0.615
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clk'
+Slack : -0.394
+TNS   : -602.499
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'register4_r:state_reg|d_out[0]'
+Slack : -0.394
+TNS   : -2.907
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'mul:mul|register2_r:reg_state|d_out[0]'
+Slack : -0.204
+TNS   : -0.399
+
+Type  : Fast 1100mV 85C Model Setup 'mul:mul|register2_r:reg_state|d_out[0]'
+Slack : -5.240
+TNS   : -341.346
+
+Type  : Fast 1100mV 85C Model Setup 'register4_r:state_reg|d_out[0]'
+Slack : -5.016
+TNS   : -144.775
+
+Type  : Fast 1100mV 85C Model Setup 'clk'
+Slack : -4.096
+TNS   : -3037.601
+
+Type  : Fast 1100mV 85C Model Hold 'clk'
+Slack : -1.122
+TNS   : -47.634
+
+Type  : Fast 1100mV 85C Model Hold 'mul:mul|register2_r:reg_state|d_out[0]'
+Slack : -0.372
+TNS   : -0.372
+
+Type  : Fast 1100mV 85C Model Hold 'register4_r:state_reg|d_out[0]'
+Slack : 0.466
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Recovery 'clk'
+Slack : -1.897
+TNS   : -296.762
+
+Type  : Fast 1100mV 85C Model Removal 'clk'
+Slack : 0.882
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'mul:mul|register2_r:reg_state|d_out[0]'
+Slack : -0.205
+TNS   : -0.409
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clk'
+Slack : -0.088
+TNS   : -80.599
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'register4_r:state_reg|d_out[0]'
+Slack : -0.069
+TNS   : -0.192
+
+Type  : Fast 1100mV 0C Model Setup 'mul:mul|register2_r:reg_state|d_out[0]'
+Slack : -4.889
+TNS   : -318.907
+
+Type  : Fast 1100mV 0C Model Setup 'register4_r:state_reg|d_out[0]'
+Slack : -4.677
+TNS   : -135.996
+
+Type  : Fast 1100mV 0C Model Setup 'clk'
+Slack : -3.335
+TNS   : -2498.460
+
+Type  : Fast 1100mV 0C Model Hold 'clk'
+Slack : -1.185
+TNS   : -54.355
+
+Type  : Fast 1100mV 0C Model Hold 'mul:mul|register2_r:reg_state|d_out[0]'
+Slack : -0.320
+TNS   : -0.320
+
+Type  : Fast 1100mV 0C Model Hold 'register4_r:state_reg|d_out[0]'
+Slack : 0.427
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Recovery 'clk'
+Slack : -1.448
+TNS   : -224.474
+
+Type  : Fast 1100mV 0C Model Removal 'clk'
+Slack : 0.577
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clk'
+Slack : -0.083
+TNS   : -79.153
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'mul:mul|register2_r:reg_state|d_out[0]'
+Slack : -0.061
+TNS   : -0.120
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'register4_r:state_reg|d_out[0]'
+Slack : -0.012
+TNS   : -0.021
+
+------------------------------------------------------------

@@ -1,0 +1,6 @@
+KW Typing Werification Program
+정확도 :0		속도(타자/s) : 0
+
+Hello I'm an apple.
+정확도 :100.00	속도(타자/s) : 0.19
+
