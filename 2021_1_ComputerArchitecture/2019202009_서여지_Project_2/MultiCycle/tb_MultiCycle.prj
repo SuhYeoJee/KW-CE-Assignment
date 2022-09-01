@@ -1,0 +1,3 @@
+verilog work "MyFSM.v"
+verilog work "MultiCycle.v"
+verilog work "tb_MultiCycle.v"

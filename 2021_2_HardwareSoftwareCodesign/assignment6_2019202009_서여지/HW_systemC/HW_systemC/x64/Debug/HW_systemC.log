@@ -1,0 +1,5 @@
+﻿  main5.cpp
+C:\Users\Windows10\OneDrive - 광운대학교\KW\2021_2\하드웨어소프트웨어통합설계\실습\HW6\HW_systemC\HW_systemC\main5.cpp(1,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'systemc.h': No such file or directory
+  Three_Process.cpp
+C:\Users\Windows10\OneDrive - 광운대학교\KW\2021_2\하드웨어소프트웨어통합설계\실습\HW6\HW_systemC\HW_systemC\Three_Process.cpp(1,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'systemc.h': No such file or directory
+  코드를 생성하고 있습니다...

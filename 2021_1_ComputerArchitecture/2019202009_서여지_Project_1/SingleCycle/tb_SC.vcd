@@ -1,0 +1,9336 @@
+$date
+   Sun Apr 11 23:34:32 2021
+$end
+$version
+  P.20131013
+$end
+$timescale
+  1ps
+$end
+$scope module tb_SingleCycle $end
+$scope module SC_CPU $end
+$var wire 1 w, i_clk $end
+$var wire 1 /, i_rst_n $end
+$var wire 1 # o_PC [31] $end
+$var wire 1 $ o_PC [30] $end
+$var wire 1 % o_PC [29] $end
+$var wire 1 & o_PC [28] $end
+$var wire 1 ' o_PC [27] $end
+$var wire 1 ( o_PC [26] $end
+$var wire 1 ) o_PC [25] $end
+$var wire 1 * o_PC [24] $end
+$var wire 1 + o_PC [23] $end
+$var wire 1 , o_PC [22] $end
+$var wire 1 - o_PC [21] $end
+$var wire 1 . o_PC [20] $end
+$var wire 1 / o_PC [19] $end
+$var wire 1 0 o_PC [18] $end
+$var wire 1 1 o_PC [17] $end
+$var wire 1 2 o_PC [16] $end
+$var wire 1 3 o_PC [15] $end
+$var wire 1 4 o_PC [14] $end
+$var wire 1 5 o_PC [13] $end
+$var wire 1 6 o_PC [12] $end
+$var wire 1 7 o_PC [11] $end
+$var wire 1 8 o_PC [10] $end
+$var wire 1 9 o_PC [9] $end
+$var wire 1 : o_PC [8] $end
+$var wire 1 ; o_PC [7] $end
+$var wire 1 < o_PC [6] $end
+$var wire 1 = o_PC [5] $end
+$var wire 1 > o_PC [4] $end
+$var wire 1 ? o_PC [3] $end
+$var wire 1 @ o_PC [2] $end
+$var wire 1 A o_PC [1] $end
+$var wire 1 B o_PC [0] $end
+$var wire 1 {, w_ALU_dat [31] $end
+$var wire 1 |, w_ALU_dat [30] $end
+$var wire 1 }, w_ALU_dat [29] $end
+$var wire 1 ~, w_ALU_dat [28] $end
+$var wire 1 !- w_ALU_dat [27] $end
+$var wire 1 "- w_ALU_dat [26] $end
+$var wire 1 #- w_ALU_dat [25] $end
+$var wire 1 $- w_ALU_dat [24] $end
+$var wire 1 %- w_ALU_dat [23] $end
+$var wire 1 &- w_ALU_dat [22] $end
+$var wire 1 '- w_ALU_dat [21] $end
+$var wire 1 (- w_ALU_dat [20] $end
+$var wire 1 )- w_ALU_dat [19] $end
+$var wire 1 *- w_ALU_dat [18] $end
+$var wire 1 +- w_ALU_dat [17] $end
+$var wire 1 ,- w_ALU_dat [16] $end
+$var wire 1 -- w_ALU_dat [15] $end
+$var wire 1 .- w_ALU_dat [14] $end
+$var wire 1 /- w_ALU_dat [13] $end
+$var wire 1 0- w_ALU_dat [12] $end
+$var wire 1 1- w_ALU_dat [11] $end
+$var wire 1 2- w_ALU_dat [10] $end
+$var wire 1 3- w_ALU_dat [9] $end
+$var wire 1 4- w_ALU_dat [8] $end
+$var wire 1 5- w_ALU_dat [7] $end
+$var wire 1 6- w_ALU_dat [6] $end
+$var wire 1 7- w_ALU_dat [5] $end
+$var wire 1 8- w_ALU_dat [4] $end
+$var wire 1 9- w_ALU_dat [3] $end
+$var wire 1 :- w_ALU_dat [2] $end
+$var wire 1 ;- w_ALU_dat [1] $end
+$var wire 1 <- w_ALU_dat [0] $end
+$var wire 1 Q* w_alu_ain [31] $end
+$var wire 1 R* w_alu_ain [30] $end
+$var wire 1 S* w_alu_ain [29] $end
+$var wire 1 T* w_alu_ain [28] $end
+$var wire 1 U* w_alu_ain [27] $end
+$var wire 1 V* w_alu_ain [26] $end
+$var wire 1 W* w_alu_ain [25] $end
+$var wire 1 X* w_alu_ain [24] $end
+$var wire 1 Y* w_alu_ain [23] $end
+$var wire 1 Z* w_alu_ain [22] $end
+$var wire 1 [* w_alu_ain [21] $end
+$var wire 1 \* w_alu_ain [20] $end
+$var wire 1 ]* w_alu_ain [19] $end
+$var wire 1 ^* w_alu_ain [18] $end
+$var wire 1 _* w_alu_ain [17] $end
+$var wire 1 `* w_alu_ain [16] $end
+$var wire 1 a* w_alu_ain [15] $end
+$var wire 1 b* w_alu_ain [14] $end
+$var wire 1 c* w_alu_ain [13] $end
+$var wire 1 d* w_alu_ain [12] $end
+$var wire 1 e* w_alu_ain [11] $end
+$var wire 1 f* w_alu_ain [10] $end
+$var wire 1 g* w_alu_ain [9] $end
+$var wire 1 h* w_alu_ain [8] $end
+$var wire 1 i* w_alu_ain [7] $end
+$var wire 1 j* w_alu_ain [6] $end
+$var wire 1 k* w_alu_ain [5] $end
+$var wire 1 l* w_alu_ain [4] $end
+$var wire 1 m* w_alu_ain [3] $end
+$var wire 1 n* w_alu_ain [2] $end
+$var wire 1 o* w_alu_ain [1] $end
+$var wire 1 p* w_alu_ain [0] $end
+$var wire 1 q* w_alu_bin [31] $end
+$var wire 1 r* w_alu_bin [30] $end
+$var wire 1 s* w_alu_bin [29] $end
+$var wire 1 t* w_alu_bin [28] $end
+$var wire 1 u* w_alu_bin [27] $end
+$var wire 1 v* w_alu_bin [26] $end
+$var wire 1 w* w_alu_bin [25] $end
+$var wire 1 x* w_alu_bin [24] $end
+$var wire 1 y* w_alu_bin [23] $end
+$var wire 1 z* w_alu_bin [22] $end
+$var wire 1 {* w_alu_bin [21] $end
+$var wire 1 |* w_alu_bin [20] $end
+$var wire 1 }* w_alu_bin [19] $end
+$var wire 1 ~* w_alu_bin [18] $end
+$var wire 1 !+ w_alu_bin [17] $end
+$var wire 1 "+ w_alu_bin [16] $end
+$var wire 1 #+ w_alu_bin [15] $end
+$var wire 1 $+ w_alu_bin [14] $end
+$var wire 1 %+ w_alu_bin [13] $end
+$var wire 1 &+ w_alu_bin [12] $end
+$var wire 1 '+ w_alu_bin [11] $end
+$var wire 1 (+ w_alu_bin [10] $end
+$var wire 1 )+ w_alu_bin [9] $end
+$var wire 1 *+ w_alu_bin [8] $end
+$var wire 1 ++ w_alu_bin [7] $end
+$var wire 1 ,+ w_alu_bin [6] $end
+$var wire 1 -+ w_alu_bin [5] $end
+$var wire 1 .+ w_alu_bin [4] $end
+$var wire 1 /+ w_alu_bin [3] $end
+$var wire 1 0+ w_alu_bin [2] $end
+$var wire 1 1+ w_alu_bin [1] $end
+$var wire 1 2+ w_alu_bin [0] $end
+$var wire 1 <) w_wr_dat [31] $end
+$var wire 1 =) w_wr_dat [30] $end
+$var wire 1 >) w_wr_dat [29] $end
+$var wire 1 ?) w_wr_dat [28] $end
+$var wire 1 @) w_wr_dat [27] $end
+$var wire 1 A) w_wr_dat [26] $end
+$var wire 1 B) w_wr_dat [25] $end
+$var wire 1 C) w_wr_dat [24] $end
+$var wire 1 D) w_wr_dat [23] $end
+$var wire 1 E) w_wr_dat [22] $end
+$var wire 1 F) w_wr_dat [21] $end
+$var wire 1 G) w_wr_dat [20] $end
+$var wire 1 H) w_wr_dat [19] $end
+$var wire 1 I) w_wr_dat [18] $end
+$var wire 1 J) w_wr_dat [17] $end
+$var wire 1 K) w_wr_dat [16] $end
+$var wire 1 L) w_wr_dat [15] $end
+$var wire 1 M) w_wr_dat [14] $end
+$var wire 1 N) w_wr_dat [13] $end
+$var wire 1 O) w_wr_dat [12] $end
+$var wire 1 P) w_wr_dat [11] $end
+$var wire 1 Q) w_wr_dat [10] $end
+$var wire 1 R) w_wr_dat [9] $end
+$var wire 1 S) w_wr_dat [8] $end
+$var wire 1 T) w_wr_dat [7] $end
+$var wire 1 U) w_wr_dat [6] $end
+$var wire 1 V) w_wr_dat [5] $end
+$var wire 1 W) w_wr_dat [4] $end
+$var wire 1 X) w_wr_dat [3] $end
+$var wire 1 Y) w_wr_dat [2] $end
+$var wire 1 Z) w_wr_dat [1] $end
+$var wire 1 [) w_wr_dat [0] $end
+$var wire 1 e! w_lo_reg [31] $end
+$var wire 1 f! w_lo_reg [30] $end
+$var wire 1 g! w_lo_reg [29] $end
+$var wire 1 h! w_lo_reg [28] $end
+$var wire 1 i! w_lo_reg [27] $end
+$var wire 1 j! w_lo_reg [26] $end
+$var wire 1 k! w_lo_reg [25] $end
+$var wire 1 l! w_lo_reg [24] $end
+$var wire 1 m! w_lo_reg [23] $end
+$var wire 1 n! w_lo_reg [22] $end
+$var wire 1 o! w_lo_reg [21] $end
+$var wire 1 p! w_lo_reg [20] $end
+$var wire 1 q! w_lo_reg [19] $end
+$var wire 1 r! w_lo_reg [18] $end
+$var wire 1 s! w_lo_reg [17] $end
+$var wire 1 t! w_lo_reg [16] $end
+$var wire 1 u! w_lo_reg [15] $end
+$var wire 1 v! w_lo_reg [14] $end
+$var wire 1 w! w_lo_reg [13] $end
+$var wire 1 x! w_lo_reg [12] $end
+$var wire 1 y! w_lo_reg [11] $end
+$var wire 1 z! w_lo_reg [10] $end
+$var wire 1 {! w_lo_reg [9] $end
+$var wire 1 |! w_lo_reg [8] $end
+$var wire 1 }! w_lo_reg [7] $end
+$var wire 1 ~! w_lo_reg [6] $end
+$var wire 1 !" w_lo_reg [5] $end
+$var wire 1 "" w_lo_reg [4] $end
+$var wire 1 #" w_lo_reg [3] $end
+$var wire 1 $" w_lo_reg [2] $end
+$var wire 1 %" w_lo_reg [1] $end
+$var wire 1 &" w_lo_reg [0] $end
+$var wire 1 >. ALUop [4] $end
+$var wire 1 ?. ALUop [3] $end
+$var wire 1 @. ALUop [2] $end
+$var wire 1 A. ALUop [1] $end
+$var wire 1 B. ALUop [0] $end
+$var wire 1 C. ALUctrl [3] $end
+$var wire 1 D. ALUctrl [2] $end
+$var wire 1 E. ALUctrl [1] $end
+$var wire 1 F. ALUctrl [0] $end
+$var wire 1 0" ALU_funct [4] $end
+$var wire 1 1" ALU_funct [3] $end
+$var wire 1 2" ALU_funct [2] $end
+$var wire 1 3" ALU_funct [1] $end
+$var wire 1 4" ALU_funct [0] $end
+$var wire 1 -. RegDst [1] $end
+$var wire 1 .. RegDst [0] $end
+$var wire 1 /. RegDatSel [1] $end
+$var wire 1 0. RegDatSel [0] $end
+$var wire 1 ;. Branch [2] $end
+$var wire 1 <. Branch [1] $end
+$var wire 1 =. Branch [0] $end
+$var wire 1 A+ ALU_zero $end
+$var wire 1 =" ALU_ovr $end
+$var wire 1 >" ALU_carry $end
+$var wire 1 B+ ALU_posi $end
+$var wire 1 2. MemWrite $end
+$var wire 1 1. MemtoReg $end
+$var wire 1 3. RegWrite $end
+$var wire 1 4. ExtMode $end
+$var wire 1 5. DatWidth [1] $end
+$var wire 1 6. DatWidth [0] $end
+$var wire 1 7. ALUsrc [1] $end
+$var wire 1 8. ALUsrc [0] $end
+$var wire 1 9. Jump [1] $end
+$var wire 1 :. Jump [0] $end
+$var wire 1 c( w_pc_reg [31] $end
+$var wire 1 d( w_pc_reg [30] $end
+$var wire 1 e( w_pc_reg [29] $end
+$var wire 1 f( w_pc_reg [28] $end
+$var wire 1 g( w_pc_reg [27] $end
+$var wire 1 h( w_pc_reg [26] $end
+$var wire 1 i( w_pc_reg [25] $end
+$var wire 1 j( w_pc_reg [24] $end
+$var wire 1 k( w_pc_reg [23] $end
+$var wire 1 l( w_pc_reg [22] $end
+$var wire 1 m( w_pc_reg [21] $end
+$var wire 1 n( w_pc_reg [20] $end
+$var wire 1 o( w_pc_reg [19] $end
+$var wire 1 p( w_pc_reg [18] $end
+$var wire 1 q( w_pc_reg [17] $end
+$var wire 1 r( w_pc_reg [16] $end
+$var wire 1 s( w_pc_reg [15] $end
+$var wire 1 t( w_pc_reg [14] $end
+$var wire 1 u( w_pc_reg [13] $end
+$var wire 1 v( w_pc_reg [12] $end
+$var wire 1 w( w_pc_reg [11] $end
+$var wire 1 x( w_pc_reg [10] $end
+$var wire 1 y( w_pc_reg [9] $end
+$var wire 1 z( w_pc_reg [8] $end
+$var wire 1 {( w_pc_reg [7] $end
+$var wire 1 |( w_pc_reg [6] $end
+$var wire 1 }( w_pc_reg [5] $end
+$var wire 1 ~( w_pc_reg [4] $end
+$var wire 1 !) w_pc_reg [3] $end
+$var wire 1 ") w_pc_reg [2] $end
+$var wire 1 #) w_pc_reg [1] $end
+$var wire 1 $) w_pc_reg [0] $end
+$var wire 1 j" w_pc_mab4 [31] $end
+$var wire 1 k" w_pc_mab4 [30] $end
+$var wire 1 l" w_pc_mab4 [29] $end
+$var wire 1 m" w_pc_mab4 [28] $end
+$var wire 1 n" w_pc_mab4 [27] $end
+$var wire 1 o" w_pc_mab4 [26] $end
+$var wire 1 p" w_pc_mab4 [25] $end
+$var wire 1 q" w_pc_mab4 [24] $end
+$var wire 1 r" w_pc_mab4 [23] $end
+$var wire 1 s" w_pc_mab4 [22] $end
+$var wire 1 t" w_pc_mab4 [21] $end
+$var wire 1 u" w_pc_mab4 [20] $end
+$var wire 1 v" w_pc_mab4 [19] $end
+$var wire 1 w" w_pc_mab4 [18] $end
+$var wire 1 x" w_pc_mab4 [17] $end
+$var wire 1 y" w_pc_mab4 [16] $end
+$var wire 1 z" w_pc_mab4 [15] $end
+$var wire 1 {" w_pc_mab4 [14] $end
+$var wire 1 |" w_pc_mab4 [13] $end
+$var wire 1 }" w_pc_mab4 [12] $end
+$var wire 1 ~" w_pc_mab4 [11] $end
+$var wire 1 !# w_pc_mab4 [10] $end
+$var wire 1 "# w_pc_mab4 [9] $end
+$var wire 1 ## w_pc_mab4 [8] $end
+$var wire 1 $# w_pc_mab4 [7] $end
+$var wire 1 %# w_pc_mab4 [6] $end
+$var wire 1 &# w_pc_mab4 [5] $end
+$var wire 1 '# w_pc_mab4 [4] $end
+$var wire 1 (# w_pc_mab4 [3] $end
+$var wire 1 )# w_pc_mab4 [2] $end
+$var wire 1 *# w_pc_mab4 [1] $end
+$var wire 1 +# w_pc_mab4 [0] $end
+$var wire 1 ,# w_jump_addr [31] $end
+$var wire 1 -# w_jump_addr [30] $end
+$var wire 1 .# w_jump_addr [29] $end
+$var wire 1 /# w_jump_addr [28] $end
+$var wire 1 0# w_jump_addr [27] $end
+$var wire 1 1# w_jump_addr [26] $end
+$var wire 1 2# w_jump_addr [25] $end
+$var wire 1 3# w_jump_addr [24] $end
+$var wire 1 4# w_jump_addr [23] $end
+$var wire 1 5# w_jump_addr [22] $end
+$var wire 1 6# w_jump_addr [21] $end
+$var wire 1 7# w_jump_addr [20] $end
+$var wire 1 8# w_jump_addr [19] $end
+$var wire 1 9# w_jump_addr [18] $end
+$var wire 1 :# w_jump_addr [17] $end
+$var wire 1 ;# w_jump_addr [16] $end
+$var wire 1 <# w_jump_addr [15] $end
+$var wire 1 =# w_jump_addr [14] $end
+$var wire 1 ># w_jump_addr [13] $end
+$var wire 1 ?# w_jump_addr [12] $end
+$var wire 1 @# w_jump_addr [11] $end
+$var wire 1 A# w_jump_addr [10] $end
+$var wire 1 B# w_jump_addr [9] $end
+$var wire 1 C# w_jump_addr [8] $end
+$var wire 1 D# w_jump_addr [7] $end
+$var wire 1 E# w_jump_addr [6] $end
+$var wire 1 F# w_jump_addr [5] $end
+$var wire 1 G# w_jump_addr [4] $end
+$var wire 1 H# w_jump_addr [3] $end
+$var wire 1 I# w_jump_addr [2] $end
+$var wire 1 J# w_jump_addr [1] $end
+$var wire 1 K# w_jump_addr [0] $end
+$var wire 1 L# w_br_ofs [31] $end
+$var wire 1 M# w_br_ofs [30] $end
+$var wire 1 N# w_br_ofs [29] $end
+$var wire 1 O# w_br_ofs [28] $end
+$var wire 1 P# w_br_ofs [27] $end
+$var wire 1 Q# w_br_ofs [26] $end
+$var wire 1 R# w_br_ofs [25] $end
+$var wire 1 S# w_br_ofs [24] $end
+$var wire 1 T# w_br_ofs [23] $end
+$var wire 1 U# w_br_ofs [22] $end
+$var wire 1 V# w_br_ofs [21] $end
+$var wire 1 W# w_br_ofs [20] $end
+$var wire 1 X# w_br_ofs [19] $end
+$var wire 1 Y# w_br_ofs [18] $end
+$var wire 1 Z# w_br_ofs [17] $end
+$var wire 1 [# w_br_ofs [16] $end
+$var wire 1 \# w_br_ofs [15] $end
+$var wire 1 ]# w_br_ofs [14] $end
+$var wire 1 ^# w_br_ofs [13] $end
+$var wire 1 _# w_br_ofs [12] $end
+$var wire 1 `# w_br_ofs [11] $end
+$var wire 1 a# w_br_ofs [10] $end
+$var wire 1 b# w_br_ofs [9] $end
+$var wire 1 c# w_br_ofs [8] $end
+$var wire 1 d# w_br_ofs [7] $end
+$var wire 1 e# w_br_ofs [6] $end
+$var wire 1 f# w_br_ofs [5] $end
+$var wire 1 g# w_br_ofs [4] $end
+$var wire 1 h# w_br_ofs [3] $end
+$var wire 1 i# w_br_ofs [2] $end
+$var wire 1 j# w_br_ofs [1] $end
+$var wire 1 k# w_br_ofs [0] $end
+$var wire 1 l# w_instr_imm26 [25] $end
+$var wire 1 m# w_instr_imm26 [24] $end
+$var wire 1 n# w_instr_imm26 [23] $end
+$var wire 1 o# w_instr_imm26 [22] $end
+$var wire 1 p# w_instr_imm26 [21] $end
+$var wire 1 q# w_instr_imm26 [20] $end
+$var wire 1 r# w_instr_imm26 [19] $end
+$var wire 1 s# w_instr_imm26 [18] $end
+$var wire 1 t# w_instr_imm26 [17] $end
+$var wire 1 u# w_instr_imm26 [16] $end
+$var wire 1 v# w_instr_imm26 [15] $end
+$var wire 1 w# w_instr_imm26 [14] $end
+$var wire 1 x# w_instr_imm26 [13] $end
+$var wire 1 y# w_instr_imm26 [12] $end
+$var wire 1 z# w_instr_imm26 [11] $end
+$var wire 1 {# w_instr_imm26 [10] $end
+$var wire 1 |# w_instr_imm26 [9] $end
+$var wire 1 }# w_instr_imm26 [8] $end
+$var wire 1 ~# w_instr_imm26 [7] $end
+$var wire 1 !$ w_instr_imm26 [6] $end
+$var wire 1 "$ w_instr_imm26 [5] $end
+$var wire 1 #$ w_instr_imm26 [4] $end
+$var wire 1 $$ w_instr_imm26 [3] $end
+$var wire 1 %$ w_instr_imm26 [2] $end
+$var wire 1 &$ w_instr_imm26 [1] $end
+$var wire 1 '$ w_instr_imm26 [0] $end
+$var wire 1 ($ w_pc_plus4 [31] $end
+$var wire 1 )$ w_pc_plus4 [30] $end
+$var wire 1 *$ w_pc_plus4 [29] $end
+$var wire 1 +$ w_pc_plus4 [28] $end
+$var wire 1 ,$ w_pc_plus4 [27] $end
+$var wire 1 -$ w_pc_plus4 [26] $end
+$var wire 1 .$ w_pc_plus4 [25] $end
+$var wire 1 /$ w_pc_plus4 [24] $end
+$var wire 1 0$ w_pc_plus4 [23] $end
+$var wire 1 1$ w_pc_plus4 [22] $end
+$var wire 1 2$ w_pc_plus4 [21] $end
+$var wire 1 3$ w_pc_plus4 [20] $end
+$var wire 1 4$ w_pc_plus4 [19] $end
+$var wire 1 5$ w_pc_plus4 [18] $end
+$var wire 1 6$ w_pc_plus4 [17] $end
+$var wire 1 7$ w_pc_plus4 [16] $end
+$var wire 1 8$ w_pc_plus4 [15] $end
+$var wire 1 9$ w_pc_plus4 [14] $end
+$var wire 1 :$ w_pc_plus4 [13] $end
+$var wire 1 ;$ w_pc_plus4 [12] $end
+$var wire 1 <$ w_pc_plus4 [11] $end
+$var wire 1 =$ w_pc_plus4 [10] $end
+$var wire 1 >$ w_pc_plus4 [9] $end
+$var wire 1 ?$ w_pc_plus4 [8] $end
+$var wire 1 @$ w_pc_plus4 [7] $end
+$var wire 1 A$ w_pc_plus4 [6] $end
+$var wire 1 B$ w_pc_plus4 [5] $end
+$var wire 1 C$ w_pc_plus4 [4] $end
+$var wire 1 D$ w_pc_plus4 [3] $end
+$var wire 1 E$ w_pc_plus4 [2] $end
+$var wire 1 F$ w_pc_plus4 [1] $end
+$var wire 1 G$ w_pc_plus4 [0] $end
+$var wire 1 B( w_next_pc [31] $end
+$var wire 1 C( w_next_pc [30] $end
+$var wire 1 D( w_next_pc [29] $end
+$var wire 1 E( w_next_pc [28] $end
+$var wire 1 F( w_next_pc [27] $end
+$var wire 1 G( w_next_pc [26] $end
+$var wire 1 H( w_next_pc [25] $end
+$var wire 1 I( w_next_pc [24] $end
+$var wire 1 J( w_next_pc [23] $end
+$var wire 1 K( w_next_pc [22] $end
+$var wire 1 L( w_next_pc [21] $end
+$var wire 1 M( w_next_pc [20] $end
+$var wire 1 N( w_next_pc [19] $end
+$var wire 1 O( w_next_pc [18] $end
+$var wire 1 P( w_next_pc [17] $end
+$var wire 1 Q( w_next_pc [16] $end
+$var wire 1 R( w_next_pc [15] $end
+$var wire 1 S( w_next_pc [14] $end
+$var wire 1 T( w_next_pc [13] $end
+$var wire 1 U( w_next_pc [12] $end
+$var wire 1 V( w_next_pc [11] $end
+$var wire 1 W( w_next_pc [10] $end
+$var wire 1 X( w_next_pc [9] $end
+$var wire 1 Y( w_next_pc [8] $end
+$var wire 1 Z( w_next_pc [7] $end
+$var wire 1 [( w_next_pc [6] $end
+$var wire 1 \( w_next_pc [5] $end
+$var wire 1 ]( w_next_pc [4] $end
+$var wire 1 ^( w_next_pc [3] $end
+$var wire 1 _( w_next_pc [2] $end
+$var wire 1 `( w_next_pc [1] $end
+$var wire 1 a( w_next_pc [0] $end
+$var wire 1 h$ w_br_addr [31] $end
+$var wire 1 i$ w_br_addr [30] $end
+$var wire 1 j$ w_br_addr [29] $end
+$var wire 1 k$ w_br_addr [28] $end
+$var wire 1 l$ w_br_addr [27] $end
+$var wire 1 m$ w_br_addr [26] $end
+$var wire 1 n$ w_br_addr [25] $end
+$var wire 1 o$ w_br_addr [24] $end
+$var wire 1 p$ w_br_addr [23] $end
+$var wire 1 q$ w_br_addr [22] $end
+$var wire 1 r$ w_br_addr [21] $end
+$var wire 1 s$ w_br_addr [20] $end
+$var wire 1 t$ w_br_addr [19] $end
+$var wire 1 u$ w_br_addr [18] $end
+$var wire 1 v$ w_br_addr [17] $end
+$var wire 1 w$ w_br_addr [16] $end
+$var wire 1 x$ w_br_addr [15] $end
+$var wire 1 y$ w_br_addr [14] $end
+$var wire 1 z$ w_br_addr [13] $end
+$var wire 1 {$ w_br_addr [12] $end
+$var wire 1 |$ w_br_addr [11] $end
+$var wire 1 }$ w_br_addr [10] $end
+$var wire 1 ~$ w_br_addr [9] $end
+$var wire 1 !% w_br_addr [8] $end
+$var wire 1 "% w_br_addr [7] $end
+$var wire 1 #% w_br_addr [6] $end
+$var wire 1 $% w_br_addr [5] $end
+$var wire 1 %% w_br_addr [4] $end
+$var wire 1 &% w_br_addr [3] $end
+$var wire 1 '% w_br_addr [2] $end
+$var wire 1 (% w_br_addr [1] $end
+$var wire 1 )% w_br_addr [0] $end
+$var wire 1 *% w_SEU_data [31] $end
+$var wire 1 +% w_SEU_data [30] $end
+$var wire 1 ,% w_SEU_data [29] $end
+$var wire 1 -% w_SEU_data [28] $end
+$var wire 1 .% w_SEU_data [27] $end
+$var wire 1 /% w_SEU_data [26] $end
+$var wire 1 0% w_SEU_data [25] $end
+$var wire 1 1% w_SEU_data [24] $end
+$var wire 1 2% w_SEU_data [23] $end
+$var wire 1 3% w_SEU_data [22] $end
+$var wire 1 4% w_SEU_data [21] $end
+$var wire 1 5% w_SEU_data [20] $end
+$var wire 1 6% w_SEU_data [19] $end
+$var wire 1 7% w_SEU_data [18] $end
+$var wire 1 8% w_SEU_data [17] $end
+$var wire 1 9% w_SEU_data [16] $end
+$var wire 1 :% w_SEU_data [15] $end
+$var wire 1 ;% w_SEU_data [14] $end
+$var wire 1 <% w_SEU_data [13] $end
+$var wire 1 =% w_SEU_data [12] $end
+$var wire 1 >% w_SEU_data [11] $end
+$var wire 1 ?% w_SEU_data [10] $end
+$var wire 1 @% w_SEU_data [9] $end
+$var wire 1 A% w_SEU_data [8] $end
+$var wire 1 B% w_SEU_data [7] $end
+$var wire 1 C% w_SEU_data [6] $end
+$var wire 1 D% w_SEU_data [5] $end
+$var wire 1 E% w_SEU_data [4] $end
+$var wire 1 F% w_SEU_data [3] $end
+$var wire 1 G% w_SEU_data [2] $end
+$var wire 1 H% w_SEU_data [1] $end
+$var wire 1 I% w_SEU_data [0] $end
+$var wire 1 J% w_hi_reg [31] $end
+$var wire 1 K% w_hi_reg [30] $end
+$var wire 1 L% w_hi_reg [29] $end
+$var wire 1 M% w_hi_reg [28] $end
+$var wire 1 N% w_hi_reg [27] $end
+$var wire 1 O% w_hi_reg [26] $end
+$var wire 1 P% w_hi_reg [25] $end
+$var wire 1 Q% w_hi_reg [24] $end
+$var wire 1 R% w_hi_reg [23] $end
+$var wire 1 S% w_hi_reg [22] $end
+$var wire 1 T% w_hi_reg [21] $end
+$var wire 1 U% w_hi_reg [20] $end
+$var wire 1 V% w_hi_reg [19] $end
+$var wire 1 W% w_hi_reg [18] $end
+$var wire 1 X% w_hi_reg [17] $end
+$var wire 1 Y% w_hi_reg [16] $end
+$var wire 1 Z% w_hi_reg [15] $end
+$var wire 1 [% w_hi_reg [14] $end
+$var wire 1 \% w_hi_reg [13] $end
+$var wire 1 ]% w_hi_reg [12] $end
+$var wire 1 ^% w_hi_reg [11] $end
+$var wire 1 _% w_hi_reg [10] $end
+$var wire 1 `% w_hi_reg [9] $end
+$var wire 1 a% w_hi_reg [8] $end
+$var wire 1 b% w_hi_reg [7] $end
+$var wire 1 c% w_hi_reg [6] $end
+$var wire 1 d% w_hi_reg [5] $end
+$var wire 1 e% w_hi_reg [4] $end
+$var wire 1 f% w_hi_reg [3] $end
+$var wire 1 g% w_hi_reg [2] $end
+$var wire 1 h% w_hi_reg [1] $end
+$var wire 1 i% w_hi_reg [0] $end
+$var wire 1 9/ w_instr [31] $end
+$var wire 1 :/ w_instr [30] $end
+$var wire 1 ;/ w_instr [29] $end
+$var wire 1 </ w_instr [28] $end
+$var wire 1 =/ w_instr [27] $end
+$var wire 1 >/ w_instr [26] $end
+$var wire 1 -) w_instr [25] $end
+$var wire 1 .) w_instr [24] $end
+$var wire 1 /) w_instr [23] $end
+$var wire 1 0) w_instr [22] $end
+$var wire 1 1) w_instr [21] $end
+$var wire 1 2) w_instr [20] $end
+$var wire 1 3) w_instr [19] $end
+$var wire 1 4) w_instr [18] $end
+$var wire 1 5) w_instr [17] $end
+$var wire 1 6) w_instr [16] $end
+$var wire 1 ?* w_instr [15] $end
+$var wire 1 @* w_instr [14] $end
+$var wire 1 A* w_instr [13] $end
+$var wire 1 B* w_instr [12] $end
+$var wire 1 C* w_instr [11] $end
+$var wire 1 D* w_instr [10] $end
+$var wire 1 E* w_instr [9] $end
+$var wire 1 F* w_instr [8] $end
+$var wire 1 G* w_instr [7] $end
+$var wire 1 H* w_instr [6] $end
+$var wire 1 ?/ w_instr [5] $end
+$var wire 1 @/ w_instr [4] $end
+$var wire 1 A/ w_instr [3] $end
+$var wire 1 B/ w_instr [2] $end
+$var wire 1 C/ w_instr [1] $end
+$var wire 1 D/ w_instr [0] $end
+$var wire 1 ,& w_br_chk_addr [31] $end
+$var wire 1 -& w_br_chk_addr [30] $end
+$var wire 1 .& w_br_chk_addr [29] $end
+$var wire 1 /& w_br_chk_addr [28] $end
+$var wire 1 0& w_br_chk_addr [27] $end
+$var wire 1 1& w_br_chk_addr [26] $end
+$var wire 1 2& w_br_chk_addr [25] $end
+$var wire 1 3& w_br_chk_addr [24] $end
+$var wire 1 4& w_br_chk_addr [23] $end
+$var wire 1 5& w_br_chk_addr [22] $end
+$var wire 1 6& w_br_chk_addr [21] $end
+$var wire 1 7& w_br_chk_addr [20] $end
+$var wire 1 8& w_br_chk_addr [19] $end
+$var wire 1 9& w_br_chk_addr [18] $end
+$var wire 1 :& w_br_chk_addr [17] $end
+$var wire 1 ;& w_br_chk_addr [16] $end
+$var wire 1 <& w_br_chk_addr [15] $end
+$var wire 1 =& w_br_chk_addr [14] $end
+$var wire 1 >& w_br_chk_addr [13] $end
+$var wire 1 ?& w_br_chk_addr [12] $end
+$var wire 1 @& w_br_chk_addr [11] $end
+$var wire 1 A& w_br_chk_addr [10] $end
+$var wire 1 B& w_br_chk_addr [9] $end
+$var wire 1 C& w_br_chk_addr [8] $end
+$var wire 1 D& w_br_chk_addr [7] $end
+$var wire 1 E& w_br_chk_addr [6] $end
+$var wire 1 F& w_br_chk_addr [5] $end
+$var wire 1 G& w_br_chk_addr [4] $end
+$var wire 1 H& w_br_chk_addr [3] $end
+$var wire 1 I& w_br_chk_addr [2] $end
+$var wire 1 J& w_br_chk_addr [1] $end
+$var wire 1 K& w_br_chk_addr [0] $end
+$var wire 1 L& w_pc_msb4 [3] $end
+$var wire 1 M& w_pc_msb4 [2] $end
+$var wire 1 N& w_pc_msb4 [1] $end
+$var wire 1 O& w_pc_msb4 [0] $end
+$var wire 1 P& w_br_ok $end
+$var wire 1 G. w_const_ld $end
+$var wire 1 7) w_wr_reg [4] $end
+$var wire 1 8) w_wr_reg [3] $end
+$var wire 1 9) w_wr_reg [2] $end
+$var wire 1 :) w_wr_reg [1] $end
+$var wire 1 ;) w_wr_reg [0] $end
+$var wire 1 W& w_alu_or_dm [31] $end
+$var wire 1 X& w_alu_or_dm [30] $end
+$var wire 1 Y& w_alu_or_dm [29] $end
+$var wire 1 Z& w_alu_or_dm [28] $end
+$var wire 1 [& w_alu_or_dm [27] $end
+$var wire 1 \& w_alu_or_dm [26] $end
+$var wire 1 ]& w_alu_or_dm [25] $end
+$var wire 1 ^& w_alu_or_dm [24] $end
+$var wire 1 _& w_alu_or_dm [23] $end
+$var wire 1 `& w_alu_or_dm [22] $end
+$var wire 1 a& w_alu_or_dm [21] $end
+$var wire 1 b& w_alu_or_dm [20] $end
+$var wire 1 c& w_alu_or_dm [19] $end
+$var wire 1 d& w_alu_or_dm [18] $end
+$var wire 1 e& w_alu_or_dm [17] $end
+$var wire 1 f& w_alu_or_dm [16] $end
+$var wire 1 g& w_alu_or_dm [15] $end
+$var wire 1 h& w_alu_or_dm [14] $end
+$var wire 1 i& w_alu_or_dm [13] $end
+$var wire 1 j& w_alu_or_dm [12] $end
+$var wire 1 k& w_alu_or_dm [11] $end
+$var wire 1 l& w_alu_or_dm [10] $end
+$var wire 1 m& w_alu_or_dm [9] $end
+$var wire 1 n& w_alu_or_dm [8] $end
+$var wire 1 o& w_alu_or_dm [7] $end
+$var wire 1 p& w_alu_or_dm [6] $end
+$var wire 1 q& w_alu_or_dm [5] $end
+$var wire 1 r& w_alu_or_dm [4] $end
+$var wire 1 s& w_alu_or_dm [3] $end
+$var wire 1 t& w_alu_or_dm [2] $end
+$var wire 1 u& w_alu_or_dm [1] $end
+$var wire 1 v& w_alu_or_dm [0] $end
+$var wire 1 0, w_rreg_dat1 [31] $end
+$var wire 1 1, w_rreg_dat1 [30] $end
+$var wire 1 2, w_rreg_dat1 [29] $end
+$var wire 1 3, w_rreg_dat1 [28] $end
+$var wire 1 4, w_rreg_dat1 [27] $end
+$var wire 1 5, w_rreg_dat1 [26] $end
+$var wire 1 6, w_rreg_dat1 [25] $end
+$var wire 1 7, w_rreg_dat1 [24] $end
+$var wire 1 8, w_rreg_dat1 [23] $end
+$var wire 1 9, w_rreg_dat1 [22] $end
+$var wire 1 :, w_rreg_dat1 [21] $end
+$var wire 1 ;, w_rreg_dat1 [20] $end
+$var wire 1 <, w_rreg_dat1 [19] $end
+$var wire 1 =, w_rreg_dat1 [18] $end
+$var wire 1 >, w_rreg_dat1 [17] $end
+$var wire 1 ?, w_rreg_dat1 [16] $end
+$var wire 1 @, w_rreg_dat1 [15] $end
+$var wire 1 A, w_rreg_dat1 [14] $end
+$var wire 1 B, w_rreg_dat1 [13] $end
+$var wire 1 C, w_rreg_dat1 [12] $end
+$var wire 1 D, w_rreg_dat1 [11] $end
+$var wire 1 E, w_rreg_dat1 [10] $end
+$var wire 1 F, w_rreg_dat1 [9] $end
+$var wire 1 G, w_rreg_dat1 [8] $end
+$var wire 1 H, w_rreg_dat1 [7] $end
+$var wire 1 I, w_rreg_dat1 [6] $end
+$var wire 1 J, w_rreg_dat1 [5] $end
+$var wire 1 K, w_rreg_dat1 [4] $end
+$var wire 1 L, w_rreg_dat1 [3] $end
+$var wire 1 M, w_rreg_dat1 [2] $end
+$var wire 1 N, w_rreg_dat1 [1] $end
+$var wire 1 O, w_rreg_dat1 [0] $end
+$var wire 1 =- w_rreg_dat2 [31] $end
+$var wire 1 >- w_rreg_dat2 [30] $end
+$var wire 1 ?- w_rreg_dat2 [29] $end
+$var wire 1 @- w_rreg_dat2 [28] $end
+$var wire 1 A- w_rreg_dat2 [27] $end
+$var wire 1 B- w_rreg_dat2 [26] $end
+$var wire 1 C- w_rreg_dat2 [25] $end
+$var wire 1 D- w_rreg_dat2 [24] $end
+$var wire 1 E- w_rreg_dat2 [23] $end
+$var wire 1 F- w_rreg_dat2 [22] $end
+$var wire 1 G- w_rreg_dat2 [21] $end
+$var wire 1 H- w_rreg_dat2 [20] $end
+$var wire 1 I- w_rreg_dat2 [19] $end
+$var wire 1 J- w_rreg_dat2 [18] $end
+$var wire 1 K- w_rreg_dat2 [17] $end
+$var wire 1 L- w_rreg_dat2 [16] $end
+$var wire 1 M- w_rreg_dat2 [15] $end
+$var wire 1 N- w_rreg_dat2 [14] $end
+$var wire 1 O- w_rreg_dat2 [13] $end
+$var wire 1 P- w_rreg_dat2 [12] $end
+$var wire 1 Q- w_rreg_dat2 [11] $end
+$var wire 1 R- w_rreg_dat2 [10] $end
+$var wire 1 S- w_rreg_dat2 [9] $end
+$var wire 1 T- w_rreg_dat2 [8] $end
+$var wire 1 U- w_rreg_dat2 [7] $end
+$var wire 1 V- w_rreg_dat2 [6] $end
+$var wire 1 W- w_rreg_dat2 [5] $end
+$var wire 1 X- w_rreg_dat2 [4] $end
+$var wire 1 Y- w_rreg_dat2 [3] $end
+$var wire 1 Z- w_rreg_dat2 [2] $end
+$var wire 1 [- w_rreg_dat2 [1] $end
+$var wire 1 \- w_rreg_dat2 [0] $end
+$var wire 1 Y' w_SEU_dat [31] $end
+$var wire 1 Z' w_SEU_dat [30] $end
+$var wire 1 [' w_SEU_dat [29] $end
+$var wire 1 \' w_SEU_dat [28] $end
+$var wire 1 ]' w_SEU_dat [27] $end
+$var wire 1 ^' w_SEU_dat [26] $end
+$var wire 1 _' w_SEU_dat [25] $end
+$var wire 1 `' w_SEU_dat [24] $end
+$var wire 1 a' w_SEU_dat [23] $end
+$var wire 1 b' w_SEU_dat [22] $end
+$var wire 1 c' w_SEU_dat [21] $end
+$var wire 1 d' w_SEU_dat [20] $end
+$var wire 1 e' w_SEU_dat [19] $end
+$var wire 1 f' w_SEU_dat [18] $end
+$var wire 1 g' w_SEU_dat [17] $end
+$var wire 1 h' w_SEU_dat [16] $end
+$var wire 1 i' w_SEU_dat [15] $end
+$var wire 1 j' w_SEU_dat [14] $end
+$var wire 1 k' w_SEU_dat [13] $end
+$var wire 1 l' w_SEU_dat [12] $end
+$var wire 1 m' w_SEU_dat [11] $end
+$var wire 1 n' w_SEU_dat [10] $end
+$var wire 1 o' w_SEU_dat [9] $end
+$var wire 1 p' w_SEU_dat [8] $end
+$var wire 1 q' w_SEU_dat [7] $end
+$var wire 1 r' w_SEU_dat [6] $end
+$var wire 1 s' w_SEU_dat [5] $end
+$var wire 1 t' w_SEU_dat [4] $end
+$var wire 1 u' w_SEU_dat [3] $end
+$var wire 1 v' w_SEU_dat [2] $end
+$var wire 1 w' w_SEU_dat [1] $end
+$var wire 1 x' w_SEU_dat [0] $end
+$var wire 1 y' w_DM_dat [31] $end
+$var wire 1 z' w_DM_dat [30] $end
+$var wire 1 {' w_DM_dat [29] $end
+$var wire 1 |' w_DM_dat [28] $end
+$var wire 1 }' w_DM_dat [27] $end
+$var wire 1 ~' w_DM_dat [26] $end
+$var wire 1 !( w_DM_dat [25] $end
+$var wire 1 "( w_DM_dat [24] $end
+$var wire 1 #( w_DM_dat [23] $end
+$var wire 1 $( w_DM_dat [22] $end
+$var wire 1 %( w_DM_dat [21] $end
+$var wire 1 &( w_DM_dat [20] $end
+$var wire 1 '( w_DM_dat [19] $end
+$var wire 1 (( w_DM_dat [18] $end
+$var wire 1 )( w_DM_dat [17] $end
+$var wire 1 *( w_DM_dat [16] $end
+$var wire 1 +( w_DM_dat [15] $end
+$var wire 1 ,( w_DM_dat [14] $end
+$var wire 1 -( w_DM_dat [13] $end
+$var wire 1 .( w_DM_dat [12] $end
+$var wire 1 /( w_DM_dat [11] $end
+$var wire 1 0( w_DM_dat [10] $end
+$var wire 1 1( w_DM_dat [9] $end
+$var wire 1 2( w_DM_dat [8] $end
+$var wire 1 3( w_DM_dat [7] $end
+$var wire 1 4( w_DM_dat [6] $end
+$var wire 1 5( w_DM_dat [5] $end
+$var wire 1 6( w_DM_dat [4] $end
+$var wire 1 7( w_DM_dat [3] $end
+$var wire 1 8( w_DM_dat [2] $end
+$var wire 1 9( w_DM_dat [1] $end
+$var wire 1 :( w_DM_dat [0] $end
+$var wire 1 3+ w_shamt [4] $end
+$var wire 1 4+ w_shamt [3] $end
+$var wire 1 5+ w_shamt [2] $end
+$var wire 1 6+ w_shamt [1] $end
+$var wire 1 7+ w_shamt [0] $end
+$scope module U0_PC $end
+$var wire 1 w, i_clk $end
+$var wire 1 /, i_rst_n $end
+$var wire 1 B( i_next_pc [31] $end
+$var wire 1 C( i_next_pc [30] $end
+$var wire 1 D( i_next_pc [29] $end
+$var wire 1 E( i_next_pc [28] $end
+$var wire 1 F( i_next_pc [27] $end
+$var wire 1 G( i_next_pc [26] $end
+$var wire 1 H( i_next_pc [25] $end
+$var wire 1 I( i_next_pc [24] $end
+$var wire 1 J( i_next_pc [23] $end
+$var wire 1 K( i_next_pc [22] $end
+$var wire 1 L( i_next_pc [21] $end
+$var wire 1 M( i_next_pc [20] $end
+$var wire 1 N( i_next_pc [19] $end
+$var wire 1 O( i_next_pc [18] $end
+$var wire 1 P( i_next_pc [17] $end
+$var wire 1 Q( i_next_pc [16] $end
+$var wire 1 R( i_next_pc [15] $end
+$var wire 1 S( i_next_pc [14] $end
+$var wire 1 T( i_next_pc [13] $end
+$var wire 1 U( i_next_pc [12] $end
+$var wire 1 V( i_next_pc [11] $end
+$var wire 1 W( i_next_pc [10] $end
+$var wire 1 X( i_next_pc [9] $end
+$var wire 1 Y( i_next_pc [8] $end
+$var wire 1 Z( i_next_pc [7] $end
+$var wire 1 [( i_next_pc [6] $end
+$var wire 1 \( i_next_pc [5] $end
+$var wire 1 ]( i_next_pc [4] $end
+$var wire 1 ^( i_next_pc [3] $end
+$var wire 1 _( i_next_pc [2] $end
+$var wire 1 `( i_next_pc [1] $end
+$var wire 1 a( i_next_pc [0] $end
+$var reg 32 b( o_pc_reg [31:0] $end
+$upscope $end
+$scope module U1_IM $end
+$var wire 1 c( i_addr [31] $end
+$var wire 1 d( i_addr [30] $end
+$var wire 1 e( i_addr [29] $end
+$var wire 1 f( i_addr [28] $end
+$var wire 1 g( i_addr [27] $end
+$var wire 1 h( i_addr [26] $end
+$var wire 1 i( i_addr [25] $end
+$var wire 1 j( i_addr [24] $end
+$var wire 1 k( i_addr [23] $end
+$var wire 1 l( i_addr [22] $end
+$var wire 1 m( i_addr [21] $end
+$var wire 1 n( i_addr [20] $end
+$var wire 1 o( i_addr [19] $end
+$var wire 1 p( i_addr [18] $end
+$var wire 1 q( i_addr [17] $end
+$var wire 1 r( i_addr [16] $end
+$var wire 1 s( i_addr [15] $end
+$var wire 1 t( i_addr [14] $end
+$var wire 1 u( i_addr [13] $end
+$var wire 1 v( i_addr [12] $end
+$var wire 1 w( i_addr [11] $end
+$var wire 1 x( i_addr [10] $end
+$var wire 1 y( i_addr [9] $end
+$var wire 1 z( i_addr [8] $end
+$var wire 1 {( i_addr [7] $end
+$var wire 1 |( i_addr [6] $end
+$var wire 1 }( i_addr [5] $end
+$var wire 1 ~( i_addr [4] $end
+$var wire 1 !) i_addr [3] $end
+$var wire 1 ") i_addr [2] $end
+$var wire 1 #) i_addr [1] $end
+$var wire 1 $) i_addr [0] $end
+$var reg 32 %) o_instr [31:0] $end
+$var reg 8192 &) inst_mem [7:0] $end
+$var reg 1 ') w_WE $end
+$var reg 32 () w_addr [31:0] $end
+$var reg 32 )) w_data [31:0] $end
+$upscope $end
+$scope module U2_RF $end
+$var wire 1 w, i_clk $end
+$var wire 1 /, i_rst_n $end
+$var wire 1 3. RegWrite $end
+$var wire 1 -) i_Read_reg1 [4] $end
+$var wire 1 .) i_Read_reg1 [3] $end
+$var wire 1 /) i_Read_reg1 [2] $end
+$var wire 1 0) i_Read_reg1 [1] $end
+$var wire 1 1) i_Read_reg1 [0] $end
+$var wire 1 2) i_Read_reg2 [4] $end
+$var wire 1 3) i_Read_reg2 [3] $end
+$var wire 1 4) i_Read_reg2 [2] $end
+$var wire 1 5) i_Read_reg2 [1] $end
+$var wire 1 6) i_Read_reg2 [0] $end
+$var wire 1 7) i_Write_reg [4] $end
+$var wire 1 8) i_Write_reg [3] $end
+$var wire 1 9) i_Write_reg [2] $end
+$var wire 1 :) i_Write_reg [1] $end
+$var wire 1 ;) i_Write_reg [0] $end
+$var wire 1 <) i_Write_data [31] $end
+$var wire 1 =) i_Write_data [30] $end
+$var wire 1 >) i_Write_data [29] $end
+$var wire 1 ?) i_Write_data [28] $end
+$var wire 1 @) i_Write_data [27] $end
+$var wire 1 A) i_Write_data [26] $end
+$var wire 1 B) i_Write_data [25] $end
+$var wire 1 C) i_Write_data [24] $end
+$var wire 1 D) i_Write_data [23] $end
+$var wire 1 E) i_Write_data [22] $end
+$var wire 1 F) i_Write_data [21] $end
+$var wire 1 G) i_Write_data [20] $end
+$var wire 1 H) i_Write_data [19] $end
+$var wire 1 I) i_Write_data [18] $end
+$var wire 1 J) i_Write_data [17] $end
+$var wire 1 K) i_Write_data [16] $end
+$var wire 1 L) i_Write_data [15] $end
+$var wire 1 M) i_Write_data [14] $end
+$var wire 1 N) i_Write_data [13] $end
+$var wire 1 O) i_Write_data [12] $end
+$var wire 1 P) i_Write_data [11] $end
+$var wire 1 Q) i_Write_data [10] $end
+$var wire 1 R) i_Write_data [9] $end
+$var wire 1 S) i_Write_data [8] $end
+$var wire 1 T) i_Write_data [7] $end
+$var wire 1 U) i_Write_data [6] $end
+$var wire 1 V) i_Write_data [5] $end
+$var wire 1 W) i_Write_data [4] $end
+$var wire 1 X) i_Write_data [3] $end
+$var wire 1 Y) i_Write_data [2] $end
+$var wire 1 Z) i_Write_data [1] $end
+$var wire 1 [) i_Write_data [0] $end
+$var wire 1 0, o_Read_data1 [31] $end
+$var wire 1 1, o_Read_data1 [30] $end
+$var wire 1 2, o_Read_data1 [29] $end
+$var wire 1 3, o_Read_data1 [28] $end
+$var wire 1 4, o_Read_data1 [27] $end
+$var wire 1 5, o_Read_data1 [26] $end
+$var wire 1 6, o_Read_data1 [25] $end
+$var wire 1 7, o_Read_data1 [24] $end
+$var wire 1 8, o_Read_data1 [23] $end
+$var wire 1 9, o_Read_data1 [22] $end
+$var wire 1 :, o_Read_data1 [21] $end
+$var wire 1 ;, o_Read_data1 [20] $end
+$var wire 1 <, o_Read_data1 [19] $end
+$var wire 1 =, o_Read_data1 [18] $end
+$var wire 1 >, o_Read_data1 [17] $end
+$var wire 1 ?, o_Read_data1 [16] $end
+$var wire 1 @, o_Read_data1 [15] $end
+$var wire 1 A, o_Read_data1 [14] $end
+$var wire 1 B, o_Read_data1 [13] $end
+$var wire 1 C, o_Read_data1 [12] $end
+$var wire 1 D, o_Read_data1 [11] $end
+$var wire 1 E, o_Read_data1 [10] $end
+$var wire 1 F, o_Read_data1 [9] $end
+$var wire 1 G, o_Read_data1 [8] $end
+$var wire 1 H, o_Read_data1 [7] $end
+$var wire 1 I, o_Read_data1 [6] $end
+$var wire 1 J, o_Read_data1 [5] $end
+$var wire 1 K, o_Read_data1 [4] $end
+$var wire 1 L, o_Read_data1 [3] $end
+$var wire 1 M, o_Read_data1 [2] $end
+$var wire 1 N, o_Read_data1 [1] $end
+$var wire 1 O, o_Read_data1 [0] $end
+$var wire 1 =- o_Read_data2 [31] $end
+$var wire 1 >- o_Read_data2 [30] $end
+$var wire 1 ?- o_Read_data2 [29] $end
+$var wire 1 @- o_Read_data2 [28] $end
+$var wire 1 A- o_Read_data2 [27] $end
+$var wire 1 B- o_Read_data2 [26] $end
+$var wire 1 C- o_Read_data2 [25] $end
+$var wire 1 D- o_Read_data2 [24] $end
+$var wire 1 E- o_Read_data2 [23] $end
+$var wire 1 F- o_Read_data2 [22] $end
+$var wire 1 G- o_Read_data2 [21] $end
+$var wire 1 H- o_Read_data2 [20] $end
+$var wire 1 I- o_Read_data2 [19] $end
+$var wire 1 J- o_Read_data2 [18] $end
+$var wire 1 K- o_Read_data2 [17] $end
+$var wire 1 L- o_Read_data2 [16] $end
+$var wire 1 M- o_Read_data2 [15] $end
+$var wire 1 N- o_Read_data2 [14] $end
+$var wire 1 O- o_Read_data2 [13] $end
+$var wire 1 P- o_Read_data2 [12] $end
+$var wire 1 Q- o_Read_data2 [11] $end
+$var wire 1 R- o_Read_data2 [10] $end
+$var wire 1 S- o_Read_data2 [9] $end
+$var wire 1 T- o_Read_data2 [8] $end
+$var wire 1 U- o_Read_data2 [7] $end
+$var wire 1 V- o_Read_data2 [6] $end
+$var wire 1 W- o_Read_data2 [5] $end
+$var wire 1 X- o_Read_data2 [4] $end
+$var wire 1 Y- o_Read_data2 [3] $end
+$var wire 1 Z- o_Read_data2 [2] $end
+$var wire 1 [- o_Read_data2 [1] $end
+$var wire 1 \- o_Read_data2 [0] $end
+$var reg 1024 >* regs [31:0] $end
+$upscope $end
+$scope module U3_SEU $end
+$var wire 1 ?* i_halfword [15] $end
+$var wire 1 @* i_halfword [14] $end
+$var wire 1 A* i_halfword [13] $end
+$var wire 1 B* i_halfword [12] $end
+$var wire 1 C* i_halfword [11] $end
+$var wire 1 D* i_halfword [10] $end
+$var wire 1 E* i_halfword [9] $end
+$var wire 1 F* i_halfword [8] $end
+$var wire 1 G* i_halfword [7] $end
+$var wire 1 H* i_halfword [6] $end
+$var wire 1 ?/ i_halfword [5] $end
+$var wire 1 @/ i_halfword [4] $end
+$var wire 1 A/ i_halfword [3] $end
+$var wire 1 B/ i_halfword [2] $end
+$var wire 1 C/ i_halfword [1] $end
+$var wire 1 D/ i_halfword [0] $end
+$var wire 1 4. ext_mode $end
+$var reg 32 P* o_word [31:0] $end
+$upscope $end
+$scope module U4_ALU $end
+$var wire 1 Q* i_data1 [31] $end
+$var wire 1 R* i_data1 [30] $end
+$var wire 1 S* i_data1 [29] $end
+$var wire 1 T* i_data1 [28] $end
+$var wire 1 U* i_data1 [27] $end
+$var wire 1 V* i_data1 [26] $end
+$var wire 1 W* i_data1 [25] $end
+$var wire 1 X* i_data1 [24] $end
+$var wire 1 Y* i_data1 [23] $end
+$var wire 1 Z* i_data1 [22] $end
+$var wire 1 [* i_data1 [21] $end
+$var wire 1 \* i_data1 [20] $end
+$var wire 1 ]* i_data1 [19] $end
+$var wire 1 ^* i_data1 [18] $end
+$var wire 1 _* i_data1 [17] $end
+$var wire 1 `* i_data1 [16] $end
+$var wire 1 a* i_data1 [15] $end
+$var wire 1 b* i_data1 [14] $end
+$var wire 1 c* i_data1 [13] $end
+$var wire 1 d* i_data1 [12] $end
+$var wire 1 e* i_data1 [11] $end
+$var wire 1 f* i_data1 [10] $end
+$var wire 1 g* i_data1 [9] $end
+$var wire 1 h* i_data1 [8] $end
+$var wire 1 i* i_data1 [7] $end
+$var wire 1 j* i_data1 [6] $end
+$var wire 1 k* i_data1 [5] $end
+$var wire 1 l* i_data1 [4] $end
+$var wire 1 m* i_data1 [3] $end
+$var wire 1 n* i_data1 [2] $end
+$var wire 1 o* i_data1 [1] $end
+$var wire 1 p* i_data1 [0] $end
+$var wire 1 q* i_data2 [31] $end
+$var wire 1 r* i_data2 [30] $end
+$var wire 1 s* i_data2 [29] $end
+$var wire 1 t* i_data2 [28] $end
+$var wire 1 u* i_data2 [27] $end
+$var wire 1 v* i_data2 [26] $end
+$var wire 1 w* i_data2 [25] $end
+$var wire 1 x* i_data2 [24] $end
+$var wire 1 y* i_data2 [23] $end
+$var wire 1 z* i_data2 [22] $end
+$var wire 1 {* i_data2 [21] $end
+$var wire 1 |* i_data2 [20] $end
+$var wire 1 }* i_data2 [19] $end
+$var wire 1 ~* i_data2 [18] $end
+$var wire 1 !+ i_data2 [17] $end
+$var wire 1 "+ i_data2 [16] $end
+$var wire 1 #+ i_data2 [15] $end
+$var wire 1 $+ i_data2 [14] $end
+$var wire 1 %+ i_data2 [13] $end
+$var wire 1 &+ i_data2 [12] $end
+$var wire 1 '+ i_data2 [11] $end
+$var wire 1 (+ i_data2 [10] $end
+$var wire 1 )+ i_data2 [9] $end
+$var wire 1 *+ i_data2 [8] $end
+$var wire 1 ++ i_data2 [7] $end
+$var wire 1 ,+ i_data2 [6] $end
+$var wire 1 -+ i_data2 [5] $end
+$var wire 1 .+ i_data2 [4] $end
+$var wire 1 /+ i_data2 [3] $end
+$var wire 1 0+ i_data2 [2] $end
+$var wire 1 1+ i_data2 [1] $end
+$var wire 1 2+ i_data2 [0] $end
+$var wire 1 3+ shamt [4] $end
+$var wire 1 4+ shamt [3] $end
+$var wire 1 5+ shamt [2] $end
+$var wire 1 6+ shamt [1] $end
+$var wire 1 7+ shamt [0] $end
+$var wire 1 >. ALUop [4] $end
+$var wire 1 ?. ALUop [3] $end
+$var wire 1 @. ALUop [2] $end
+$var wire 1 A. ALUop [1] $end
+$var wire 1 B. ALUop [0] $end
+$var wire 1 C. ALUctrl [3] $end
+$var wire 1 D. ALUctrl [2] $end
+$var wire 1 E. ALUctrl [1] $end
+$var wire 1 F. ALUctrl [0] $end
+$var wire 1 A+ o_zero $end
+$var wire 1 B+ o_positive $end
+$var wire 1 C+ w_shift [4] $end
+$var wire 1 D+ w_shift [3] $end
+$var wire 1 E+ w_shift [2] $end
+$var wire 1 F+ w_shift [1] $end
+$var wire 1 G+ w_shift [0] $end
+$var wire 1 H+ w_ain [31] $end
+$var wire 1 I+ w_ain [30] $end
+$var wire 1 J+ w_ain [29] $end
+$var wire 1 K+ w_ain [28] $end
+$var wire 1 L+ w_ain [27] $end
+$var wire 1 M+ w_ain [26] $end
+$var wire 1 N+ w_ain [25] $end
+$var wire 1 O+ w_ain [24] $end
+$var wire 1 P+ w_ain [23] $end
+$var wire 1 Q+ w_ain [22] $end
+$var wire 1 R+ w_ain [21] $end
+$var wire 1 S+ w_ain [20] $end
+$var wire 1 T+ w_ain [19] $end
+$var wire 1 U+ w_ain [18] $end
+$var wire 1 V+ w_ain [17] $end
+$var wire 1 W+ w_ain [16] $end
+$var wire 1 X+ w_ain [15] $end
+$var wire 1 Y+ w_ain [14] $end
+$var wire 1 Z+ w_ain [13] $end
+$var wire 1 [+ w_ain [12] $end
+$var wire 1 \+ w_ain [11] $end
+$var wire 1 ]+ w_ain [10] $end
+$var wire 1 ^+ w_ain [9] $end
+$var wire 1 _+ w_ain [8] $end
+$var wire 1 `+ w_ain [7] $end
+$var wire 1 a+ w_ain [6] $end
+$var wire 1 b+ w_ain [5] $end
+$var wire 1 c+ w_ain [4] $end
+$var wire 1 d+ w_ain [3] $end
+$var wire 1 e+ w_ain [2] $end
+$var wire 1 f+ w_ain [1] $end
+$var wire 1 g+ w_ain [0] $end
+$var wire 1 h+ w_bin [31] $end
+$var wire 1 i+ w_bin [30] $end
+$var wire 1 j+ w_bin [29] $end
+$var wire 1 k+ w_bin [28] $end
+$var wire 1 l+ w_bin [27] $end
+$var wire 1 m+ w_bin [26] $end
+$var wire 1 n+ w_bin [25] $end
+$var wire 1 o+ w_bin [24] $end
+$var wire 1 p+ w_bin [23] $end
+$var wire 1 q+ w_bin [22] $end
+$var wire 1 r+ w_bin [21] $end
+$var wire 1 s+ w_bin [20] $end
+$var wire 1 t+ w_bin [19] $end
+$var wire 1 u+ w_bin [18] $end
+$var wire 1 v+ w_bin [17] $end
+$var wire 1 w+ w_bin [16] $end
+$var wire 1 x+ w_bin [15] $end
+$var wire 1 y+ w_bin [14] $end
+$var wire 1 z+ w_bin [13] $end
+$var wire 1 {+ w_bin [12] $end
+$var wire 1 |+ w_bin [11] $end
+$var wire 1 }+ w_bin [10] $end
+$var wire 1 ~+ w_bin [9] $end
+$var wire 1 !, w_bin [8] $end
+$var wire 1 ", w_bin [7] $end
+$var wire 1 #, w_bin [6] $end
+$var wire 1 $, w_bin [5] $end
+$var wire 1 %, w_bin [4] $end
+$var wire 1 &, w_bin [3] $end
+$var wire 1 ', w_bin [2] $end
+$var wire 1 (, w_bin [1] $end
+$var wire 1 ), w_bin [0] $end
+$var reg 32 *, o_result [31:0] $end
+$var reg 1 +, o_overflow $end
+$var reg 1 ,, o_carry $end
+$var reg 32 -, m_data [31:0] $end
+$upscope $end
+$scope module U5_MULT $end
+$var wire 1 w, i_clk $end
+$var wire 1 /, i_rst_n $end
+$var wire 1 0, i_data1 [31] $end
+$var wire 1 1, i_data1 [30] $end
+$var wire 1 2, i_data1 [29] $end
+$var wire 1 3, i_data1 [28] $end
+$var wire 1 4, i_data1 [27] $end
+$var wire 1 5, i_data1 [26] $end
+$var wire 1 6, i_data1 [25] $end
+$var wire 1 7, i_data1 [24] $end
+$var wire 1 8, i_data1 [23] $end
+$var wire 1 9, i_data1 [22] $end
+$var wire 1 :, i_data1 [21] $end
+$var wire 1 ;, i_data1 [20] $end
+$var wire 1 <, i_data1 [19] $end
+$var wire 1 =, i_data1 [18] $end
+$var wire 1 >, i_data1 [17] $end
+$var wire 1 ?, i_data1 [16] $end
+$var wire 1 @, i_data1 [15] $end
+$var wire 1 A, i_data1 [14] $end
+$var wire 1 B, i_data1 [13] $end
+$var wire 1 C, i_data1 [12] $end
+$var wire 1 D, i_data1 [11] $end
+$var wire 1 E, i_data1 [10] $end
+$var wire 1 F, i_data1 [9] $end
+$var wire 1 G, i_data1 [8] $end
+$var wire 1 H, i_data1 [7] $end
+$var wire 1 I, i_data1 [6] $end
+$var wire 1 J, i_data1 [5] $end
+$var wire 1 K, i_data1 [4] $end
+$var wire 1 L, i_data1 [3] $end
+$var wire 1 M, i_data1 [2] $end
+$var wire 1 N, i_data1 [1] $end
+$var wire 1 O, i_data1 [0] $end
+$var wire 1 =- i_data2 [31] $end
+$var wire 1 >- i_data2 [30] $end
+$var wire 1 ?- i_data2 [29] $end
+$var wire 1 @- i_data2 [28] $end
+$var wire 1 A- i_data2 [27] $end
+$var wire 1 B- i_data2 [26] $end
+$var wire 1 C- i_data2 [25] $end
+$var wire 1 D- i_data2 [24] $end
+$var wire 1 E- i_data2 [23] $end
+$var wire 1 F- i_data2 [22] $end
+$var wire 1 G- i_data2 [21] $end
+$var wire 1 H- i_data2 [20] $end
+$var wire 1 I- i_data2 [19] $end
+$var wire 1 J- i_data2 [18] $end
+$var wire 1 K- i_data2 [17] $end
+$var wire 1 L- i_data2 [16] $end
+$var wire 1 M- i_data2 [15] $end
+$var wire 1 N- i_data2 [14] $end
+$var wire 1 O- i_data2 [13] $end
+$var wire 1 P- i_data2 [12] $end
+$var wire 1 Q- i_data2 [11] $end
+$var wire 1 R- i_data2 [10] $end
+$var wire 1 S- i_data2 [9] $end
+$var wire 1 T- i_data2 [8] $end
+$var wire 1 U- i_data2 [7] $end
+$var wire 1 V- i_data2 [6] $end
+$var wire 1 W- i_data2 [5] $end
+$var wire 1 X- i_data2 [4] $end
+$var wire 1 Y- i_data2 [3] $end
+$var wire 1 Z- i_data2 [2] $end
+$var wire 1 [- i_data2 [1] $end
+$var wire 1 \- i_data2 [0] $end
+$var wire 1 >. ALUop [4] $end
+$var wire 1 ?. ALUop [3] $end
+$var wire 1 @. ALUop [2] $end
+$var wire 1 A. ALUop [1] $end
+$var wire 1 B. ALUop [0] $end
+$var reg 32 u, o_hi [31:0] $end
+$var reg 32 v, o_lo [31:0] $end
+$upscope $end
+$scope module U6_DM $end
+$var wire 1 w, i_clk $end
+$var wire 1 2. MemWrite $end
+$var wire 1 5. DatWidth [1] $end
+$var wire 1 6. DatWidth [0] $end
+$var wire 1 {, i_addr [31] $end
+$var wire 1 |, i_addr [30] $end
+$var wire 1 }, i_addr [29] $end
+$var wire 1 ~, i_addr [28] $end
+$var wire 1 !- i_addr [27] $end
+$var wire 1 "- i_addr [26] $end
+$var wire 1 #- i_addr [25] $end
+$var wire 1 $- i_addr [24] $end
+$var wire 1 %- i_addr [23] $end
+$var wire 1 &- i_addr [22] $end
+$var wire 1 '- i_addr [21] $end
+$var wire 1 (- i_addr [20] $end
+$var wire 1 )- i_addr [19] $end
+$var wire 1 *- i_addr [18] $end
+$var wire 1 +- i_addr [17] $end
+$var wire 1 ,- i_addr [16] $end
+$var wire 1 -- i_addr [15] $end
+$var wire 1 .- i_addr [14] $end
+$var wire 1 /- i_addr [13] $end
+$var wire 1 0- i_addr [12] $end
+$var wire 1 1- i_addr [11] $end
+$var wire 1 2- i_addr [10] $end
+$var wire 1 3- i_addr [9] $end
+$var wire 1 4- i_addr [8] $end
+$var wire 1 5- i_addr [7] $end
+$var wire 1 6- i_addr [6] $end
+$var wire 1 7- i_addr [5] $end
+$var wire 1 8- i_addr [4] $end
+$var wire 1 9- i_addr [3] $end
+$var wire 1 :- i_addr [2] $end
+$var wire 1 ;- i_addr [1] $end
+$var wire 1 <- i_addr [0] $end
+$var wire 1 =- i_data [31] $end
+$var wire 1 >- i_data [30] $end
+$var wire 1 ?- i_data [29] $end
+$var wire 1 @- i_data [28] $end
+$var wire 1 A- i_data [27] $end
+$var wire 1 B- i_data [26] $end
+$var wire 1 C- i_data [25] $end
+$var wire 1 D- i_data [24] $end
+$var wire 1 E- i_data [23] $end
+$var wire 1 F- i_data [22] $end
+$var wire 1 G- i_data [21] $end
+$var wire 1 H- i_data [20] $end
+$var wire 1 I- i_data [19] $end
+$var wire 1 J- i_data [18] $end
+$var wire 1 K- i_data [17] $end
+$var wire 1 L- i_data [16] $end
+$var wire 1 M- i_data [15] $end
+$var wire 1 N- i_data [14] $end
+$var wire 1 O- i_data [13] $end
+$var wire 1 P- i_data [12] $end
+$var wire 1 Q- i_data [11] $end
+$var wire 1 R- i_data [10] $end
+$var wire 1 S- i_data [9] $end
+$var wire 1 T- i_data [8] $end
+$var wire 1 U- i_data [7] $end
+$var wire 1 V- i_data [6] $end
+$var wire 1 W- i_data [5] $end
+$var wire 1 X- i_data [4] $end
+$var wire 1 Y- i_data [3] $end
+$var wire 1 Z- i_data [2] $end
+$var wire 1 [- i_data [1] $end
+$var wire 1 \- i_data [0] $end
+$var wire 1 ]- w_addr [31] $end
+$var wire 1 ^- w_addr [30] $end
+$var wire 1 _- w_addr [29] $end
+$var wire 1 `- w_addr [28] $end
+$var wire 1 a- w_addr [27] $end
+$var wire 1 b- w_addr [26] $end
+$var wire 1 c- w_addr [25] $end
+$var wire 1 d- w_addr [24] $end
+$var wire 1 e- w_addr [23] $end
+$var wire 1 f- w_addr [22] $end
+$var wire 1 g- w_addr [21] $end
+$var wire 1 h- w_addr [20] $end
+$var wire 1 i- w_addr [19] $end
+$var wire 1 j- w_addr [18] $end
+$var wire 1 k- w_addr [17] $end
+$var wire 1 l- w_addr [16] $end
+$var wire 1 m- w_addr [15] $end
+$var wire 1 n- w_addr [14] $end
+$var wire 1 o- w_addr [13] $end
+$var wire 1 p- w_addr [12] $end
+$var wire 1 q- w_addr [11] $end
+$var wire 1 r- w_addr [10] $end
+$var wire 1 s- w_addr [9] $end
+$var wire 1 t- w_addr [8] $end
+$var wire 1 u- w_addr [7] $end
+$var wire 1 v- w_addr [6] $end
+$var wire 1 w- w_addr [5] $end
+$var wire 1 x- w_addr [4] $end
+$var wire 1 y- w_addr [3] $end
+$var wire 1 z- w_addr [2] $end
+$var wire 1 {- w_addr [1] $end
+$var wire 1 |- w_addr [0] $end
+$var reg 32 }- o_data [31:0] $end
+$var reg 8192 ~- mem [7:0] $end
+$upscope $end
+$scope module U7_CTRL $end
+$var wire 1 9/ op [5] $end
+$var wire 1 :/ op [4] $end
+$var wire 1 ;/ op [3] $end
+$var wire 1 </ op [2] $end
+$var wire 1 =/ op [1] $end
+$var wire 1 >/ op [0] $end
+$var wire 1 ?/ func [5] $end
+$var wire 1 @/ func [4] $end
+$var wire 1 A/ func [3] $end
+$var wire 1 B/ func [2] $end
+$var wire 1 C/ func [1] $end
+$var wire 1 D/ func [0] $end
+$var wire 1 -. RegDst [1] $end
+$var wire 1 .. RegDst [0] $end
+$var wire 1 /. RegDatSel [1] $end
+$var wire 1 0. RegDatSel [0] $end
+$var wire 1 1. MemtoReg $end
+$var wire 1 2. MemWrite $end
+$var wire 1 3. RegWrite $end
+$var wire 1 4. ExtMode $end
+$var wire 1 5. DatWidth [1] $end
+$var wire 1 6. DatWidth [0] $end
+$var wire 1 7. ALUsrc [1] $end
+$var wire 1 8. ALUsrc [0] $end
+$var wire 1 9. Jump [1] $end
+$var wire 1 :. Jump [0] $end
+$var wire 1 ;. Branch [2] $end
+$var wire 1 <. Branch [1] $end
+$var wire 1 =. Branch [0] $end
+$var wire 1 >. ALUop [4] $end
+$var wire 1 ?. ALUop [3] $end
+$var wire 1 @. ALUop [2] $end
+$var wire 1 A. ALUop [1] $end
+$var wire 1 B. ALUop [0] $end
+$var wire 1 C. ALUctrl [3] $end
+$var wire 1 D. ALUctrl [2] $end
+$var wire 1 E. ALUctrl [1] $end
+$var wire 1 F. ALUctrl [0] $end
+$var wire 1 G. ConstLD $end
+$var wire 1 H. sel $end
+$var wire 1 I. RegDst_main [1] $end
+$var wire 1 J. RegDst_main [0] $end
+$var wire 1 K. RegDst_my [1] $end
+$var wire 1 L. RegDst_my [0] $end
+$var wire 1 M. RegDatSel_main [1] $end
+$var wire 1 N. RegDatSel_main [0] $end
+$var wire 1 O. RegDatSel_my [1] $end
+$var wire 1 P. RegDatSel_my [0] $end
+$var wire 1 Q. MemWrite_main $end
+$var wire 1 R. MemtoReg_main $end
+$var wire 1 S. RegWrite_main $end
+$var wire 1 T. ExtMode_main $end
+$var wire 1 U. MemWrite_my $end
+$var wire 1 V. MemtoReg_my $end
+$var wire 1 W. RegWrite_my $end
+$var wire 1 X. ExtMode_my $end
+$var wire 1 Y. DatWidth_main [1] $end
+$var wire 1 Z. DatWidth_main [0] $end
+$var wire 1 [. ALUsrc_main [1] $end
+$var wire 1 \. ALUsrc_main [0] $end
+$var wire 1 ]. DatWidth_my [1] $end
+$var wire 1 ^. DatWidth_my [0] $end
+$var wire 1 _. ALUsrc_my [1] $end
+$var wire 1 `. ALUsrc_my [0] $end
+$var wire 1 a. Jump_main [1] $end
+$var wire 1 b. Jump_main [0] $end
+$var wire 1 c. Jump_my [1] $end
+$var wire 1 d. Jump_my [0] $end
+$var wire 1 e. Branch_main [2] $end
+$var wire 1 f. Branch_main [1] $end
+$var wire 1 g. Branch_main [0] $end
+$var wire 1 h. Branch_my [2] $end
+$var wire 1 i. Branch_my [1] $end
+$var wire 1 j. Branch_my [0] $end
+$var wire 1 k. ALUop_main [4] $end
+$var wire 1 l. ALUop_main [3] $end
+$var wire 1 m. ALUop_main [2] $end
+$var wire 1 n. ALUop_main [1] $end
+$var wire 1 o. ALUop_main [0] $end
+$var wire 1 p. ALUop_my [4] $end
+$var wire 1 q. ALUop_my [3] $end
+$var wire 1 r. ALUop_my [2] $end
+$var wire 1 s. ALUop_my [1] $end
+$var wire 1 t. ALUop_my [0] $end
+$var wire 1 u. ALUctrl_main [3] $end
+$var wire 1 v. ALUctrl_main [2] $end
+$var wire 1 w. ALUctrl_main [1] $end
+$var wire 1 x. ALUctrl_main [0] $end
+$var wire 1 y. ALUctrl_my [3] $end
+$var wire 1 z. ALUctrl_my [2] $end
+$var wire 1 {. ALUctrl_my [1] $end
+$var wire 1 |. ALUctrl_my [0] $end
+$scope module U0_MainControl $end
+$var wire 1 9/ op [5] $end
+$var wire 1 :/ op [4] $end
+$var wire 1 ;/ op [3] $end
+$var wire 1 </ op [2] $end
+$var wire 1 =/ op [1] $end
+$var wire 1 >/ op [0] $end
+$var wire 1 ?/ func [5] $end
+$var wire 1 @/ func [4] $end
+$var wire 1 A/ func [3] $end
+$var wire 1 B/ func [2] $end
+$var wire 1 C/ func [1] $end
+$var wire 1 D/ func [0] $end
+$var reg 2 +/ RegDst [1:0] $end
+$var reg 2 ,/ RegDatSel [1:0] $end
+$var reg 1 -/ MemtoReg $end
+$var reg 1 ./ MemWrite $end
+$var reg 1 // RegWrite $end
+$var reg 1 0/ ExtMode $end
+$var reg 2 1/ DatWidth [1:0] $end
+$var reg 2 2/ ALUsrc [1:0] $end
+$var reg 2 3/ Jump [1:0] $end
+$var reg 3 4/ Branch [2:0] $end
+$var reg 5 5/ ALUOp [4:0] $end
+$var reg 4 6/ ALUctrl [3:0] $end
+$var reg 1 7/ ConstLD $end
+$var reg 1 8/ sel $end
+$upscope $end
+$scope module U1_MyControl $end
+$var wire 1 9/ op [5] $end
+$var wire 1 :/ op [4] $end
+$var wire 1 ;/ op [3] $end
+$var wire 1 </ op [2] $end
+$var wire 1 =/ op [1] $end
+$var wire 1 >/ op [0] $end
+$var wire 1 ?/ func [5] $end
+$var wire 1 @/ func [4] $end
+$var wire 1 A/ func [3] $end
+$var wire 1 B/ func [2] $end
+$var wire 1 C/ func [1] $end
+$var wire 1 D/ func [0] $end
+$var reg 1 E/ MemtoReg $end
+$var reg 1 F/ ExtMode $end
+$var reg 1 G/ MemWrite $end
+$var reg 1 H/ RegWrite $end
+$var reg 2 I/ RegDst [1:0] $end
+$var reg 2 J/ RegDatSel [1:0] $end
+$var reg 2 K/ Jump [1:0] $end
+$var reg 2 L/ DatWidth [1:0] $end
+$var reg 2 M/ ALUsrc [1:0] $end
+$var reg 3 N/ Branch [2:0] $end
+$var reg 5 O/ ALUop [4:0] $end
+$var reg 4 P/ ALUctrl [3:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0B
+0A
+0@
+0?
+0>
+0=
+0<
+0;
+0:
+09
+08
+07
+06
+05
+04
+03
+02
+0&
+0*
+0%
+0.
+0)
+0+
+01
+0#
+0-
+0$
+0/
+0<-
+0'
+0;-
+0(
+0,
+00
+05-
+0k*
+06-
+0--
+18-
+00-
+0,-
+0'-
+0%-
+14-
+02-
+01-
+0&-
+0#-
+0!-
+0~,
+0o*
+03-
+0|,
+0{,
+0:-
+0$-
+0n*
+0"-
+0},
+0l*
+0p*
+0/-
+0*-
+0.-
+07-
+0)-
+0(-
+0+-
+0m*
+09-
+0_*
+0d*
+0^*
+0Z*
+0f*
+0[*
+0W*
+0U*
+00+
+0`*
+0]*
+0X*
+0V*
+01+
+1.+
+0-+
+0j*
+0T*
+0R*
+0Q*
+0/+
+0e*
+0c*
+0\*
+0b*
+0S*
+0,+
+0i*
+0g*
+0++
+1*+
+02+
+0)+
+0a*
+0Y*
+0h*
+0v*
+0r*
+0!+
+0t*
+0T)
+1S)
+0R)
+0Q)
+0P)
+0q*
+0O)
+0z*
+0|*
+0(+
+0w*
+0Y)
+0N)
+0#+
+0~*
+0'+
+0}*
+0x*
+0u*
+0"+
+0&+
+0[)
+0s*
+0Z)
+0$+
+0y*
+0V)
+0{*
+0X)
+1W)
+0U)
+0%+
+0I)
+0""
+0#"
+0}!
+0x!
+0v!
+0&"
+0|!
+0?)
+0F)
+0~!
+0!"
+0z!
+0y!
+0u!
+0t!
+0s!
+0L)
+0<)
+0%"
+0A)
+0G)
+0D)
+0J)
+0C)
+0K)
+0>)
+0=)
+0$"
+0{!
+0H)
+0B)
+0@)
+0w!
+0M)
+0E)
+0A+
+0o!
+z0"
+0..
+0q!
+0j!
+z4"
+1B.
+z3"
+0l!
+0A.
+z2"
+0-.
+0@.
+0f!
+0E.
+0h!
+00.
+0/.
+0k!
+0g!
+0p!
+0n!
+0i!
+0m!
+0e!
+z1"
+0C.
+0F.
+0?.
+0=.
+0<.
+0r!
+0D.
+0;.
+0>.
+0q(
+06.
+0w(
+0:.
+0="
+02.
+0o(
+05.
+04.
+0$)
+0")
+0~(
+0y(
+0x(
+0u(
+0z(
+07.
+0#)
+0t(
+0s(
+0p(
+0n(
+0|(
+0v(
+0l(
+01.
+0m(
+0}(
+0{(
+09.
+0>"
+13.
+0r(
+1B+
+18.
+0!)
+zv"
+zs"
+zu"
+zz"
+z+#
+zr"
+zq"
+0h(
+0g(
+0c(
+0d(
+zp"
+z{"
+zx"
+z'#
+zo"
+0j(
+z*#
+z)#
+0i(
+z$#
+z}"
+z"#
+zw"
+z!#
+0k(
+0f(
+z%#
+z##
+z|"
+zy"
+zt"
+z&#
+0e(
+z(#
+z~"
+0C#
+0<#
+0:#
+18#
+02#
+0J#
+0G#
+0/#
+0F#
+zj"
+zn"
+0D#
+0B#
+09#
+07#
+0.#
+1E#
+0>#
+0;#
+zl"
+04#
+03#
+00#
+0@#
+16#
+05#
+0-#
+01#
+zk"
+0K#
+1A#
+0?#
+zm"
+0=#
+0I#
+0H#
+0M#
+0$$
+0,#
+0h#
+0_#
+1#$
+0!$
+0k#
+0%$
+1}#
+0s#
+1r#
+0N#
+0~#
+0U#
+0y#
+0]#
+0q#
+0n#
+0L#
+0j#
+0|#
+0w#
+0m#
+0l#
+0F$
+1E$
+0G$
+0&$
+0[#
+0i#
+0W#
+0{#
+0P#
+1t#
+0V#
+1e#
+0S#
+0R#
+0o#
+0Y#
+0"$
+0b#
+0x#
+0Z#
+0g#
+0'$
+0z#
+0v#
+0u#
+0p#
+0d#
+0c#
+0`#
+0^#
+1a#
+0Q#
+0X#
+0T#
+0f#
+0\#
+0O#
+0?$
+0>$
+0=$
+0D$
+0A$
+0B$
+0@$
+0C$
+0/$
+0*$
+0[(
+0U(
+07$
+0W(
+0N(
+0)%
+0!%
+04$
+0T(
+01$
+0.$
+0Z(
+09$
+0-$
+0+$
+08$
+0)$
+0](
+0Q(
+0M(
+0I(
+0G(
+0C(
+0;$
+0L(
+0(%
+0P(
+0,$
+0X(
+0a(
+0$%
+0"%
+0~$
+0\(
+0^(
+0Y(
+1'%
+0%%
+1#%
+1}$
+0`(
+0R(
+0O(
+0K(
+0V(
+0J(
+0($
+0H(
+05$
+0E(
+0D(
+1_(
+0S(
+0B(
+0F(
+06$
+0&%
+0:$
+03$
+0<$
+02$
+00$
+0w$
+0v$
+0|$
+0x$
+0z$
+0u$
+0y$
+0{$
+0k$
+z?%
+z9%
+z,%
+0i%
+0f%
+0d%
+0c%
+0o$
+0l$
+0b%
+0`%
+z*%
+zE%
+0a%
+0^%
+zG%
+0h$
+0s$
+z3%
+z=%
+z2%
+z;%
+z:%
+0r$
+zA%
+zI%
+0j$
+0\%
+0Z%
+0Y%
+z1%
+z<%
+z-%
+zD%
+0_%
+0q$
+0t$
+zC%
+z>%
+z6%
+z5%
+z0%
+0h%
+0e%
+0[%
+z+%
+0X%
+0i$
+zH%
+0]%
+0W%
+z7%
+z8%
+z/%
+0n$
+z@%
+z4%
+z.%
+0m$
+0g%
+zF%
+zB%
+0p$
+0T%
+0R%
+0V%
+0U%
+0Q%
+0P%
+0O%
+0S%
+01)
+09/
+0B*
+0A/
+0M%
+06)
+0@*
+0D/
+1>/
+04)
+1I&
+0H&
+1</
+0K%
+0A*
+0-)
+0@&
+0E&
+1;/
+0?&
+0.)
+0C/
+0>&
+0:/
+0=&
+0;&
+0B&
+0G&
+0:&
+09&
+06&
+0B/
+0?*
+13)
+00)
+0D&
+05&
+0H*
+07&
+03&
+0=/
+0A&
+08&
+0E*
+02&
+0C&
+1@/
+01&
+15)
+0N%
+0J%
+0/)
+0F&
+0G*
+1F*
+0C*
+0K&
+0D*
+0<&
+0J&
+04&
+0L%
+0?/
+02)
+0-&
+0O&
+0N&
+0M&
+00&
+0.&
+0,&
+0/&
+x>-
+0n'
+xP-
+0x'
+1t'
+0i'
+0g'
+0`'
+0]'
+0f'
+0\'
+0['
+0l'
+xI-
+xB-
+0r'
+0Z'
+xK-
+0c'
+0Y'
+x:(
+x9(
+xR-
+xE-
+xO-
+x@-
+x6(
+x5(
+0b'
+x4(
+x3(
+0a'
+x8(
+0v'
+0o'
+x2(
+x7(
+0u'
+x=-
+xM-
+0k'
+0j'
+0d'
+xS-
+xQ-
+xN-
+xL-
+xJ-
+0m'
+xF-
+0w'
+xD-
+0q'
+0h'
+xC-
+x?-
+xH-
+xG-
+1p'
+0e'
+0_'
+xA-
+0s'
+0^'
+0e&
+0Z&
+0L,
+0I,
+0o&
+0v&
+0G,
+0M,
+0H,
+0l&
+0F,
+0i&
+0B,
+0Y&
+0h&
+0f&
+0[&
+0G.
+0p&
+0d&
+0J,
+18)
+0A,
+0?,
+0>,
+0s&
+0E,
+0`&
+0=,
+0g&
+0<,
+0@,
+0;,
+0:,
+0P&
+09,
+08,
+0;)
+07)
+0L&
+09)
+0b&
+0X&
+0]&
+0W&
+1:)
+0D,
+0C,
+0c&
+0^&
+0m&
+0a&
+0\&
+0N,
+0O,
+0K,
+1r&
+1n&
+0_&
+0u&
+0k&
+0t&
+0q&
+0j&
+02,
+04,
+x\-
+05,
+00,
+x[-
+xZ-
+xX-
+03,
+xW-
+xY-
+xV-
+xU-
+xT-
+07,
+01,
+06,
+0l-
+0q-
+0g-
+0e-
+0_-
+0^-
+0f-
+0v-
+1t-
+0n+
+0n-
+0s-
+0j-
+0I.
+0J.
+0|-
+0{-
+0r+
+0d-
+0a-
+0`-
+xK.
+0M.
+0]-
+0h-
+0u+
+0H.
+0c-
+0i+
+0Q.
+0R.
+0x+
+0h+
+1S.
+0T.
+xU.
+0y-
+xV.
+0w-
+xL.
+0r-
+0l+
+0p-
+0i-
+0N.
+xO.
+0p+
+0b-
+xP.
+0q+
+0o+
+0j+
+0o-
+0m-
+0k+
+0k-
+0t+
+0u-
+1x-
+0w+
+0m+
+0v+
+0s+
+0z-
+0]+
+03+
+xy'
+0\+
+06+
+15+
+0e+
+0Y+
+0P+
+x1(
+0Z+
+0R+
+0J+
+x"(
+0F+
+0g+
+x$(
+x-(
+x|'
+0f+
+0G+
+0b+
+0a+
+0[+
+0X+
+0T+
+0_+
+x0(
+x)(
+x}'
+0O+
+x/(
+0V+
+0N+
+0M+
+0c+
+xz'
+x~'
+0C+
+0U+
+x+(
+x!(
+04+
+x&(
+0d+
+0Q+
+0L+
+0K+
+x,(
+x'(
+x%(
+x*(
+0D+
+0`+
+1E+
+x{'
+0^+
+x((
+0W+
+07+
+x.(
+x#(
+0S+
+0H+
+0',
+1%,
+0(,
+0#,
+0$,
+0&,
+0",
+0~+
+0{+
+0z+
+0),
+0y+
+0}+
+0|+
+1!,
+0I+
+b0 b(
+b110100000010100000000100010000 %)
+b110100000010100000000100010000000000010100101001001000001000000000000100101010010000000010001010001101000000011111111100000000101011000000000100000000000001001000110000000010000000000000010000001000000000000000000000001000xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0110010000000011100001110110010101100000000000110100001100100001000000010100001100100000000001110000000010000000001010000010011100010000001000100000000000000001xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0010000100100110000000000000000100001100000000000000000000000001000010000000000000000000000000000000000100100110001110000010101000011100111000000000000000000001xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx00111100000000100111100011111111001110000100001001000011001000010000000001001000000000000001100000000000000000000011100000010010001010001110101000000000000000010001000000100010000000000000000100000011111000000000000000001000xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx &)
+0')
+bx ()
+bx ))
+b0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx >*
+b100010000 P*
+b100010000 *,
+0+,
+0,,
+bx -,
+b0 u,
+b0 v,
+bx }-
+bx00010010001101000101011001111000xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx00000001xxxxxxxxxxxxxxxxxxxxxxxx00000010xxxxxxxxxxxxxxxxxxxxxxxx00000100xxxxxxxxxxxxxxxxxxxxxxxx00001000xxxxxxxxxxxxxxxxxxxxxxxx00010000xxxxxxxxxxxxxxxxxxxxxxxx00100000xxxxxxxxxxxxxxxxxxxxxxxx01000000xxxxxxxxxxxxxxxxxxxxxxxx10000000xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx ~-
+xq.
+0b.
+xj.
+0/,
+0w.
+x|.
+0l.
+xd.
+0w,
+0m.
+x`.
+x].
+0[.
+0n.
+0g.
+xW.
+xi.
+0x.
+0k.
+0u.
+x{.
+x^.
+xX.
+0Z.
+xs.
+0v.
+xy.
+x_.
+1\.
+xh.
+xt.
+0Y.
+xr.
+xp.
+xz.
+0f.
+xc.
+1o.
+0a.
+0e.
+b0 +/
+b0 ,/
+0-/
+0./
+1//
+00/
+b0 1/
+b1 2/
+b0 3/
+b0 4/
+b1 5/
+b0 6/
+07/
+08/
+xE/
+xF/
+xG/
+xH/
+bx I/
+bx J/
+bx K/
+bx L/
+bx M/
+bx N/
+bx O/
+bx P/
+$end
+#5000
+1w,
+#7000
+1/,
+#10000
+0w,
+#15000
+1@
+08-
+04-
+01-
+13-
+1l*
+0.-
+17-
+1.+
+0-+
+1*+
+1h*
+0S)
+1R)
+0P)
+0'+
+0$+
+1V)
+0W)
+0M)
+1..
+0B.
+1@.
+x4.
+1")
+08.
+1D#
+0E#
+1>#
+1;#
+13#
+11#
+0A#
+0#$
+0}#
+1w#
+1m#
+0E$
+1[#
+0e#
+1o#
+1"$
+1z#
+1d#
+1^#
+0a#
+1D$
+1"%
+1^(
+0'%
+0#%
+0}$
+0_(
+1&%
+1w$
+1z$
+1@*
+0>/
+0I&
+1H&
+0</
+0;/
+1.)
+10)
+0@/
+0F*
+1C*
+1?/
+0>-
+0P-
+0t'
+0I-
+0B-
+0K-
+0R-
+0E-
+0O-
+0@-
+0=-
+0M-
+1j'
+0S-
+0Q-
+0N-
+0L-
+0J-
+1m'
+0F-
+0D-
+0C-
+0?-
+0H-
+0G-
+0p'
+0A-
+1s'
+1G,
+0h&
+1;)
+0:)
+1m&
+1K,
+0r&
+0n&
+0k&
+1q&
+0\-
+0[-
+0Z-
+1X-
+0W-
+0Y-
+0V-
+0U-
+1T-
+0q-
+0t-
+0n-
+1s-
+1J.
+xT.
+1w-
+0x-
+05+
+1_+
+1c+
+0E+
+1%,
+0$,
+0y+
+0|+
+1!,
+b100 b(
+b1010010100100100000100000 %)
+b0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx00000000000000000000000100010000xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx >*
+b100100000100000 P*
+b1000100000 *,
+1w,
+1m.
+0\.
+0o.
+b1 +/
+x0/
+b0 2/
+b100 5/
+#20000
+0w,
+#25000
+0@
+1?
+1k*
+18-
+14-
+03-
+0l*
+07-
+1g*
+0h*
+1S)
+0R)
+0V)
+1W)
+1A.
+0")
+1!)
+0>#
+14#
+03#
+1H#
+1h#
+1E$
+1&$
+0o#
+0z#
+1p#
+0^#
+1'%
+1%%
+1_(
+0&%
+0z$
+11)
+1I&
+1C/
+00)
+0C*
+0m'
+1w'
+0G,
+1F,
+1J,
+0;)
+0m&
+0K,
+1r&
+1n&
+0q&
+1t-
+0s-
+0w-
+1x-
+1b+
+0_+
+0c+
+1^+
+b1000 b(
+b1001010100100000000100010 %)
+b0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0000000000000000000000100010000000000000000000000000000100010000xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx >*
+b100000000100010 P*
+b100010000 *,
+b11111111111111111111111011101111 -,
+1w,
+1n.
+b110 5/
+#30000
+0w,
+#35000
+1@
+0<-
+0;-
+05-
+0k*
+06-
+0--
+18-
+00-
+0,-
+0'-
+0%-
+04-
+02-
+01-
+0&-
+0#-
+0!-
+0~,
+03-
+0|,
+0{,
+0:-
+0$-
+0"-
+0},
+1l*
+0/-
+0*-
+0.-
+07-
+0)-
+0(-
+0+-
+09-
+00+
+01+
+0.+
+0-+
+0/+
+0,+
+0g*
+0++
+1*+
+02+
+1)+
+1h*
+1v*
+1r*
+1!+
+1t*
+0T)
+0S)
+1R)
+1Q)
+0P)
+1q*
+1O)
+1z*
+1|*
+1(+
+1w*
+0Y)
+0N)
+1#+
+1~*
+1'+
+1}*
+1x*
+1u*
+1"+
+1&+
+0[)
+1s*
+0Z)
+1$+
+1y*
+1V)
+1{*
+1X)
+1W)
+1U)
+1%+
+1I)
+1?)
+1F)
+0L)
+0<)
+0A)
+1G)
+0D)
+0J)
+0C)
+0K)
+0>)
+0=)
+0H)
+1B)
+0@)
+1M)
+0E)
+0A+
+0..
+0A.
+0="
+14.
+1")
+11.
+0>"
+1B+
+18.
+1<#
+1:#
+08#
+0D#
+19#
+1>#
+04#
+1@#
+06#
+1A#
+1?#
+1=#
+0H#
+1M#
+0h#
+1_#
+1}#
+0r#
+1N#
+1U#
+1y#
+1]#
+1L#
+1|#
+0E$
+0&$
+1W#
+1{#
+1P#
+0t#
+1V#
+1S#
+1R#
+1Y#
+0"$
+1x#
+1Z#
+1z#
+1v#
+1u#
+0p#
+0d#
+1`#
+1^#
+1a#
+1Q#
+1X#
+1T#
+1\#
+1O#
+0D$
+1C$
+1](
+0"%
+0^(
+0'%
+1}$
+0_(
+0&%
+1v$
+1|$
+1x$
+1z$
+1u$
+1y$
+1{$
+1k$
+1o$
+1l$
+1h$
+1s$
+1r$
+1j$
+1q$
+1t$
+1i$
+1n$
+1m$
+1p$
+01)
+19/
+1B*
+16)
+1>/
+0I&
+0H&
+1A*
+0C/
+1G&
+1?*
+03)
+1=/
+1E*
+05)
+1F*
+1C*
+1D*
+0?/
+x>-
+1n'
+xP-
+1i'
+1g'
+1`'
+1]'
+1f'
+1\'
+1['
+1l'
+xI-
+xB-
+1Z'
+xK-
+1c'
+1Y'
+0:(
+09(
+xR-
+xE-
+xO-
+x@-
+16(
+15(
+1b'
+14(
+03(
+1a'
+08(
+1o'
+02(
+17(
+x=-
+xM-
+1k'
+1d'
+xS-
+xQ-
+xN-
+xL-
+xJ-
+1m'
+xF-
+0w'
+xD-
+1h'
+xC-
+x?-
+xH-
+xG-
+1p'
+1e'
+1_'
+xA-
+0s'
+1^'
+0e&
+1Z&
+0o&
+0v&
+1G,
+1l&
+0F,
+0i&
+0Y&
+1h&
+0f&
+0[&
+1p&
+1d&
+0J,
+08)
+1s&
+0`&
+0g&
+1;)
+07)
+09)
+1b&
+0X&
+1]&
+0W&
+0:)
+0c&
+0^&
+1m&
+1a&
+0\&
+1K,
+1r&
+0n&
+0_&
+0u&
+0k&
+0t&
+1q&
+1j&
+x\-
+x[-
+xZ-
+xX-
+xW-
+xY-
+xV-
+xU-
+xT-
+0l-
+0q-
+0g-
+0e-
+0_-
+0^-
+0f-
+0v-
+0t-
+1n+
+0n-
+0s-
+0j-
+0J.
+1r+
+0d-
+0a-
+0`-
+0]-
+0h-
+1u+
+0c-
+1i+
+1R.
+1x+
+1h+
+1T.
+0y-
+0w-
+0r-
+1l+
+0p-
+0i-
+1p+
+0b-
+1q+
+1o+
+1j+
+0o-
+0m-
+1k+
+0k-
+1t+
+0u-
+1x-
+1w+
+1m+
+1v+
+1s+
+0z-
+13+
+0y'
+15+
+11(
+0"(
+0$(
+0-(
+1|'
+0b+
+1_+
+10(
+0)(
+0}'
+0/(
+1c+
+0z'
+0~'
+1C+
+0+(
+1!(
+14+
+1&(
+1,(
+0'(
+1%(
+0*(
+1D+
+1E+
+0{'
+0^+
+1((
+1.(
+0#(
+0',
+0%,
+0(,
+0#,
+0$,
+0&,
+0",
+1~+
+1{+
+1z+
+0),
+1y+
+1}+
+1|+
+1!,
+b1100 b(
+b10001101000000011111111100000000 %)
+b0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx000000000000000000000001000100000000000000000000000000100010000000000000000000000000000100010000xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx >*
+b11111111111111111111111100000000 P*
+b10000 *,
+0+,
+0,,
+b10010001101000101011001111000 }-
+1w,
+0n.
+1\.
+b0 +/
+1-/
+10/
+b1 2/
+b100 5/
+#40000
+0w,
+#45000
+0@
+0?
+1>
+08-
+1:-
+0l*
+10+
+0*+
+0)+
+0h*
+0v*
+0r*
+0!+
+0t*
+xT)
+xS)
+xR)
+xQ)
+xP)
+0q*
+xO)
+0z*
+0|*
+0(+
+0w*
+xY)
+xN)
+0#+
+0~*
+0'+
+0}*
+0x*
+0u*
+0"+
+0&+
+x[)
+0s*
+xZ)
+0$+
+0y*
+xV)
+0{*
+xX)
+xW)
+xU)
+0%+
+xI)
+x?)
+xF)
+xL)
+x<)
+xA)
+xG)
+xD)
+xJ)
+xC)
+xK)
+x>)
+x=)
+xH)
+xB)
+x@)
+xM)
+xE)
+x..
+x-.
+12.
+0")
+1~(
+x1.
+03.
+0!)
+0<#
+0:#
+1G#
+0>#
+0;#
+0@#
+01#
+0A#
+0?#
+0=#
+0M#
+0_#
+1%$
+0}#
+0N#
+0U#
+0y#
+0]#
+0L#
+0|#
+0w#
+0m#
+1E$
+0[#
+0W#
+0{#
+0P#
+0V#
+0S#
+0R#
+0Y#
+0x#
+0Z#
+1g#
+0z#
+0v#
+0`#
+0^#
+0a#
+0Q#
+0X#
+0T#
+0\#
+0O#
+1$%
+1'%
+0%%
+0}$
+1_(
+0w$
+0v$
+0|$
+0x$
+0z$
+0u$
+0y$
+0{$
+0k$
+0o$
+0l$
+0h$
+0s$
+0r$
+0j$
+0q$
+0t$
+0i$
+0n$
+0m$
+0p$
+0B*
+0@*
+1I&
+0A*
+1;/
+0.)
+1B/
+0?*
+0E*
+0F*
+0C*
+0D*
+0>-
+0n'
+1P-
+0i'
+0g'
+0`'
+0]'
+0f'
+0\'
+0['
+0l'
+0I-
+0B-
+0Z'
+0K-
+0c'
+0Y'
+x:(
+x9(
+1R-
+0E-
+0O-
+1@-
+x6(
+x5(
+0b'
+x4(
+x3(
+0a'
+x8(
+1v'
+0o'
+x2(
+x7(
+0=-
+0M-
+0k'
+0j'
+0d'
+1S-
+0Q-
+1N-
+0L-
+1J-
+0m'
+0F-
+0D-
+0h'
+1C-
+0?-
+1H-
+1G-
+0p'
+0e'
+0_'
+0A-
+0^'
+xe&
+xZ&
+xo&
+xv&
+0G,
+xl&
+xi&
+xY&
+xh&
+xf&
+x[&
+xp&
+xd&
+x8)
+xs&
+x`&
+xg&
+x;)
+x7)
+x9)
+xb&
+xX&
+x]&
+xW&
+x:)
+xc&
+x^&
+xm&
+xa&
+x\&
+0K,
+xr&
+xn&
+x_&
+xu&
+xk&
+xt&
+xq&
+xj&
+0\-
+0[-
+0Z-
+1X-
+1W-
+1Y-
+1V-
+0U-
+0T-
+0n+
+xI.
+xJ.
+0r+
+0u+
+0i+
+1Q.
+xR.
+0x+
+0h+
+0S.
+0l+
+0p+
+0q+
+0o+
+0j+
+0k+
+0t+
+0x-
+0w+
+0m+
+0v+
+0s+
+1z-
+03+
+xy'
+05+
+x1(
+x"(
+x$(
+x-(
+x|'
+0_+
+x0(
+x)(
+x}'
+x/(
+0c+
+xz'
+x~'
+0C+
+x+(
+x!(
+04+
+x&(
+x,(
+x'(
+x%(
+x*(
+0D+
+0E+
+x{'
+x((
+x.(
+x#(
+1',
+0~+
+0{+
+0z+
+0y+
+0}+
+0|+
+0!,
+b10000 b(
+b10101100000000010000000000000100 %)
+b10010001101000101011001111000xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx000000000000000000000001000100000000000000000000000000100010000000000000000000000000000100010000xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx >*
+b100 P*
+b100 *,
+bx }-
+1w,
+bx +/
+x-/
+1./
+0//
+#50000
+0w,
+#55000
+1@
+0T)
+0S)
+1R)
+1Q)
+0P)
+1O)
+0Y)
+0N)
+0[)
+0Z)
+1V)
+1X)
+1W)
+1U)
+1I)
+1?)
+1F)
+0L)
+0<)
+0A)
+1G)
+0D)
+0J)
+0C)
+0K)
+0>)
+0=)
+0H)
+1B)
+0@)
+1M)
+0E)
+0..
+0-.
+02.
+1")
+11.
+13.
+18#
+09#
+0E$
+1t#
+0u#
+1D$
+1^(
+0'%
+0_(
+1&%
+06)
+0I&
+1H&
+0;/
+15)
+x>-
+xP-
+xI-
+xB-
+xK-
+0:(
+09(
+xR-
+xE-
+xO-
+x@-
+16(
+15(
+14(
+03(
+08(
+02(
+17(
+x=-
+xM-
+xS-
+xQ-
+xN-
+xL-
+xJ-
+xF-
+xD-
+xC-
+x?-
+xH-
+xG-
+xA-
+0e&
+1Z&
+0o&
+0v&
+1l&
+0i&
+0Y&
+1h&
+0f&
+0[&
+1p&
+1d&
+08)
+1s&
+0`&
+0g&
+0;)
+07)
+09)
+1b&
+0X&
+1]&
+0W&
+1:)
+0c&
+0^&
+1m&
+1a&
+0\&
+1r&
+0n&
+0_&
+0u&
+0k&
+0t&
+1q&
+1j&
+x\-
+x[-
+xZ-
+xX-
+xW-
+xY-
+xV-
+xU-
+xT-
+0I.
+0J.
+0Q.
+1R.
+1S.
+0y'
+11(
+0"(
+0$(
+0-(
+1|'
+10(
+0)(
+0}'
+0/(
+0z'
+0~'
+0+(
+1!(
+1&(
+1,(
+0'(
+1%(
+0*(
+0{'
+1((
+1.(
+0#(
+b10100 b(
+b10001100000000100000000000000100 %)
+b10010001101000101011001111000 }-
+bx00010010001101000101011001111000xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx00010010001101000101011001111000xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx00000001xxxxxxxxxxxxxxxxxxxxxxxx00000010xxxxxxxxxxxxxxxxxxxxxxxx00000100xxxxxxxxxxxxxxxxxxxxxxxx00001000xxxxxxxxxxxxxxxxxxxxxxxx00010000xxxxxxxxxxxxxxxxxxxxxxxx00100000xxxxxxxxxxxxxxxxxxxxxxxx01000000xxxxxxxxxxxxxxxxxxxxxxxx10000000xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx ~-
+1w,
+b0 +/
+1-/
+0./
+1//
+#60000
+0w,
+#65000
+0@
+1?
+0:-
+x0+
+x1+
+x.+
+x-+
+x/+
+x,+
+x++
+x*+
+x2+
+x)+
+xv*
+xr*
+x!+
+xt*
+xT)
+xS)
+xR)
+xQ)
+xP)
+xq*
+xO)
+xz*
+x|*
+x(+
+xw*
+xY)
+xN)
+x#+
+x~*
+x'+
+x}*
+xx*
+xu*
+x"+
+x&+
+x[)
+xs*
+xZ)
+x$+
+xy*
+xV)
+x{*
+xX)
+xW)
+xU)
+x%+
+xI)
+x?)
+xF)
+xL)
+x<)
+xA)
+xG)
+xD)
+xJ)
+xC)
+xK)
+x>)
+x=)
+xH)
+xB)
+x@)
+xM)
+xE)
+1A+
+x..
+xB.
+xA.
+x-.
+x@.
+xE.
+x0.
+x/.
+xC.
+xF.
+x?.
+x=.
+x<.
+xD.
+x;.
+x>.
+x6.
+1:.
+x5.
+x4.
+0")
+x7.
+x1.
+03.
+0B+
+x8.
+1!)
+08#
+0G#
+1F#
+1$$
+0%$
+1E$
+0t#
+0g#
+1f#
+0](
+1\(
+0^(
+1'%
+1%%
+0_(
+09/
+1A/
+0>/
+1I&
+0B/
+05)
+xF&
+0>-
+0P-
+0I-
+0B-
+0K-
+x:(
+x9(
+0R-
+0E-
+0O-
+0@-
+x6(
+x5(
+x4(
+x3(
+x8(
+0v'
+x2(
+x7(
+1u'
+0=-
+0M-
+0S-
+0Q-
+0N-
+0L-
+0J-
+0F-
+0D-
+0C-
+0?-
+0H-
+0G-
+0A-
+0Z&
+xo&
+xv&
+xl&
+xi&
+xh&
+xG.
+xp&
+0d&
+x8)
+xs&
+xg&
+xP&
+x;)
+x7)
+x9)
+0b&
+0]&
+x:)
+xm&
+0a&
+xr&
+xn&
+xu&
+xk&
+xt&
+xq&
+xj&
+0\-
+0[-
+0Z-
+0X-
+0W-
+0Y-
+0V-
+0U-
+0T-
+xn+
+xI.
+xJ.
+xr+
+xM.
+xu+
+xi+
+xR.
+xx+
+xh+
+0S.
+xT.
+xl+
+xN.
+xp+
+xq+
+xo+
+xj+
+xk+
+xt+
+xw+
+xm+
+xv+
+xs+
+0z-
+x]+
+x\+
+xe+
+xY+
+xP+
+x1(
+xZ+
+xR+
+xJ+
+xg+
+x-(
+0|'
+xf+
+xb+
+xa+
+x[+
+xX+
+xT+
+x_+
+x0(
+xO+
+x/(
+xV+
+xN+
+xM+
+xc+
+xU+
+x+(
+0!(
+0&(
+xd+
+xQ+
+xL+
+xK+
+x,(
+0%(
+x`+
+x^+
+0((
+xW+
+x.(
+xS+
+xH+
+x',
+x%,
+x(,
+x#,
+x$,
+x&,
+x",
+x~+
+x{+
+xz+
+x),
+xy+
+x}+
+x|+
+x!,
+xI+
+b11000 b(
+b1000000000000000000000001000 %)
+b1001000110100010101100111100000010010001101000101011001111000xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx000000000000000000000001000100000000000000000000000000100010000000000000000000000000000100010000xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx >*
+b1000 P*
+b0 *,
+b0xxxxxxxxxxxxxxxx }-
+1b.
+xw.
+xl.
+1w,
+xm.
+x[.
+xn.
+xg.
+xx.
+xk.
+xu.
+xZ.
+xv.
+x\.
+xY.
+xf.
+xo.
+xe.
+bx +/
+bx ,/
+x-/
+0//
+x0/
+bx 1/
+bx 2/
+b1 3/
+bx 4/
+bx 5/
+bx 6/
+x7/
+#70000
+0w,
+#75000
+0?
+0>
+1=
+x<-
+x;-
+x5-
+xk*
+x6-
+x--
+x8-
+x0-
+1,-
+1'-
+0%-
+x4-
+x2-
+x1-
+1&-
+1#-
+0!-
+0~,
+xo*
+x3-
+0|,
+1{,
+x:-
+1$-
+xn*
+1"-
+0},
+xl*
+xp*
+x/-
+1*-
+x.-
+x7-
+0)-
+0(-
+0+-
+xm*
+x9-
+x_*
+xd*
+x^*
+xZ*
+xf*
+x[*
+xW*
+xU*
+10+
+x`*
+x]*
+xX*
+xV*
+01+
+0.+
+1-+
+xj*
+xT*
+xR*
+xQ*
+0/+
+xe*
+xc*
+x\*
+xb*
+xS*
+1,+
+xi*
+xg*
+0++
+1*+
+12+
+1)+
+xa*
+xY*
+xh*
+0v*
+0r*
+0!+
+0t*
+xT)
+xS)
+xR)
+xQ)
+xP)
+0q*
+xO)
+0z*
+0|*
+1(+
+0w*
+xY)
+xN)
+1#+
+0~*
+0'+
+0}*
+0x*
+0u*
+0"+
+0&+
+x[)
+0s*
+xZ)
+0$+
+0y*
+xV)
+0{*
+xX)
+xW)
+xU)
+0%+
+1I)
+0?)
+1F)
+xL)
+1<)
+1A)
+0G)
+0D)
+0J)
+1C)
+1K)
+0>)
+0=)
+0H)
+1B)
+0@)
+xM)
+1E)
+0A+
+0..
+1B.
+0A.
+0-.
+1@.
+0E.
+00.
+0/.
+0C.
+0F.
+1?.
+0=.
+0<.
+0D.
+0;.
+1>.
+06.
+0:.
+05.
+04.
+0~(
+07.
+01.
+1}(
+13.
+0B+
+18.
+0!)
+1C#
+1:#
+18#
+1G#
+0F#
+1D#
+19#
+1@#
+1A#
+1?#
+1I#
+0M#
+0$$
+1_#
+1!$
+1%$
+1}#
+0N#
+0U#
+0L#
+1|#
+1i#
+0W#
+1{#
+0P#
+1t#
+0V#
+0S#
+0R#
+0Y#
+1"$
+1Z#
+1g#
+1'$
+1v#
+1u#
+1d#
+1c#
+1`#
+1a#
+0Q#
+0X#
+0T#
+0f#
+0O#
+0D$
+1B$
+0C$
+0[(
+0U(
+0W(
+0N(
+1!%
+0Z(
+0](
+0P(
+1$%
+1"%
+1\(
+0Y(
+0'%
+1%%
+0#%
+1}$
+0O(
+0V(
+1_(
+1&%
+1v$
+1|$
+0u$
+1{$
+0k$
+0o$
+0l$
+0h$
+0s$
+0r$
+0j$
+0q$
+0t$
+0i$
+0n$
+0m$
+0p$
+0A/
+16)
+1D/
+1>/
+0H&
+0E&
+1;/
+1:/
+0G&
+1B/
+1?*
+1H*
+0=/
+1E*
+15)
+1F&
+1F*
+1D*
+1?/
+x>-
+1n'
+xP-
+1x'
+1i'
+0g'
+0`'
+0]'
+0f'
+0\'
+0['
+xI-
+xB-
+1r'
+0Z'
+xK-
+0c'
+0Y'
+xR-
+xE-
+xO-
+x@-
+0b'
+0a'
+1v'
+1o'
+0u'
+x=-
+xM-
+0d'
+xS-
+xQ-
+xN-
+xL-
+xJ-
+xF-
+xD-
+0h'
+xC-
+x?-
+xH-
+xG-
+1p'
+0e'
+0_'
+xA-
+1s'
+0^'
+0e&
+0Z&
+xo&
+xv&
+xl&
+xi&
+0Y&
+xh&
+1f&
+0[&
+1G.
+xp&
+1d&
+08)
+xs&
+1`&
+xg&
+0P&
+1;)
+07)
+09)
+0b&
+0X&
+1]&
+1W&
+1:)
+0c&
+1^&
+xm&
+1a&
+1\&
+xr&
+xn&
+0_&
+xu&
+xk&
+xt&
+xq&
+xj&
+x\-
+x[-
+xZ-
+xX-
+xW-
+xY-
+xV-
+xU-
+xT-
+1l-
+xq-
+1g-
+0e-
+0_-
+0^-
+1f-
+xv-
+xt-
+0n+
+xn-
+xs-
+1j-
+0I.
+0J.
+0r+
+1d-
+0a-
+0`-
+0M.
+1]-
+0h-
+0u+
+1c-
+0i+
+0R.
+1x+
+0h+
+1S.
+0T.
+xy-
+xw-
+xr-
+0l+
+xp-
+0i-
+0N.
+0p+
+1b-
+0q+
+0o+
+0j+
+xo-
+xm-
+0k+
+0k-
+0t+
+xu-
+xx-
+0w+
+0m+
+0v+
+0s+
+xz-
+13+
+xy'
+15+
+x"(
+x$(
+x|'
+1G+
+x)(
+x}'
+xz'
+x~'
+1C+
+x!(
+14+
+x&(
+x'(
+x%(
+x*(
+1D+
+1E+
+x{'
+x((
+17+
+x#(
+1',
+0%,
+0(,
+1#,
+1$,
+0&,
+0",
+1~+
+0{+
+0z+
+1),
+0y+
+1}+
+0|+
+1!,
+b100000 b(
+b1100100000000111000011101100101 %)
+b1000011101100101 P*
+b1000011101100101xxxxxxxxxxxxxxxx *,
+bx }-
+0b.
+0w.
+1l.
+1w,
+1m.
+0[.
+0n.
+0g.
+0x.
+1k.
+0u.
+0Z.
+0v.
+1\.
+0Y.
+0f.
+1o.
+0e.
+b0 +/
+b0 ,/
+0-/
+1//
+00/
+b0 1/
+b1 2/
+b0 3/
+b0 4/
+b11101 5/
+b0 6/
+17/
+#80000
+0w,
+#85000
+1@
+1<-
+0;-
+05-
+06-
+0--
+08-
+00-
+14-
+02-
+01-
+13-
+0:-
+0/-
+1.-
+17-
+09-
+0_*
+1^*
+1Z*
+1[*
+1W*
+0U*
+00+
+1`*
+0]*
+1X*
+1V*
+0T*
+0R*
+1Q*
+0\*
+0S*
+0,+
+0Y*
+0T)
+1S)
+1R)
+0Q)
+0P)
+0O)
+0(+
+0Y)
+0N)
+0#+
+1[)
+0Z)
+1$+
+1V)
+0X)
+0W)
+0U)
+0L)
+1M)
+0B.
+1A.
+1")
+0C#
+0:#
+0G#
+1;#
+0?#
+0_#
+0!$
+0%$
+1w#
+0E$
+1[#
+0{#
+0Z#
+0g#
+0v#
+0c#
+1D$
+0!%
+1^(
+1'%
+0%%
+0_(
+1w$
+0v$
+0{$
+1@*
+0>/
+0I&
+1H&
+0B/
+0?*
+0H*
+0D*
+0>-
+0n'
+0i'
+0I-
+1B-
+0r'
+0K-
+0E-
+0@-
+0v'
+1=-
+1j'
+1L-
+1J-
+1F-
+1D-
+1C-
+0?-
+0H-
+1G-
+0A-
+0o&
+1v&
+0l&
+0i&
+1h&
+0p&
+0s&
+0g&
+1m&
+0r&
+1n&
+0u&
+0k&
+0t&
+1q&
+0j&
+0q-
+0v-
+1t-
+1n-
+1s-
+0x+
+0y-
+1w-
+0r-
+0p-
+0o-
+0m-
+0u-
+0x-
+0z-
+03+
+0P+
+1R+
+0J+
+0G+
+0T+
+1O+
+0V+
+1N+
+1M+
+0C+
+1U+
+1Q+
+0L+
+0K+
+1W+
+07+
+0S+
+1H+
+0',
+0#,
+1y+
+0}+
+0I+
+b100100 b(
+b1100000000000110100001100100001 %)
+b10010001101000101011001111000000100100011010001010110011110001000011101100101xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx000000000000000000000001000100000000000000000000000000100010000000000000000000000000000100010000xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx >*
+b100001100100001 P*
+b10000111011001010100001100100001 *,
+1w,
+1n.
+0o.
+b11110 5/
+#90000
+0w,
+#95000
+0@
+1?
+0<-
+0k*
+0,-
+0'-
+04-
+0&-
+0#-
+0o*
+03-
+0{,
+0$-
+0n*
+0"-
+1l*
+0p*
+0*-
+0.-
+07-
+0m*
+0d*
+0^*
+0Z*
+0f*
+0[*
+0W*
+00+
+0`*
+0X*
+0V*
+01+
+1-+
+0j*
+0Q*
+0e*
+0c*
+0b*
+0i*
+0g*
+1*+
+1)+
+0a*
+1h*
+1v*
+0S)
+0R)
+1q*
+1z*
+1w*
+1~*
+1x*
+1"+
+0[)
+1$+
+0V)
+1{*
+0%+
+0I)
+0F)
+0<)
+0A)
+0C)
+0K)
+0B)
+0M)
+0E)
+1A+
+1..
+1B.
+1E.
+1F.
+0>.
+x4.
+0")
+0B+
+08.
+1!)
+1<#
+1G#
+0D#
+0;#
+13#
+0@#
+11#
+0A#
+1H#
+1h#
+1%$
+0}#
+0|#
+0w#
+1m#
+1E$
+1&$
+0[#
+1o#
+0"$
+1x#
+1g#
+0d#
+0`#
+0a#
+1\#
+0$%
+0"%
+0'%
+0%%
+1#%
+0}$
+1_(
+1&%
+0w$
+0|$
+1x$
+0@*
+1I&
+1A*
+0;/
+1.)
+1C/
+0:/
+1B/
+10)
+0E*
+0F*
+0?/
+0P-
+0R-
+0O-
+1v'
+0o'
+0M-
+1k'
+0j'
+1S-
+0Q-
+1N-
+1w'
+0p'
+0s'
+0v&
+1G,
+0h&
+0f&
+0G.
+0d&
+0`&
+0;)
+19)
+0]&
+0W&
+0:)
+0^&
+0m&
+0a&
+0\&
+1K,
+0n&
+0q&
+1\-
+0[-
+0Z-
+0X-
+1W-
+0Y-
+0V-
+0U-
+1T-
+0l-
+0g-
+0f-
+0t-
+0n-
+0s-
+0j-
+xI.
+xJ.
+0d-
+0K.
+xM.
+0]-
+1H.
+0c-
+xQ.
+xR.
+xS.
+xT.
+0U.
+0V.
+0w-
+1L.
+xN.
+0O.
+0b-
+0P.
+0]+
+0\+
+05+
+0e+
+1Y+
+0Z+
+1R+
+1g+
+0f+
+1b+
+0a+
+0[+
+0X+
+1_+
+1O+
+1N+
+1M+
+0c+
+1C+
+1U+
+04+
+0d+
+1Q+
+0D+
+0`+
+0E+
+1^+
+1W+
+1H+
+1%,
+0$,
+0~+
+0),
+0y+
+b101000 b(
+b1010000110010000000000111 %)
+b100100011010001010110011110000001001000110100010101100111100010000111011001010100001100100001xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx000000000000000000000001000100000000000000000000000000100010000000000000000000000000000100010000xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx >*
+b10000000000111 P*
+b0 *,
+1q.
+xb.
+0j.
+xw.
+1|.
+xl.
+0d.
+1w,
+xm.
+0`.
+0].
+x[.
+xn.
+xg.
+1W.
+0i.
+xx.
+xk.
+xu.
+1{.
+0^.
+xZ.
+1s.
+xv.
+0y.
+0_.
+x\.
+0h.
+1t.
+xY.
+1r.
+0p.
+0z.
+xf.
+0c.
+xo.
+xa.
+xe.
+bx +/
+bx ,/
+x-/
+x./
+x//
+x0/
+bx 1/
+bx 2/
+bx 3/
+bx 4/
+bx 5/
+bx 6/
+07/
+18/
+0E/
+0G/
+1H/
+b1 I/
+b0 J/
+b0 K/
+b0 L/
+b0 M/
+b0 N/
+b1111 O/
+b11 P/
+#100000
+0w,
+#105000
+1@
+1<-
+1;-
+15-
+16-
+1--
+18-
+10-
+1,-
+1'-
+1%-
+14-
+12-
+11-
+1&-
+1#-
+1!-
+1~,
+13-
+1|,
+1{,
+1:-
+1$-
+1"-
+1},
+0l*
+1/-
+1*-
+1.-
+17-
+1)-
+1(-
+1+-
+19-
+0-+
+0*+
+02+
+0)+
+0h*
+0v*
+1T)
+1S)
+1R)
+1Q)
+1P)
+0q*
+1O)
+0z*
+0w*
+1Y)
+1N)
+0~*
+0x*
+0"+
+1[)
+1Z)
+0$+
+1V)
+0{*
+1X)
+1W)
+1U)
+1I)
+1?)
+1F)
+1L)
+1<)
+1A)
+1G)
+1D)
+1J)
+1C)
+1K)
+1>)
+1=)
+1H)
+1B)
+1@)
+1M)
+1E)
+0A+
+0B.
+0@.
+0E.
+0F.
+0?.
+1")
+08#
+12#
+1D#
+09#
+1>#
+03#
+01#
+1n#
+0m#
+0E$
+0t#
+0o#
+1"$
+1z#
+0u#
+1d#
+1^#
+0D$
+1C$
+1](
+1"%
+0^(
+1'%
+0_(
+1z$
+06)
+0I&
+0H&
+0.)
+1G&
+00)
+05)
+1/)
+1C*
+1?/
+0B-
+0=-
+0S-
+0N-
+0L-
+0J-
+1m'
+0F-
+0D-
+0C-
+0G-
+1s'
+1e&
+1Z&
+1o&
+1v&
+0G,
+1l&
+1i&
+1Y&
+1h&
+1f&
+1[&
+1p&
+1d&
+1s&
+1`&
+1g&
+1;)
+1b&
+1X&
+1]&
+1W&
+1c&
+1^&
+1m&
+1a&
+1\&
+0K,
+1r&
+1n&
+1_&
+1u&
+1k&
+1t&
+1q&
+1j&
+0\-
+0W-
+0T-
+1l-
+1q-
+1g-
+1e-
+1_-
+1^-
+1f-
+1v-
+1t-
+1n-
+1s-
+1j-
+1d-
+1a-
+1`-
+1]-
+1h-
+1c-
+1y-
+1w-
+1r-
+1p-
+1i-
+1b-
+1o-
+1m-
+1k-
+1u-
+1x-
+1z-
+0Y+
+0R+
+0g+
+0b+
+0_+
+0O+
+0N+
+0M+
+0C+
+0U+
+0Q+
+0^+
+0W+
+0H+
+0%,
+0!,
+b101100 b(
+b100000000010100000100111 %)
+b10010001101000101011001111000000100100011010001010110011110001000011101100101010000110010000100000000000000000000000000000000xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx000000000000000000000001000100000000000000000000000000100010000000000000000000000000000100010000xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx >*
+b10100000100111 P*
+b11111111111111111111111111111111 *,
+0q.
+0|.
+1w,
+0{.
+0t.
+0r.
+b10 O/
+b0 P/
+#110000
+0w,
+#115000
+0@
+0?
+1>
+0<-
+0;-
+05-
+1k*
+06-
+0--
+08-
+00-
+0,-
+0'-
+0%-
+04-
+02-
+01-
+0&-
+0#-
+0!-
+0~,
+03-
+0|,
+0{,
+0:-
+0$-
+0"-
+0},
+1l*
+0/-
+0*-
+0.-
+07-
+0)-
+0(-
+0+-
+1m*
+09-
+1d*
+1^*
+1f*
+1[*
+1W*
+1.+
+1-+
+1j*
+1T*
+1/+
+1\*
+1b*
+1,+
+1g*
+1)+
+1t*
+xT)
+xS)
+xR)
+xQ)
+xP)
+xO)
+1|*
+1(+
+1w*
+xY)
+xN)
+1~*
+1&+
+x[)
+xZ)
+1$+
+xV)
+1{*
+xX)
+xW)
+xU)
+xI)
+x?)
+xF)
+xL)
+x<)
+xA)
+xG)
+xD)
+xJ)
+xC)
+xK)
+x>)
+x=)
+xH)
+xB)
+x@)
+xM)
+xE)
+1A+
+x..
+x-.
+1@.
+x0.
+x/.
+1;.
+x6.
+x5.
+14.
+0")
+1~(
+03.
+0B+
+0!)
+0<#
+18#
+02#
+0G#
+0D#
+0>#
+14#
+0H#
+0h#
+0%$
+0n#
+1E$
+0&$
+1t#
+0"$
+0x#
+0g#
+0z#
+1p#
+0d#
+0^#
+0\#
+1$%
+0"%
+1^(
+0'%
+1%%
+0#%
+0_(
+1&%
+0x$
+0z$
+11)
+0I&
+1H&
+1</
+0A*
+0C/
+0B/
+15)
+0/)
+0C*
+0?/
+1P-
+1R-
+1@-
+0v'
+0k'
+1S-
+1N-
+1J-
+0m'
+0w'
+1C-
+1H-
+1G-
+0s'
+0e&
+0Z&
+1L,
+1I,
+0o&
+0v&
+0l&
+1F,
+0i&
+0Y&
+0h&
+0f&
+0[&
+0p&
+0d&
+1J,
+x8)
+1A,
+0s&
+1E,
+0`&
+1=,
+0g&
+1;,
+1:,
+1P&
+x;)
+x7)
+x9)
+0b&
+0X&
+0]&
+0W&
+x:)
+1C,
+0c&
+0^&
+0m&
+0a&
+0\&
+1K,
+0r&
+0n&
+0_&
+0u&
+0k&
+0t&
+0q&
+0j&
+1X-
+13,
+1W-
+1Y-
+1V-
+16,
+0l-
+0q-
+0g-
+0e-
+0_-
+0^-
+0f-
+0v-
+0t-
+1n+
+0n-
+0s-
+0j-
+0|-
+0{-
+1r+
+0d-
+0a-
+0`-
+xK.
+0]-
+0h-
+1u+
+0c-
+0y-
+0w-
+xL.
+0r-
+0p-
+0i-
+xO.
+0b-
+xP.
+0o-
+0m-
+1k+
+0k-
+0u-
+0x-
+1s+
+0z-
+1]+
+0y'
+1Y+
+1R+
+0"(
+0$(
+0|'
+1b+
+1a+
+1[+
+0)(
+0}'
+1N+
+1c+
+0z'
+0~'
+1U+
+0!(
+0&(
+1d+
+1K+
+0'(
+0%(
+0*(
+0{'
+1^+
+0((
+0#(
+1S+
+1%,
+1#,
+1$,
+1&,
+1~+
+1{+
+1y+
+1}+
+b110000 b(
+b10000001000100000000000000001 %)
+b1001000110100010101100111100000010010001101000101011001111000100001110110010101000011001000010000000000000000000000000000000011111111111111111111111111111111xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx000000000000000000000001000100000000000000000000000000100010000000000000000000000000000100010000xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx >*
+b1 P*
+b0 *,
+b11101101110010111010100110000111 -,
+b0xxxxxxxxxxxxxxxx }-
+1w,
+x].
+0W.
+x^.
+1X.
+1h.
+1r.
+1F/
+0H/
+bx I/
+bx J/
+bx L/
+b100 N/
+b110 O/
+#120000
+0w,
+#125000
+1?
+1<-
+0;-
+05-
+06-
+0--
+08-
+00-
+0,-
+0'-
+0%-
+04-
+02-
+01-
+0&-
+0#-
+0!-
+0~,
+13-
+0|,
+0{,
+0:-
+0$-
+0"-
+0},
+0l*
+0/-
+0*-
+0.-
+17-
+0)-
+0(-
+0+-
+0m*
+09-
+0d*
+0^*
+0f*
+0[*
+0W*
+00+
+01+
+0.+
+0-+
+0j*
+0T*
+0/+
+0\*
+0b*
+0,+
+0++
+0*+
+12+
+0)+
+0v*
+0r*
+0!+
+0t*
+0T)
+0S)
+1R)
+0Q)
+0P)
+0q*
+0O)
+0z*
+0|*
+0(+
+0w*
+0Y)
+0N)
+0#+
+0~*
+0'+
+0}*
+0x*
+0u*
+0"+
+0&+
+1[)
+0s*
+0Z)
+0$+
+0y*
+1V)
+0{*
+0X)
+0W)
+0U)
+0%+
+0I)
+0?)
+0F)
+0L)
+0<)
+0A)
+0G)
+0D)
+0J)
+0C)
+0K)
+0>)
+0=)
+0H)
+0B)
+0@)
+0M)
+0E)
+0A+
+0..
+0A.
+0-.
+00.
+0/.
+0;.
+06.
+0="
+05.
+0>"
+13.
+1B+
+18.
+1!)
+17#
+11#
+1s#
+1m#
+1D$
+0[(
+1](
+0$%
+1\(
+1^(
+0%%
+1#%
+1_(
+0&%
+14)
+1I&
+1H&
+0</
+0E&
+1;/
+1.)
+1G&
+1F&
+x>-
+xP-
+xI-
+xB-
+xK-
+xR-
+xE-
+xO-
+x@-
+x=-
+xM-
+xS-
+xQ-
+xN-
+xL-
+xJ-
+xF-
+xD-
+xC-
+x?-
+xH-
+xG-
+xA-
+0e&
+0Z&
+0L,
+0I,
+0o&
+1v&
+0l&
+0i&
+0Y&
+0h&
+0f&
+0[&
+0p&
+0d&
+08)
+0A,
+0s&
+0E,
+0`&
+0=,
+0g&
+0;,
+0:,
+0P&
+0;)
+07)
+19)
+0b&
+0X&
+0]&
+0W&
+1:)
+0C,
+0c&
+0^&
+1m&
+0a&
+0\&
+0K,
+0r&
+0n&
+0_&
+0u&
+0k&
+0t&
+1q&
+0j&
+x\-
+x[-
+xZ-
+xX-
+03,
+xW-
+xY-
+xV-
+xU-
+xT-
+06,
+0l-
+0q-
+0g-
+0e-
+0_-
+0^-
+0f-
+0v-
+0t-
+0n+
+0n-
+1s-
+0j-
+0r+
+0d-
+0a-
+0`-
+0K.
+0]-
+0h-
+0u+
+0c-
+0i+
+0x+
+0h+
+0y-
+1w-
+0L.
+0r-
+0l+
+0p-
+0i-
+0O.
+0p+
+0b-
+0P.
+0q+
+0o+
+0j+
+0o-
+0m-
+0k+
+0k-
+0t+
+0u-
+0x-
+0w+
+0m+
+0v+
+0s+
+0z-
+0]+
+xy'
+0Y+
+0R+
+x"(
+x$(
+x|'
+0a+
+0[+
+x)(
+x}'
+0N+
+0c+
+xz'
+x~'
+0U+
+x!(
+x&(
+0d+
+0K+
+x'(
+x%(
+x*(
+x{'
+x((
+x#(
+0S+
+0',
+0%,
+0(,
+0#,
+0$,
+0&,
+0",
+0~+
+0{+
+0z+
+1),
+0y+
+0}+
+0|+
+0!,
+b111000 b(
+b100001001001100000000000000001 %)
+b1000100001 *,
+0+,
+0,,
+bx }-
+1w,
+1`.
+0].
+1W.
+0^.
+0s.
+0h.
+1H/
+b0 I/
+b0 J/
+b0 L/
+b1 M/
+b0 N/
+b100 O/
+#130000
+0w,
+#135000
+1@
+0<-
+0k*
+03-
+07-
+x0+
+x1+
+x.+
+x-+
+x/+
+x,+
+0g*
+x++
+x*+
+x2+
+x)+
+xv*
+xr*
+x!+
+xt*
+0R)
+xq*
+xz*
+x|*
+x(+
+xw*
+x#+
+x~*
+x'+
+x}*
+xx*
+xu*
+x"+
+x&+
+0[)
+xs*
+x$+
+xy*
+0V)
+x{*
+1U)
+x%+
+1A+
+xB.
+xA.
+1-.
+x@.
+xE.
+10.
+1/.
+xC.
+xF.
+x?.
+1=.
+1<.
+xD.
+x>.
+1")
+x7.
+0B+
+x8.
+08#
+07#
+04#
+01#
+0s#
+0m#
+0E$
+0t#
+0p#
+0D$
+1A$
+0B$
+0C$
+1[(
+0](
+0\(
+0^(
+1'%
+1_(
+01)
+1>/
+04)
+1I&
+0H&
+1E&
+0;/
+0.)
+0G&
+1=/
+05)
+0F&
+0>-
+0P-
+0I-
+0B-
+0K-
+0R-
+0E-
+0O-
+0@-
+0=-
+0M-
+0S-
+0Q-
+0N-
+0L-
+0J-
+0F-
+0D-
+0C-
+0?-
+0H-
+0G-
+0A-
+0v&
+0F,
+0J,
+18)
+1P&
+1;)
+17)
+19)
+1:)
+0m&
+0q&
+0\-
+0[-
+0Z-
+0X-
+0W-
+0Y-
+0V-
+0U-
+0T-
+xn+
+0s-
+xr+
+1K.
+xu+
+xi+
+xx+
+xh+
+0w-
+xl+
+1O.
+xp+
+1P.
+xq+
+xo+
+xj+
+xk+
+xt+
+xw+
+xm+
+xv+
+xs+
+x]+
+x\+
+xe+
+xY+
+xP+
+xZ+
+xR+
+xJ+
+xg+
+xf+
+xb+
+xa+
+x[+
+xX+
+xT+
+x_+
+xO+
+xV+
+xN+
+xM+
+xc+
+xU+
+xd+
+xQ+
+xL+
+xK+
+x`+
+x^+
+xW+
+xS+
+xH+
+x',
+x%,
+x(,
+x#,
+x$,
+x&,
+x",
+x~+
+x{+
+xz+
+x),
+xy+
+x}+
+x|+
+x!,
+xI+
+b111100 b(
+b1100000000000000000000000001 %)
+b100100011010001010110011110000001001000110100010101100111100010000111011001010100001100100001000000000000000000000000000000001111111111111111111111111111111100000000000000000000001000100001xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx000000000000000000000001000100000000000000000000000000100010000000000000000000000000000100010000xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx >*
+b0 *,
+xq.
+1j.
+x|.
+1w,
+x`.
+1i.
+x{.
+xs.
+xy.
+x_.
+xt.
+xr.
+xp.
+xz.
+b10 I/
+b11 J/
+bx M/
+b11 N/
+bx O/
+bx P/
+#140000
+0w,
+#145000
+0?
+0>
+0=
+1<
+1<-
+1k*
+00+
+01+
+0.+
+1-+
+0/+
+0,+
+1g*
+0++
+0*+
+12+
+1)+
+0v*
+0r*
+0!+
+0t*
+0q*
+0z*
+0|*
+0(+
+0w*
+0#+
+0~*
+0'+
+0}*
+0x*
+0u*
+0"+
+0&+
+1[)
+0s*
+0$+
+0y*
+0{*
+0X)
+0U)
+0%+
+0A+
+1..
+0B.
+0A.
+0-.
+0@.
+0E.
+00.
+0/.
+0C.
+0F.
+0?.
+0=.
+0<.
+0D.
+1>.
+x4.
+0~(
+07.
+1|(
+0}(
+1B+
+08.
+0!)
+1<#
+18#
+1F#
+1D#
+17#
+1>#
+14#
+11#
+1=#
+0I#
+1H#
+1$$
+1h#
+1s#
+1y#
+1]#
+1m#
+1&$
+0i#
+1t#
+1"$
+1x#
+0'$
+1z#
+1p#
+1d#
+1^#
+1f#
+1\#
+1D$
+1$%
+1"%
+1^(
+0'%
+1%%
+0_(
+0&%
+1x$
+1z$
+1y$
+11)
+1B*
+1A/
+0D/
+0>/
+14)
+0I&
+1H&
+1A*
+1.)
+1C/
+0=/
+15)
+1C*
+1?/
+0x'
+1l'
+1u'
+1k'
+1S-
+1m'
+1w'
+1s'
+1v&
+1F,
+1J,
+08)
+0P&
+07)
+1\-
+1W-
+0n+
+0r+
+0K.
+0u+
+0i+
+0x+
+0h+
+1L.
+0l+
+0O.
+0p+
+0P.
+0q+
+0o+
+0j+
+0k+
+0t+
+0w+
+0m+
+0v+
+0s+
+0]+
+0\+
+0e+
+0Y+
+0P+
+0Z+
+0R+
+0J+
+0g+
+0f+
+1b+
+0a+
+0[+
+0X+
+0T+
+0_+
+0O+
+0V+
+0N+
+0M+
+0c+
+0U+
+0d+
+0Q+
+0L+
+0K+
+0`+
+1^+
+0W+
+0S+
+0H+
+0',
+0%,
+0(,
+0#,
+1$,
+0&,
+0",
+1~+
+0{+
+0z+
+1),
+0y+
+0}+
+0|+
+0!,
+0I+
+b1000100 b(
+b1001001100011100000101010 %)
+b100100011010001010110011110000001001000110100010101100111100010000111011001010100001100100001000000000000000000000000000000001111111111111111111111111111111100000000000000000000001000100001xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx000000000000000000000001000100000000000000000000000000100010000000000000000000000000000100010000xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx00000000000000000000000001000000 >*
+b11100000101010 P*
+b1 *,
+0q.
+0j.
+0|.
+1w,
+0`.
+0i.
+0{.
+xX.
+0s.
+0y.
+0_.
+0t.
+0r.
+1p.
+0z.
+xF/
+b1 I/
+b0 J/
+b0 M/
+b0 N/
+b10000 O/
+b0 P/
+#150000
+0w,
+#155000
+0@
+1?
+0k*
+1p*
+0-+
+0g*
+02+
+0)+
+xT)
+xS)
+xR)
+xQ)
+xP)
+xO)
+xY)
+xN)
+x[)
+xZ)
+xV)
+xX)
+xW)
+xU)
+xI)
+x?)
+xF)
+xL)
+x<)
+xA)
+xG)
+xD)
+xJ)
+xC)
+xK)
+x>)
+x=)
+xH)
+xB)
+x@)
+xM)
+xE)
+x..
+x-.
+1E.
+x0.
+x/.
+1=.
+1;.
+14.
+0")
+17.
+03.
+1!)
+0<#
+08#
+12#
+0F#
+0D#
+07#
+0>#
+13#
+01#
+0=#
+1I#
+0H#
+0$$
+0h#
+0s#
+0y#
+0]#
+1n#
+0m#
+1E$
+0&$
+1i#
+0t#
+1o#
+0"$
+0x#
+1'$
+0z#
+0d#
+0^#
+0f#
+0\#
+1](
+0$%
+0"%
+0^(
+0'%
+0_(
+0x$
+0z$
+0y$
+0B*
+0A/
+1D/
+1>/
+04)
+0I&
+0H&
+1</
+0A*
+0.)
+0C/
+1G&
+10)
+1=/
+05)
+1/)
+0C*
+0?/
+1x'
+0l'
+0u'
+0k'
+0S-
+0m'
+0w'
+0s'
+0F,
+0J,
+x8)
+1P&
+x;)
+x7)
+x9)
+x:)
+1O,
+0\-
+0W-
+xK.
+xL.
+xO.
+xP.
+0b+
+0^+
+0$,
+0~+
+b1001000 b(
+b11100111000000000000000000001 %)
+b10010001101000101011001111000000100100011010001010110011110001000011101100101010000110010000100000000000000000000000000000000111111111111111111111111111111110000000000000000000000100010000100000000000000000000000000000001000000000000000000000001000100000000000000000000000000100010000000000000000000000000000100010000xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx00000000000000000000000001000000 >*
+b1 P*
+1j.
+1w,
+0W.
+1{.
+1X.
+1_.
+1h.
+1F/
+0H/
+bx I/
+bx J/
+b10 M/
+b101 N/
+b10 P/
+#160000
+0w,
+#165000
+0?
+1>
+0<-
+1,-
+1'-
+1%-
+1&-
+1!-
+1~,
+1|,
+1},
+0p*
+1*-
+1)-
+1(-
+1+-
+10+
+11+
+1.+
+1-+
+1/+
+1,+
+1++
+12+
+0T)
+0S)
+0R)
+0Q)
+0P)
+0O)
+0Y)
+0N)
+1'+
+1&+
+0[)
+0Z)
+1$+
+0V)
+0X)
+0W)
+0U)
+1%+
+1I)
+1?)
+1F)
+0L)
+0<)
+0A)
+1G)
+1D)
+1J)
+0C)
+1K)
+1>)
+1=)
+1H)
+0B)
+1@)
+0M)
+1E)
+0A+
+0..
+1B.
+1A.
+0-.
+1@.
+0E.
+00.
+0/.
+1?.
+0=.
+0;.
+04.
+1~(
+07.
+13.
+1B+
+18.
+0!)
+1C#
+1<#
+18#
+02#
+1G#
+1F#
+1D#
+1B#
+1E#
+1>#
+1;#
+04#
+03#
+1=#
+1H#
+1$$
+1h#
+1#$
+1!$
+1%$
+1~#
+1y#
+1]#
+0n#
+1w#
+1&$
+1[#
+1t#
+1e#
+0o#
+1"$
+1b#
+1x#
+1g#
+1z#
+0p#
+1d#
+1c#
+1^#
+1f#
+1\#
+0D$
+1C$
+0^(
+1}$
+1_(
+0&%
+1w$
+1x$
+1z$
+1y$
+01)
+1B*
+1A/
+1@*
+1I&
+0H&
+1A*
+1;/
+1C/
+1B/
+00)
+1H*
+1@/
+15)
+0/)
+1G*
+1C*
+1?/
+1P-
+1t'
+1l'
+1r'
+1R-
+1@-
+1v'
+1u'
+1k'
+1j'
+1S-
+1N-
+1J-
+1m'
+1w'
+1q'
+1C-
+1H-
+1G-
+1s'
+1e&
+1Z&
+0v&
+1Y&
+1f&
+1[&
+1d&
+08)
+1`&
+0P&
+0;)
+07)
+09)
+1b&
+1X&
+1:)
+1c&
+1a&
+0O,
+1_&
+1X-
+1W-
+1Y-
+1V-
+1l-
+1g-
+1e-
+1_-
+1^-
+1f-
+1j-
+0I.
+0J.
+1a-
+1`-
+0M.
+1h-
+0H.
+0Q.
+0R.
+1S.
+0T.
+xU.
+xV.
+1i-
+0N.
+1k-
+16+
+1F+
+1G+
+17+
+1',
+1%,
+1(,
+1#,
+1$,
+1&,
+1",
+1{+
+1z+
+1),
+1y+
+1|+
+b1010000 b(
+b111100000000100111100011111111 %)
+b111100011111111 P*
+b1111000111111110000000000000000 *,
+xq.
+0b.
+xj.
+0w.
+x|.
+1l.
+xd.
+1w,
+1m.
+x`.
+x].
+0[.
+1n.
+0g.
+xW.
+xi.
+0x.
+1k.
+0u.
+x{.
+x^.
+xX.
+0Z.
+xs.
+0v.
+xy.
+x_.
+1\.
+xh.
+xt.
+0Y.
+xr.
+xp.
+xz.
+0f.
+xc.
+1o.
+0a.
+0e.
+b0 +/
+b0 ,/
+0-/
+0./
+1//
+00/
+b0 1/
+b1 2/
+b0 3/
+b0 4/
+b11111 5/
+b0 6/
+08/
+xE/
+xF/
+xG/
+xH/
+bx K/
+bx L/
+bx M/
+bx N/
+bx O/
+bx P/
+#170000
+0w,
+#175000
+1@
+1<-
+0;-
+05-
+06-
+08-
+00-
+1,-
+1'-
+1%-
+14-
+01-
+1&-
+1!-
+1~,
+13-
+1|,
+0:-
+1},
+0/-
+1*-
+1.-
+17-
+1)-
+1(-
+1+-
+09-
+1_*
+1^*
+1Z*
+1[*
+1U*
+00+
+1`*
+1]*
+01+
+0.+
+1T*
+1R*
+0/+
+1\*
+1S*
+0,+
+0++
+1*+
+1)+
+1Y*
+0T)
+1S)
+1R)
+0P)
+0O)
+0Y)
+0N)
+0'+
+0&+
+1[)
+0Z)
+1V)
+0X)
+0W)
+0U)
+0%+
+1I)
+1?)
+1F)
+1G)
+1D)
+1J)
+1K)
+1>)
+1=)
+1H)
+1@)
+1M)
+1E)
+0@.
+0?.
+0>.
+1")
+0C#
+0<#
+0G#
+0F#
+0B#
+0E#
+0>#
+13#
+1@#
+1A#
+0=#
+0H#
+0$$
+0h#
+0#$
+0!$
+0%$
+1}#
+0~#
+0y#
+0]#
+1|#
+0E$
+0&$
+0e#
+1o#
+0b#
+0x#
+0g#
+0z#
+0c#
+1`#
+0^#
+1a#
+0f#
+0\#
+1D$
+1"%
+1^(
+1'%
+0_(
+1&%
+1|$
+0x$
+0z$
+0y$
+0B*
+0A/
+0>/
+0I&
+1H&
+0A*
+0C/
+0B/
+10)
+0H*
+1E*
+0@/
+0G*
+1F*
+0C*
+1>-
+0P-
+0t'
+0l'
+1I-
+0r'
+1K-
+0R-
+1E-
+0v'
+1o'
+0u'
+0k'
+0S-
+0N-
+1L-
+0m'
+1F-
+0w'
+0q'
+0C-
+1?-
+1p'
+1A-
+1e&
+1Z&
+0o&
+1v&
+0i&
+1Y&
+1h&
+1f&
+1[&
+0p&
+1d&
+1?,
+1>,
+0s&
+1`&
+1=,
+1<,
+1;,
+1:,
+19,
+18,
+1b&
+1X&
+1c&
+1m&
+1a&
+0r&
+1n&
+1_&
+0u&
+0k&
+0t&
+1q&
+0j&
+12,
+14,
+0X-
+13,
+0W-
+0Y-
+0V-
+11,
+1l-
+0q-
+1g-
+1e-
+1_-
+1^-
+1f-
+0v-
+1t-
+1n-
+1s-
+1j-
+xI.
+xJ.
+1a-
+1`-
+0K.
+xM.
+1h-
+1H.
+xQ.
+xR.
+xS.
+xT.
+0U.
+0y-
+0V.
+1w-
+0L.
+0p-
+1i-
+xN.
+0O.
+0P.
+0o-
+1k-
+0u-
+0x-
+0z-
+06+
+15+
+1P+
+1R+
+1J+
+0F+
+0G+
+1T+
+1V+
+1U+
+14+
+1Q+
+1L+
+1K+
+1D+
+1E+
+1W+
+07+
+1S+
+0',
+0%,
+0(,
+0#,
+0&,
+0",
+1~+
+0{+
+0z+
+0|+
+1!,
+1I+
+b1010100 b(
+b111000010000100100001100100001 %)
+b10010001101000101011001111000011110001111111100000000000000001000011101100101010000110010000100000000000000000000000000000000111111111111111111111111111111110000000000000000000000100010000100000000000000000000000000000001000000000000000000000001000100000000000000000000000000100010000000000000000000000000000100010000xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx00000000000000000000000001000000 >*
+b100001100100001 P*
+b1111000111111110100001100100001 *,
+0q.
+xb.
+0j.
+xw.
+0|.
+xl.
+0d.
+1w,
+xm.
+1`.
+0].
+x[.
+xn.
+xg.
+1W.
+0i.
+xx.
+xk.
+xu.
+0{.
+0^.
+0X.
+xZ.
+1s.
+xv.
+0y.
+0_.
+x\.
+0h.
+1t.
+xY.
+0r.
+0p.
+0z.
+xf.
+0c.
+xo.
+xa.
+xe.
+bx +/
+bx ,/
+x-/
+x./
+x//
+x0/
+bx 1/
+bx 2/
+bx 3/
+bx 4/
+bx 5/
+bx 6/
+18/
+0E/
+0F/
+0G/
+1H/
+b0 I/
+b0 J/
+b0 K/
+b0 L/
+b1 M/
+b0 N/
+b11 O/
+b0 P/
+#180000
+0w,
+#185000
+0@
+1?
+0<-
+1k*
+0,-
+0'-
+0%-
+04-
+0&-
+0!-
+0~,
+03-
+0|,
+0},
+1p*
+0*-
+0.-
+07-
+0)-
+0(-
+0+-
+1.+
+0-+
+0/+
+1b*
+1g*
+1*+
+02+
+0)+
+1h*
+xT)
+xS)
+xR)
+xQ)
+xP)
+xO)
+xY)
+xN)
+x[)
+xZ)
+0$+
+xV)
+xX)
+xW)
+xU)
+xI)
+x?)
+xF)
+xL)
+x<)
+xA)
+xG)
+xD)
+xJ)
+xC)
+xK)
+x>)
+x=)
+xH)
+xB)
+x@)
+xM)
+xE)
+1A+
+x..
+0A.
+x-.
+x0.
+x/.
+1?.
+x4.
+0")
+03.
+0B+
+08.
+1!)
+08#
+1F#
+0D#
+1E#
+0;#
+0@#
+16#
+0A#
+0I#
+1$$
+1#$
+0}#
+1r#
+0|#
+0w#
+1E$
+0[#
+0i#
+0t#
+1e#
+0"$
+0'$
+0d#
+0`#
+0a#
+1f#
+1$%
+1'%
+1%%
+0#%
+0}$
+1_(
+1&%
+0w$
+0|$
+1A/
+0@*
+0D/
+1I&
+0</
+0;/
+13)
+0=/
+0E*
+1@/
+05)
+0F*
+0?/
+0>-
+0x'
+1t'
+0I-
+0K-
+0E-
+0@-
+0o'
+1u'
+0j'
+0S-
+0N-
+0L-
+0J-
+0F-
+0?-
+0H-
+0G-
+0p'
+0A-
+0s'
+0e&
+0Z&
+0v&
+1G,
+1F,
+0Y&
+0h&
+0f&
+0[&
+0d&
+1J,
+x8)
+1A,
+0`&
+x;)
+x7)
+x9)
+0b&
+0X&
+x:)
+0c&
+0m&
+0a&
+1O,
+0n&
+0_&
+0q&
+0\-
+1X-
+0W-
+1T-
+0l-
+0g-
+0e-
+0_-
+0^-
+0f-
+0t-
+0n-
+0s-
+0j-
+0a-
+0`-
+xK.
+0h-
+0w-
+xL.
+0i-
+xO.
+xP.
+0k-
+05+
+1Y+
+1g+
+1b+
+1_+
+04+
+0D+
+0E+
+1^+
+1%,
+0$,
+0&,
+0~+
+0),
+0y+
+1!,
+b1011000 b(
+b10010000000000000011000 %)
+b10010001101000101011001111000011110001111111101000011001000011000011101100101010000110010000100000000000000000000000000000000111111111111111111111111111111110000000000000000000000100010000100000000000000000000000000000001000000000000000000000001000100000000000000000000000000100010000000000000000000000000000100010000xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx00000000000000000000000001000000 >*
+b11000 P*
+b0 *,
+1q.
+1w,
+0`.
+0W.
+xX.
+0s.
+xF/
+0H/
+bx I/
+bx J/
+b0 M/
+b1001 O/
+#190000
+0w,
+#195000
+1@
+0k*
+0p*
+0_*
+0^*
+0Z*
+0[*
+0U*
+x0+
+0`*
+0]*
+x1+
+x.+
+x-+
+0T*
+0R*
+x/+
+0\*
+0b*
+0S*
+x,+
+0g*
+x++
+x*+
+x2+
+x)+
+0Y*
+0h*
+xv*
+xr*
+x!+
+xt*
+0T)
+1S)
+1R)
+0Q)
+0P)
+xq*
+1O)
+xz*
+x|*
+x(+
+xw*
+0Y)
+0N)
+x#+
+x~*
+x'+
+x}*
+xx*
+xu*
+x"+
+x&+
+0[)
+xs*
+0Z)
+x$+
+xy*
+0V)
+x{*
+0X)
+1W)
+0U)
+x%+
+1I)
+1""
+1x!
+1v!
+1|!
+0?)
+1F)
+1t!
+1s!
+0L)
+1<)
+1A)
+1G)
+0D)
+1J)
+1C)
+1K)
+0>)
+0=)
+1{!
+0H)
+1B)
+1@)
+1M)
+0E)
+1o!
+1..
+1j!
+xB.
+1l!
+xA.
+0-.
+x@.
+xE.
+10.
+0/.
+1k!
+1p!
+1i!
+1e!
+xC.
+xF.
+x?.
+1r!
+xD.
+x>.
+1")
+x7.
+13.
+x8.
+1<#
+0F#
+1>#
+03#
+06#
+1=#
+1H#
+0$$
+1h#
+0r#
+1y#
+1]#
+0E$
+1&$
+0o#
+1x#
+1z#
+1^#
+0f#
+1\#
+0D$
+1B$
+0C$
+0](
+1$%
+1\(
+0^(
+0'%
+0%%
+0#%
+0_(
+1&%
+1x$
+1z$
+1y$
+1b%
+1B*
+0A/
+0I&
+0H&
+1A*
+1C/
+0G&
+03)
+00)
+1F&
+1C*
+1l'
+0u'
+1k'
+1m'
+1w'
+0G,
+0F,
+0J,
+08)
+0A,
+0?,
+0>,
+0=,
+0<,
+0;,
+0:,
+09,
+08,
+1;)
+07)
+19)
+1:)
+0O,
+02,
+04,
+0X-
+03,
+0T-
+01,
+xn+
+xr+
+0K.
+xu+
+xi+
+xx+
+xh+
+1L.
+xl+
+0O.
+xp+
+1P.
+xq+
+xo+
+xj+
+xk+
+xt+
+xw+
+xm+
+xv+
+xs+
+x]+
+x\+
+xe+
+xY+
+xP+
+xZ+
+xR+
+xJ+
+xg+
+xf+
+xb+
+xa+
+x[+
+xX+
+xT+
+x_+
+xO+
+xV+
+xN+
+xM+
+xc+
+xU+
+xd+
+xQ+
+xL+
+xK+
+x`+
+x^+
+xW+
+xS+
+xH+
+x',
+x%,
+x(,
+x#,
+x$,
+x&,
+x",
+x~+
+x{+
+xz+
+x),
+xy+
+x}+
+x|+
+x!,
+xI+
+b1011100 b(
+b11100000010010 %)
+b11100000010010 P*
+b10000000 u,
+b10001111001101110101001100010000 v,
+xq.
+x|.
+1w,
+x`.
+1W.
+x{.
+xs.
+xy.
+x_.
+xt.
+xr.
+xp.
+xz.
+1H/
+b1 I/
+b1 J/
+bx M/
+bx O/
+bx P/
+#200000
+0w,
+#205000
+0@
+0?
+0>
+1=
+1<-
+1l*
+1_*
+1d*
+1^*
+1[*
+1W*
+1U*
+00+
+1`*
+1X*
+1V*
+01+
+0.+
+0-+
+1Q*
+0/+
+1\*
+1b*
+0,+
+1g*
+0++
+0*+
+12+
+0)+
+1h*
+0v*
+0r*
+0!+
+0t*
+0S)
+0R)
+0q*
+0O)
+0z*
+0|*
+0(+
+0w*
+0#+
+0~*
+0'+
+0}*
+0x*
+0u*
+0"+
+0&+
+1[)
+0s*
+0$+
+0y*
+0{*
+0W)
+0%+
+0I)
+0F)
+0<)
+0A)
+0G)
+0J)
+0C)
+0K)
+0B)
+0@)
+0M)
+0A+
+0..
+0B.
+0A.
+0@.
+0E.
+00.
+0C.
+0F.
+0?.
+0D.
+1>.
+14.
+0")
+0~(
+07.
+1}(
+1B+
+18.
+0!)
+0<#
+18#
+12#
+0E#
+0>#
+14#
+13#
+16#
+0=#
+1I#
+0H#
+0h#
+0#$
+1r#
+0y#
+0]#
+1n#
+1E$
+0&$
+1i#
+1t#
+0e#
+1o#
+0x#
+1'$
+0z#
+1p#
+0^#
+0\#
+0"%
+0'%
+1#%
+1_(
+0x$
+0z$
+0y$
+11)
+0B*
+1D/
+1I&
+0A*
+1;/
+0C/
+13)
+10)
+1=/
+0@/
+15)
+1/)
+0C*
+1x'
+0t'
+0l'
+0k'
+0m'
+0w'
+1v&
+1G,
+1F,
+18)
+1A,
+1?,
+1>,
+1=,
+1;,
+1:,
+0;)
+09)
+1:)
+1C,
+1K,
+14,
+15,
+10,
+1X-
+1T-
+17,
+16,
+0n+
+0r+
+0u+
+0i+
+0x+
+0h+
+0L.
+0l+
+0p+
+0P.
+0q+
+0o+
+0j+
+0k+
+0t+
+0w+
+0m+
+0v+
+0s+
+0]+
+0\+
+0e+
+1Y+
+0P+
+0Z+
+1R+
+0J+
+0g+
+0f+
+0b+
+0a+
+1[+
+0X+
+0T+
+1_+
+1O+
+1V+
+1N+
+1M+
+1c+
+1U+
+0d+
+0Q+
+1L+
+0K+
+0`+
+1^+
+1W+
+1S+
+1H+
+0',
+0%,
+0(,
+0#,
+0$,
+0&,
+0",
+0~+
+0{+
+0z+
+1),
+0y+
+0}+
+0|+
+0!,
+0I+
+b1100000 b(
+b101000111010100000000000000001 %)
+b10010001101000101011001111000011110001111111101000011001000011000011101100101010000110010000100000000000000000000000000000000111111111111111111111111111111110000000000000000000000100010000110001111001101110101001100010000000000000000000000000001000100000000000000000000000000100010000000000000000000000000000100010000xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx00000000000000000000000001000000 >*
+b1 P*
+b1 *,
+0q.
+0|.
+1w,
+1`.
+0{.
+1X.
+0s.
+0y.
+0_.
+0t.
+0r.
+1p.
+0z.
+1F/
+b0 I/
+b0 J/
+b1 M/
+b10000 O/
+b0 P/
+#210000
+0w,
+#215000
+1@
+1;-
+1k*
+16-
+18-
+10-
+1,-
+1'-
+14-
+02-
+0#-
+1!-
+1~,
+13-
+1{,
+1:-
+1$-
+1*-
+0.-
+07-
+1(-
+1m*
+0_*
+1f*
+0U*
+0`*
+0X*
+0V*
+1-+
+1j*
+1T*
+0Q*
+1*+
+1)+
+0h*
+1r*
+1!+
+1t*
+xT)
+xS)
+xR)
+xQ)
+xP)
+xO)
+1z*
+1|*
+xY)
+xN)
+1~*
+1}*
+1u*
+1"+
+x[)
+1s*
+xZ)
+1$+
+1y*
+xV)
+1{*
+xX)
+xW)
+xU)
+xI)
+x?)
+xF)
+xL)
+x<)
+xA)
+xG)
+xD)
+xJ)
+xC)
+xK)
+x>)
+x=)
+xH)
+xB)
+x@)
+xM)
+xE)
+x..
+1A.
+x-.
+1@.
+x0.
+x/.
+1;.
+0>.
+x6.
+x5.
+1")
+1>"
+03.
+0B+
+08.
+02#
+03#
+06#
+0r#
+0n#
+0E$
+0o#
+1D$
+1^(
+1'%
+0_(
+0I&
+1H&
+1</
+0;/
+03)
+00)
+0=/
+0/)
+1>-
+1I-
+1K-
+1E-
+1@-
+1S-
+1N-
+1L-
+1J-
+1F-
+1?-
+1H-
+1G-
+1A-
+1Z&
+1L,
+1I,
+0G,
+0l&
+0h&
+1f&
+1[&
+1p&
+1d&
+1J,
+x8)
+0?,
+0>,
+1E,
+x;)
+x7)
+x9)
+1b&
+0]&
+1W&
+x:)
+1^&
+1m&
+1a&
+1r&
+1n&
+1u&
+1t&
+0q&
+1j&
+04,
+1\-
+05,
+00,
+0X-
+13,
+1W-
+1T-
+07,
+1l-
+1g-
+1v-
+1t-
+0n-
+1s-
+1j-
+x|-
+x{-
+1r+
+1d-
+1a-
+1`-
+xK.
+1]-
+1h-
+1u+
+0c-
+1i+
+0w-
+xL.
+0r-
+1l+
+1p-
+xO.
+1p+
+xP.
+1q+
+1j+
+1k+
+1t+
+1x-
+1w+
+1v+
+1s+
+1z-
+1]+
+0y'
+0"(
+0$(
+0|'
+1b+
+1a+
+0_+
+0)(
+0}'
+0O+
+0V+
+0M+
+0z'
+0~'
+0!(
+0&(
+1d+
+0L+
+1K+
+0'(
+0%(
+0*(
+0{'
+0((
+0W+
+0#(
+0H+
+1$,
+1~+
+1y+
+1!,
+b1100100 b(
+b10000001000100000000000000001 %)
+b10010001101000101011001111000011110001111111101000011001000011000011101100101010000110010000100000000000000000000000000000000111111111111111111111111111111110000000000000000000000100010000110001111001101110101001100010000000000000000000000000001000100000000000000000000000000100010000000000000000000000000000000000001xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx00000000000000000000000001000000 >*
+b10011001001101010001001101010111 *,
+1,,
+b10000111000000001011110011011110 -,
+b0xxxxxxxxxxxxxxxx }-
+1w,
+0`.
+x].
+0W.
+x^.
+1s.
+1h.
+1r.
+0p.
+0H/
+bx I/
+bx J/
+bx L/
+b0 M/
+b100 N/
+b110 O/
+#220000
+0w,
+#225000
+0@
+1?
+0<-
+0;-
+0k*
+06-
+08-
+00-
+0,-
+0'-
+04-
+0!-
+0~,
+03-
+0{,
+0:-
+0$-
+0l*
+0*-
+0(-
+0m*
+0d*
+0^*
+0f*
+0[*
+0W*
+x0+
+x1+
+x.+
+x-+
+0T*
+x/+
+0\*
+0b*
+x,+
+0g*
+x++
+x*+
+x2+
+x)+
+xv*
+xr*
+x!+
+xt*
+xq*
+xz*
+x|*
+x(+
+xw*
+x#+
+x~*
+x'+
+x}*
+xx*
+xu*
+x"+
+x&+
+xs*
+x$+
+xy*
+x{*
+x%+
+1A+
+xB.
+xA.
+x@.
+xE.
+xC.
+xF.
+x?.
+x=.
+x<.
+xD.
+x;.
+x>.
+06.
+x2.
+05.
+x4.
+0")
+x7.
+x1.
+19.
+0>"
+x3.
+0B+
+x8.
+1!)
+08#
+12#
+1F#
+13#
+10#
+11#
+0I#
+1$$
+1n#
+1m#
+1l#
+1E$
+0i#
+0t#
+1o#
+0'$
+1f#
+0$%
+1"%
+0\(
+0^(
+1'%
+0%%
+0#%
+0_(
+1&%
+1A/
+0D/
+1I&
+0</
+1-)
+xE&
+1.)
+10)
+xD&
+05)
+1/)
+xF&
+0>-
+0x'
+0I-
+0K-
+0E-
+0@-
+1u'
+0S-
+0N-
+0L-
+0J-
+0F-
+0?-
+0H-
+0G-
+0A-
+xe&
+xZ&
+0L,
+xo&
+xv&
+xl&
+0F,
+xi&
+xY&
+xh&
+xf&
+x[&
+xp&
+xd&
+0J,
+0A,
+xs&
+0E,
+x`&
+0=,
+xg&
+0;,
+0:,
+xP&
+xb&
+xX&
+x]&
+xW&
+0C,
+xc&
+x^&
+xm&
+xa&
+x\&
+0K,
+xr&
+xn&
+x_&
+xu&
+xk&
+xt&
+xq&
+xj&
+0\-
+03,
+0W-
+0T-
+06,
+0l-
+0g-
+0v-
+0t-
+xn+
+0s-
+0j-
+0|-
+0{-
+xr+
+0d-
+0a-
+0`-
+0]-
+0h-
+xu+
+xi+
+xx+
+xh+
+xU.
+xV.
+xl+
+0p-
+xp+
+xq+
+xo+
+xj+
+xk+
+xt+
+0x-
+xw+
+xm+
+xv+
+xs+
+0z-
+x]+
+xy'
+x\+
+xe+
+xY+
+xP+
+xZ+
+xR+
+xJ+
+x"(
+xg+
+x$(
+x|'
+xf+
+xb+
+xa+
+x[+
+xX+
+xT+
+x_+
+x)(
+x}'
+xO+
+xV+
+xN+
+xM+
+xc+
+xz'
+x~'
+xU+
+x!(
+x&(
+xd+
+xQ+
+xL+
+xK+
+x'(
+x%(
+x*(
+x`+
+x{'
+x^+
+x((
+xW+
+x#(
+xS+
+xH+
+x',
+x%,
+x(,
+x#,
+x$,
+x&,
+x",
+x~+
+x{+
+xz+
+x),
+xy+
+x}+
+x|+
+x!,
+xI+
+b1101000 b(
+b11111000000000000000001000 %)
+b1000 P*
+b0 *,
+0,,
+bx }-
+xq.
+xj.
+x|.
+1w,
+x`.
+0].
+xW.
+xi.
+x{.
+0^.
+xX.
+xs.
+xy.
+x_.
+xh.
+xt.
+xr.
+xp.
+xz.
+1c.
+xE/
+xF/
+xG/
+xH/
+b10 K/
+b0 L/
+bx M/
+bx N/
+bx O/
+bx P/
+#230000
+0w,
+#235000
+0?
+0=
+0j*
+x6.
+1:.
+02.
+x5.
+0}(
+09.
+03.
+0!)
+02#
+0F#
+04#
+03#
+00#
+01#
+0$$
+0n#
+0m#
+0l#
+0o#
+0p#
+0f#
+0D$
+0B$
+0[(
+0$%
+0"%
+1#%
+0&%
+01)
+0A/
+0H&
+0-)
+1E&
+0.)
+00)
+0D&
+1=/
+0/)
+0F&
+0u'
+0e&
+0Z&
+0I,
+0Y&
+0f&
+0[&
+xG.
+0d&
+0`&
+0b&
+0X&
+0]&
+0W&
+0c&
+0^&
+0a&
+0\&
+0_&
+0H.
+0Q.
+0S.
+0y'
+0"(
+0$(
+0|'
+0)(
+0}'
+0z'
+0~'
+0!(
+0&(
+0'(
+0%(
+0*(
+0{'
+0((
+0#(
+b1000000 b(
+b1000000000000000000000000000 %)
+b0 P*
+b0xxxxxxxxxxxxxxxx }-
+1b.
+xd.
+1w,
+x].
+x^.
+xc.
+0a.
+0./
+0//
+b1 3/
+x7/
+08/
+bx K/
+bx L/
+#240000
+0w,
+#245000
+0<
+0<-
+0;-
+05-
+06-
+0--
+18-
+00-
+0,-
+0'-
+0%-
+14-
+02-
+01-
+0&-
+0#-
+0!-
+0~,
+03-
+0|,
+0{,
+0:-
+0$-
+0"-
+0},
+0/-
+0*-
+0.-
+07-
+0)-
+0(-
+0+-
+09-
+00+
+01+
+1.+
+0-+
+0/+
+0,+
+0++
+1*+
+02+
+0)+
+0v*
+0r*
+0!+
+0t*
+0T)
+1S)
+0R)
+0Q)
+0P)
+0q*
+0O)
+0z*
+0|*
+0(+
+0w*
+0Y)
+0N)
+0#+
+0~*
+0'+
+0}*
+0x*
+0u*
+0"+
+0&+
+0[)
+0s*
+0Z)
+0$+
+0y*
+0V)
+0{*
+0X)
+1W)
+0U)
+0%+
+0I)
+0?)
+0F)
+0L)
+0<)
+0A)
+0G)
+0D)
+0J)
+0C)
+0K)
+0>)
+0=)
+0H)
+0B)
+0@)
+0M)
+0E)
+0A+
+0..
+1B.
+0A.
+0-.
+0@.
+0E.
+00.
+0/.
+0C.
+0F.
+0?.
+0=.
+0<.
+0D.
+0;.
+0>.
+06.
+0:.
+05.
+04.
+07.
+0|(
+01.
+13.
+1B+
+18.
+18#
+1E#
+16#
+1A#
+1#$
+1}#
+1r#
+1t#
+1e#
+1a#
+0A$
+0[(
+0W(
+0N(
+0L(
+1#%
+1}$
+1_(
+1>/
+1</
+0E&
+1;/
+13)
+0=/
+1@/
+15)
+1F*
+1t'
+1p'
+0e&
+0Z&
+0o&
+0v&
+0l&
+0i&
+0Y&
+0h&
+0f&
+0[&
+0G.
+0p&
+0d&
+18)
+0s&
+0`&
+0g&
+0P&
+0;)
+07)
+09)
+0b&
+0X&
+0]&
+0W&
+1:)
+0c&
+0^&
+0m&
+0a&
+0\&
+1r&
+1n&
+0_&
+0u&
+0k&
+0t&
+0q&
+0j&
+1\-
+0l-
+0q-
+0g-
+0e-
+0_-
+0^-
+0f-
+0v-
+1t-
+0n+
+0n-
+0s-
+0j-
+0I.
+0J.
+0r+
+0d-
+0a-
+0`-
+0M.
+0]-
+0h-
+0u+
+0c-
+0i+
+0R.
+0x+
+0h+
+1S.
+0T.
+0y-
+0w-
+0r-
+0l+
+0p-
+0i-
+0N.
+0p+
+0b-
+0q+
+0o+
+0j+
+0o-
+0m-
+0k+
+0k-
+0t+
+0u-
+1x-
+0w+
+0m+
+0v+
+0s+
+0z-
+0]+
+xy'
+0\+
+15+
+0e+
+0Y+
+0P+
+0Z+
+0R+
+0J+
+x"(
+0g+
+x$(
+x|'
+0f+
+0b+
+0a+
+0[+
+0X+
+0T+
+0_+
+x)(
+x}'
+0O+
+0V+
+0N+
+0M+
+0c+
+xz'
+x~'
+0U+
+x!(
+x&(
+0d+
+0Q+
+0L+
+0K+
+x'(
+x%(
+x*(
+0`+
+1E+
+x{'
+0^+
+x((
+0W+
+x#(
+0S+
+0H+
+0',
+1%,
+0(,
+0#,
+0$,
+0&,
+0",
+0~+
+0{+
+0z+
+0),
+0y+
+0}+
+0|+
+1!,
+0I+
+b0 b(
+b110100000010100000000100010000 %)
+b100010000 P*
+b100010000 *,
+bx }-
+0b.
+0w.
+0l.
+1w,
+0m.
+0[.
+0n.
+0g.
+0x.
+0k.
+0u.
+0Z.
+0v.
+1\.
+0Y.
+0f.
+1o.
+0e.
+b0 +/
+b0 ,/
+0-/
+1//
+00/
+b0 1/
+b1 2/
+b0 3/
+b0 4/
+b1 5/
+b0 6/
+07/
+#250000
+0w,
+#255000
+1@
+08-
+04-
+01-
+13-
+1l*
+0.-
+17-
+1.+
+0-+
+1*+
+1h*
+0S)
+1R)
+0P)
+0'+
+0$+
+1V)
+0W)
+0M)
+1..
+0B.
+1@.
+x4.
+1")
+08.
+1D#
+0E#
+1>#
+1;#
+13#
+11#
+0A#
+0#$
+0}#
+1w#
+1m#
+0E$
+1[#
+0e#
+1o#
+1"$
+1z#
+1d#
+1^#
+0a#
+1D$
+1"%
+1^(
+0'%
+0#%
+0}$
+0_(
+1&%
+1w$
+1z$
+1@*
+0>/
+0I&
+1H&
+0</
+0;/
+1.)
+10)
+0@/
+0F*
+1C*
+1?/
+0t'
+1j'
+1m'
+0p'
+1s'
+1G,
+0h&
+1;)
+0:)
+1m&
+1K,
+0r&
+0n&
+0k&
+1q&
+0\-
+1X-
+1T-
+0q-
+0t-
+0n-
+1s-
+1J.
+xT.
+1w-
+0x-
+05+
+1_+
+1c+
+0E+
+1%,
+0$,
+0y+
+0|+
+1!,
+b100 b(
+b1010010100100100000100000 %)
+b10010001101000101011001111000011110001111111101000011001000011000011101100101010000110010000100000000000000000000000000000000111111111111111111111111111111110000000000000000000000100010000110001111001101110101001100010000000000000000000000000001000100000000000000000000000000100010000000000000000000000000000100010000xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx00000000000000000000000001000000 >*
+b100100000100000 P*
+b1000100000 *,
+1w,
+1m.
+0\.
+0o.
+b1 +/
+x0/
+b0 2/
+b100 5/
+#260000
+0w,
+#265000
+0@
+1?
+1k*
+18-
+14-
+03-
+0l*
+07-
+1g*
+0h*
+1S)
+0R)
+0V)
+1W)
+1A.
+0")
+1!)
+0>#
+14#
+03#
+1H#
+1h#
+1E$
+1&$
+0o#
+0z#
+1p#
+0^#
+1'%
+1%%
+1_(
+0&%
+0z$
+11)
+1I&
+1C/
+00)
+0C*
+0m'
+1w'
+0G,
+1F,
+1J,
+0;)
+0m&
+0K,
+1r&
+1n&
+0q&
+1t-
+0s-
+0w-
+1x-
+1b+
+0_+
+0c+
+1^+
+b1000 b(
+b1001010100100000000100010 %)
+b100000000100010 P*
+b100010000 *,
+b11111111111111111111111011101111 -,
+1w,
+1n.
+b110 5/
+#270000
+0w,
+#275000
+1@
+05-
+0k*
+18-
+00-
+0'-
+04-
+02-
+0#-
+0~,
+03-
+1l*
+0*-
+0.-
+07-
+0(-
+09-
+0.+
+0-+
+0/+
+0,+
+0g*
+1*+
+1)+
+1h*
+1v*
+1r*
+1!+
+1t*
+0T)
+0S)
+1R)
+1Q)
+0P)
+1q*
+1O)
+1z*
+1|*
+1(+
+1w*
+0Y)
+0N)
+1#+
+1~*
+1'+
+1}*
+1x*
+1u*
+1"+
+1&+
+0[)
+1s*
+0Z)
+1$+
+1y*
+1V)
+1{*
+1X)
+1W)
+1U)
+1%+
+1I)
+1?)
+1F)
+0L)
+0<)
+0A)
+1G)
+0D)
+0J)
+0C)
+0K)
+0>)
+0=)
+0H)
+1B)
+0@)
+1M)
+0E)
+0..
+0A.
+14.
+1")
+11.
+18.
+1<#
+1:#
+08#
+0D#
+19#
+1>#
+04#
+1@#
+06#
+1A#
+1?#
+1=#
+0H#
+1M#
+0h#
+1_#
+1}#
+0r#
+1N#
+1U#
+1y#
+1]#
+1L#
+1|#
+0E$
+0&$
+1W#
+1{#
+1P#
+0t#
+1V#
+1S#
+1R#
+1Y#
+0"$
+1x#
+1Z#
+1z#
+1v#
+1u#
+0p#
+0d#
+1`#
+1^#
+1a#
+1Q#
+1X#
+1T#
+1\#
+1O#
+0D$
+1C$
+1](
+0"%
+0^(
+0'%
+1}$
+0_(
+0&%
+1v$
+1|$
+1x$
+1z$
+1u$
+1y$
+1{$
+1k$
+1o$
+1l$
+1h$
+1s$
+1r$
+1j$
+1q$
+1t$
+1i$
+1n$
+1m$
+1p$
+01)
+19/
+1B*
+16)
+1>/
+0I&
+0H&
+1A*
+0C/
+1G&
+1?*
+03)
+1=/
+1E*
+05)
+1F*
+1C*
+1D*
+0?/
+1n'
+1P-
+1i'
+1g'
+1`'
+1]'
+1f'
+1\'
+1['
+1l'
+1Z'
+1c'
+1Y'
+0:(
+09(
+1R-
+1@-
+16(
+15(
+1b'
+14(
+03(
+1a'
+08(
+1o'
+02(
+17(
+1k'
+1d'
+1S-
+1N-
+1J-
+1m'
+0w'
+1h'
+1C-
+1H-
+1G-
+1p'
+1e'
+1_'
+0s'
+1^'
+0e&
+1Z&
+0o&
+0v&
+1G,
+1l&
+0F,
+0i&
+0Y&
+1h&
+0f&
+0[&
+1p&
+1d&

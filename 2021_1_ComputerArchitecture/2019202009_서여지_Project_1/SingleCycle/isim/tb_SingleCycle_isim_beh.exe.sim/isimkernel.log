@@ -1,0 +1,10 @@
+Command line:
+   tb_SingleCycle_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  59390
+
+Sun Apr 11 23:34:31 2021
+
+
+ Elaboration Time: 0.015625 sec

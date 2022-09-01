@@ -1,0 +1,4 @@
+verilog isim_temp "MyFSM.v"
+verilog isim_temp "MultiCycle.v"
+verilog isim_temp "tb_MultiCycle.v"
+verilog isim_temp "C:/Program_A/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

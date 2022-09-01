@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "C:/Users/gun07/Documents/ISE/MultiCycle/tb_MultiCycle.xst" -ofn "C:/Users/gun07/Documents/ISE/MultiCycle/tb_MultiCycle.syr" 
+xst -intstyle ise -ifn "C:/Users/gun07/Documents/ISE/MultiCycle/tb_MultiCycle.xst" -ofn "C:/Users/gun07/Documents/ISE/MultiCycle/tb_MultiCycle.syr" 

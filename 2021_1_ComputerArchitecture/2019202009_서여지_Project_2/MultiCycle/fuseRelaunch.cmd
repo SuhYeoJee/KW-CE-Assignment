@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/gun07/Documents/ISE/MultiCycle/tb_MultiCycle_isim_beh.exe" -prj "C:/Users/gun07/Documents/ISE/MultiCycle/tb_MultiCycle_beh.prj" "work.tb_MultiCycle" "work.glbl" 
